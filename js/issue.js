@@ -37,13 +37,15 @@ function detailHTML(it) {
   <p class="breadcrumb"><a href="index.html">← 課題一覧</a></p>
   <div class="detail-head">
     <span class="card-cat">${esc(CAT_NAME[it.category] || it.category)}</span>
+    ${it.kind === "plan" ? `<span class="badge plan">計画・施策</span>` : ""}
     <span class="badge ${tfClass(it.timeframe)}">${esc(it.timeframe)}</span>
   </div>
   <h1 class="detail-title">${esc(it.title)}</h1>
   <p class="detail-summary">${esc(it.summary)}</p>
   <div class="detail-meta">
-    <span>緊急度 ${dots(it.urgency)}</span>
-    <span>深刻度 ${dots(it.severity)}</span>
+    ${it.kind === "plan"
+      ? `<span class="plan-tag">進行中の計画・施策</span>`
+      : `<span>緊急度 ${dots(it.urgency)}</span><span>深刻度 ${dots(it.severity)}</span>`}
   </div>
   <figure class="infographic">
     <img src="images/${encodeURIComponent(it.id)}.png" loading="lazy"

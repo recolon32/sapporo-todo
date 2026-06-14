@@ -28,17 +28,19 @@ function syncActiveButton() {
 }
 
 function cardHTML(it) {
-  return `<a class="card" href="issue.html?id=${encodeURIComponent(it.id)}">
+  const isPlan = it.kind === "plan";
+  const planBadge = isPlan ? `<span class="badge plan">計画・施策</span>` : "";
+  const meta = isPlan
+    ? `<span class="plan-tag">進行中の計画・施策</span>`
+    : `<span>緊急 ${dots(it.urgency)}</span><span>深刻 ${dots(it.severity)}</span>`;
+  return `<a class="card${isPlan ? " card-plan" : ""}" href="issue.html?id=${encodeURIComponent(it.id)}">
     <div class="card-top">
       <span class="card-cat">${esc(CAT_NAME[it.category] || it.category)}</span>
-      <span class="badge ${tfClass(it.timeframe)}">${esc(it.timeframe)}</span>
+      ${planBadge}<span class="badge ${tfClass(it.timeframe)}">${esc(it.timeframe)}</span>
     </div>
     <h3 class="card-title">${esc(it.title)}</h3>
     <p class="card-summary">${esc(it.summary)}</p>
-    <div class="card-meta">
-      <span>緊急 ${dots(it.urgency)}</span>
-      <span>深刻 ${dots(it.severity)}</span>
-    </div>
+    <div class="card-meta">${meta}</div>
   </a>`;
 }
 
