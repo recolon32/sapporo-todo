@@ -1,0 +1,10 @@
+[
+  { "id": "snow",      "name": "雪・寒冷地",            "description": "除排雪、雪対策、寒冷地特有の都市運営課題" },
+  { "id": "pop",       "name": "人口減少・高齢化",      "description": "人口構造の変化、高齢化、担い手不足" },
+  { "id": "city",      "name": "都心再開発・まちづくり", "description": "都心部の再開発、土地利用、コンパクトシティ" },
+  { "id": "transit",   "name": "交通・公共交通",        "description": "地下鉄・市電・バスの維持、移動の足の確保" },
+  { "id": "finance",   "name": "財政・行政",            "description": "市財政の持続可能性、行政運営" },
+  { "id": "industry",  "name": "産業・観光・MICE",      "description": "産業構造、観光、MICE、雇用" },
+  { "id": "infra",     "name": "インフラ老朽化",        "description": "上下水道・橋梁・公共施設の更新" },
+  { "id": "energy",    "name": "環境・エネルギー",      "description": "脱炭素、エネルギー、防災・気候変動" }
+]

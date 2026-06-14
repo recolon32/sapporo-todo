@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>札幌市が先送りせず解くべき課題</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">札幌市が先送りせず解くべき課題</h1>
+      <p class="site-desc">放置すれば市の維持が揺らぐ構造的課題を、事実・解釈・提案に分けて整理したオープンな課題地図です。</p>
+      <nav class="site-nav">
+        <a href="index.html">課題一覧</a>
+        <a href="map.html">課題マップ</a>
+        <a href="about.html">このサイトについて</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <div id="filter-buttons" class="filter-buttons"></div>
+      <label class="sort-control">並び順:
+        <select id="sort-order">
+          <option value="importance">重要度（緊急度＋深刻度）順</option>
+          <option value="category">カテゴリ順</option>
+        </select>
+      </label>
+    </div>
+    <div id="issues"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>本サイトは<strong>生成AIによる評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいています。SNSや出典情報による「ゆらぎ」が存在するものとします。</p>
+      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：焚き火の会 AIチーム</p>
+      <p>最終更新: 2026-06-13</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

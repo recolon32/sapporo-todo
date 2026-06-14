@@ -1,0 +1,35 @@
+:root {
+  --font-base: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans", Meiryo, sans-serif;
+
+  --color-bg: #ffffff;
+  --color-surface: #f7f7f8;
+  --color-text: #1d1d1f;
+  --color-text-muted: #6b6b70;
+  --color-border: #e4e4e7;
+  --color-accent: #1a5fb4;
+  --color-link: #1a5fb4;
+
+  /* 緊急度・深刻度スケール（●） */
+  --color-scale-on: #c0392b;
+  --color-scale-off: #d9d9de;
+
+  /* タイムフレーム別バッジ色 */
+  --color-tf-now: #c0392b;
+  --color-tf-5y: #d68910;
+  --color-tf-10y: #1a5fb4;
+  --color-tf-gen: #6b6b70;
+}
+
+/* 別テーマ例：差し替えで全体が変わることの実証用 */
+[data-theme="dark"] {
+  --color-bg: #1b1b1d;
+  --color-surface: #242427;
+  --color-text: #f2f2f4;
+  --color-text-muted: #a1a1aa;
+  --color-border: #34343a;
+  --color-accent: #5ea0ef;
+  --color-link: #5ea0ef;
+  --color-scale-on: #ff6b5e;
+  --color-scale-off: #44444b;
+}

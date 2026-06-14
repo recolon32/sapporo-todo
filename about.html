@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>このサイトについて | 札幌市が先送りせず解くべき課題</title>
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">このサイトについて</h1>
+      <nav class="site-nav">
+        <a href="index.html">課題一覧</a>
+        <a href="map.html">課題マップ</a>
+        <a href="about.html">このサイトについて</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container about">
+    <section class="detail-section">
+      <h2>目的</h2>
+      <p>札幌市について、個別の事件ではなく「放置すれば市の維持が揺らぐ構造的課題」を整理したオープンな課題地図です。fladdict 氏の「<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>」の仕組みを参考に、その枠組みを札幌市に当てはめています。</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>生成AIによる評価版であること</h2>
+      <p>本サイトの課題は、生成AIが公開情報をもとに抽出・整理した<strong>評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいて作成しています。情報源やSNS上の指摘によって内容が変わりうる「ゆらぎ」が存在するものとし、誤りの指摘により随時更新します。最終的な判断は、一次情報をご自身で確認したうえで行ってください。</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>どのようにAIがデータを引き出したか</h2>
+      <p>各課題は、次の手順で作成しています。</p>
+      <ol>
+        <li>札幌市・北海道・国などの公開資料（計画書・統計・公式サイト）と報道を調査する。</li>
+        <li>そこから、札幌の都市構造に関わる構造的なテーマを抽出する。</li>
+        <li>内容を「事実（裏付けのある記述）」「解釈（構造的背景）」「提案（対応案とトレードオフ）」に分けて整理する。</li>
+        <li>確認できた一次情報には出典リンクを付け、断定できないものは表現を控えめにする。</li>
+        <li>課題どうしの関連を結び、関係ネットワーク図と時間軸マトリクスで俯瞰できるようにする。</li>
+      </ol>
+      <p>数値（人口推計・予算額・料金改定・開業時期など）は時点で変動するため、閲覧時点での再確認を前提としています。</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>なぜ「課題」として取り上げたか</h2>
+      <p>取り上げる基準は「先送りすると、いずれ市全体の維持が揺らぐ構造的な問題かどうか」です。短期的な賛否が分かれる個別の政策論ではなく、人口・財政・インフラ・安全など、放置するほど対応の選択肢が狭まるテーマを優先しました。各課題には<strong>緊急度</strong>・<strong>深刻度</strong>（5段階）と、いつ顕在化するかを示す<strong>時間軸</strong>（今すぐ／5年以内／10年以内／世代単位）を付けています。</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>日本全体の課題と照らして</h2>
+      <p>人口減少・高齢化・財政悪化・インフラ老朽化・脱炭素・少子化といった課題は、日本全体に共通する構造問題です。本サイトは、それらを札幌の文脈に置き換えたうえで、雪・寒冷地、地下鉄・市電、丘珠空港、ヒグマとの共生など、<strong>札幌に固有の現れ方</strong>を加えて再編成しました。全国共通の課題が、寒冷地・北海道の中枢都市という条件のもとでどう立ち現れるかを示すことを意図しています。</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>編集方針</h2>
+      <ul>
+        <li>事実・解釈・提案を分けて記載します。</li>
+        <li>可能な範囲で一次情報（札幌市・北海道・国の公開資料）の出典を付けます。</li>
+        <li>提案にはトレードオフや反対論も併記するよう努めます。</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>インフォグラフィックについて</h2>
+      <p>掲載されるインフォグラフィックは Gemini による自動生成です。AIによる理解や生成技術の特性上、誤字や誤りが含まれる場合があります。</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>更新履歴</h2>
+      <ul id="update-log" class="update-log"><li>読み込み中…</li></ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>参考・クレジット</h2>
+      <ul>
+        <li>参考サイト：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）</li>
+        <li>協力・サイト作成：焚き火の会 AIチーム</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    (async () => {
+      const esc = s => String(s ?? "").replace(/[&<>"]/g, c =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+      const log = document.getElementById("update-log");
+      try {
+        const items = await (await fetch("data/updates.json")).json();
+        log.innerHTML = items.map(u =>
+          `<li><span class="update-date">${esc(u.date)}</span> ${esc(u.text)}</li>`).join("");
+      } catch (e) {
+        log.innerHTML = "<li>更新履歴を読み込めませんでした。</li>";
+      }
+    })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>本サイトは<strong>生成AIによる評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいています。SNSや出典情報による「ゆらぎ」が存在するものとします。</p>
+      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：焚き火の会 AIチーム</p>
+      <p>最終更新: 2026-06-13</p>
+    </div>
+  </footer>
+</body>
+</html>
