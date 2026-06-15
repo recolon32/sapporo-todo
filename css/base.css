@@ -128,10 +128,24 @@ a { color: var(--color-link); }
 
 .network-wrap { width: 100%; max-width: 720px; margin: 0 auto; }
 .network-svg { width: 100%; height: auto; display: block; }
-.net-edge { stroke: var(--color-border); stroke-width: 1.2; }
-.net-node circle { cursor: pointer; stroke: var(--color-bg); stroke-width: 2;
-  transition: opacity .15s; }
-.net-node:hover circle { opacity: 0.75; }
+.net-edge { stroke: var(--color-border); stroke-width: 1;
+  transition: opacity .12s, stroke .12s, stroke-width .12s; }
+.net-node circle { cursor: pointer; stroke: var(--color-bg); stroke-width: 1.5;
+  transition: opacity .12s, stroke .12s; }
+/* ホバー時：関連だけを強調し、それ以外を淡く */
+.network-svg.hovering .net-node:not(.hi) circle { opacity: 0.12; }
+.network-svg.hovering .net-edge:not(.hi) { opacity: 0.05; }
+.net-node.hi circle { stroke: var(--color-accent); stroke-width: 2.5; }
+.net-edge.hi { stroke: var(--color-accent); stroke-width: 2; opacity: 1; }
+/* 分類フィルタで対象外を淡く */
+.net-node.muted { pointer-events: none; }
+.net-node.muted circle { opacity: 0.07; }
+.net-edge.muted { opacity: 0.04; }
+/* ホバー時の名前ラベル */
+.net-label { font-size: 13px; fill: var(--color-text);
+  paint-order: stroke; stroke: var(--color-bg); stroke-width: 3px;
+  stroke-linejoin: round; pointer-events: none; }
+.net-label.is-center { font-weight: 700; }
 
 .matrix-wrap { overflow-x: auto; }
 .matrix-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
