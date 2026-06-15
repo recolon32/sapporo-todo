@@ -17,8 +17,9 @@ a { color: var(--color-link); }
 .controls { display: flex; gap: 12px 16px; flex-wrap: wrap; align-items: center;
   margin: 24px 0; }
 .controls select { padding: 6px 10px; font-size: 0.95rem; }
-.sort-control { margin-left: auto; font-size: 0.9rem; color: var(--color-text-muted);
-  white-space: nowrap; }
+.sort-control { margin-left: auto; display: flex; align-items: center; gap: 8px;
+  font-size: 0.9rem; color: var(--color-text-muted); }
+.sort-buttons .filter-btn.active { background: var(--color-accent); }
 
 /* カテゴリ・フィルタボタン */
 .filter-buttons { display: flex; flex-wrap: wrap; gap: 8px; }

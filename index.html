@@ -23,12 +23,10 @@
   <main class="container">
     <div class="controls">
       <div id="filter-buttons" class="filter-buttons"></div>
-      <label class="sort-control">並び順:
-        <select id="sort-order">
-          <option value="importance">重要度（緊急度＋深刻度）順</option>
-          <option value="category">カテゴリ順</option>
-        </select>
-      </label>
+      <div class="sort-control">
+        <span class="sort-label">並び順:</span>
+        <div id="sort-buttons" class="filter-buttons sort-buttons"></div>
+      </div>
     </div>
     <div id="issues"></div>
   </main>

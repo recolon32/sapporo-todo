@@ -1,11 +1,26 @@
 // トップページ：4カラムの要約カードグリッド
 let currentCat = "";
+let currentSort = "category";   // 既定はカテゴリ順
 
 async function init() {
   await loadData();
   renderFilterButtons();
-  document.getElementById("sort-order").addEventListener("change", render);
+  renderSortButtons();
   render();
+}
+
+function renderSortButtons() {
+  const wrap = document.getElementById("sort-buttons");
+  const opts = [["category", "カテゴリ順"], ["importance", "重要度順"]];
+  wrap.innerHTML = opts.map(([v, l]) =>
+    `<button class="filter-btn" data-sort="${v}">${l}</button>`).join("");
+  wrap.querySelectorAll(".filter-btn").forEach(btn =>
+    btn.addEventListener("click", () => { currentSort = btn.dataset.sort; render(); }));
+}
+
+function syncSortButtons() {
+  document.querySelectorAll("#sort-buttons .filter-btn").forEach(btn =>
+    btn.classList.toggle("active", btn.dataset.sort === currentSort));
 }
 
 function renderFilterButtons() {
@@ -46,8 +61,9 @@ function cardHTML(it) {
 
 function render() {
   syncActiveButton();
+  syncSortButtons();
   const cat = currentCat;
-  const order = document.getElementById("sort-order").value;
+  const order = currentSort;
   let list = ISSUES.filter(it => !cat || it.category === cat);
   const root = document.getElementById("issues");
 
