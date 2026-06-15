@@ -108,15 +108,27 @@ a { color: var(--color-link); }
 .related-list a { text-decoration: none; }
 .rel-cat { color: var(--color-text-muted); font-size: 0.85rem; }
 /* 深掘り（市民の声＋答え） */
-.deep-dive .dd-item { border-left: 3px solid var(--color-border);
-  padding: 2px 0 2px 14px; margin: 16px 0; }
-.dd-q { font-weight: 700; margin: 0 0 6px; }
-.dd-q::before { content: "Q. "; color: var(--color-accent); }
-.dd-a { margin: 0; }
-.dd-a::before { content: "A. "; color: var(--color-text-muted); font-weight: 700; }
-.dd-src { margin-top: 8px; font-size: 0.8rem; }
-.dd-src-label { color: var(--color-text-muted); }
-.dd-src ul { margin: 2px 0 0; padding-left: 1.2em; }
+.deep-dive .dd-item { background: var(--color-surface);
+  border: 1px solid var(--color-border); border-radius: 12px;
+  padding: 18px 20px; margin: 14px 0; }
+.dd-q, .dd-a { position: relative; padding-left: 32px; margin: 0; }
+.dd-q::before, .dd-a::before {
+  position: absolute; left: 0; top: 0.05em;
+  width: 23px; height: 23px; border-radius: 50%;
+  text-align: center; line-height: 23px; font-size: 0.78rem;
+  font-weight: 700; font-family: var(--font-base); }
+.dd-q { font-weight: 700; font-size: 1.02rem; line-height: 1.6;
+  margin-bottom: 12px; }
+.dd-q::before { content: "Q"; background: var(--color-accent); color: #fff; }
+.dd-a { line-height: 1.9; }
+.dd-a::before { content: "A"; background: var(--color-bg);
+  color: var(--color-accent); border: 1.5px solid var(--color-accent);
+  line-height: 20px; }
+.dd-src { margin: 12px 0 0 32px; padding-top: 10px;
+  border-top: 1px dashed var(--color-border); font-size: 0.8rem; }
+.dd-src-label { color: var(--color-text-muted); font-weight: 600; }
+.dd-src ul { margin: 4px 0 0; padding-left: 1.2em; }
+.dd-src li { margin: 2px 0; }
 .dd-src a { color: var(--color-link); }
 .detail-section.ai-note { background: var(--color-surface);
   border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent);
