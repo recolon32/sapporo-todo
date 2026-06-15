@@ -38,6 +38,23 @@ def list_section(title, items):
     return f'<section class="detail-section"><h2>{esc(title)}</h2><ul>{lis}</ul></section>'
 
 
+def deepdive_section(it):
+    dd = it.get("deepDive")
+    if not dd:
+        return ""
+    items = ""
+    for d in dd:
+        srcs = "".join(
+            f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a></li>'
+            for s in d.get("sources", []))
+        src_html = f'<div class="dd-src"><span class="dd-src-label">出典</span><ul>{srcs}</ul></div>' if srcs else ""
+        items += (f'<div class="dd-item">'
+                  f'<p class="dd-q">{esc(d.get("q"))}</p>'
+                  f'<p class="dd-a">{esc(d.get("a"))}</p>'
+                  f'{src_html}</div>')
+    return f'<section class="detail-section deep-dive"><h2>深掘り — 市民の声と答え</h2>{items}</section>'
+
+
 def build_detail(it, cat_name, by_id, has_image):
     is_plan = it.get("kind") == "plan"
     tf = TF_CLASS.get(it.get("timeframe"), "tf-gen")
@@ -90,6 +107,7 @@ def build_detail(it, cat_name, by_id, has_image):
   {list_section("事実", it.get("facts"))}
   {interp}
   {list_section("提案", it.get("proposals"))}
+  {deepdive_section(it)}
   {team}
   {ainote}
   {related_sec}

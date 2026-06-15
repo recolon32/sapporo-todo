@@ -107,6 +107,17 @@ a { color: var(--color-link); }
   color: var(--color-text-muted); font-weight: 600; }
 .related-list a { text-decoration: none; }
 .rel-cat { color: var(--color-text-muted); font-size: 0.85rem; }
+/* 深掘り（市民の声＋答え） */
+.deep-dive .dd-item { border-left: 3px solid var(--color-border);
+  padding: 2px 0 2px 14px; margin: 16px 0; }
+.dd-q { font-weight: 700; margin: 0 0 6px; }
+.dd-q::before { content: "Q. "; color: var(--color-accent); }
+.dd-a { margin: 0; }
+.dd-a::before { content: "A. "; color: var(--color-text-muted); font-weight: 700; }
+.dd-src { margin-top: 8px; font-size: 0.8rem; }
+.dd-src-label { color: var(--color-text-muted); }
+.dd-src ul { margin: 2px 0 0; padding-left: 1.2em; }
+.dd-src a { color: var(--color-link); }
 .detail-section.ai-note { background: var(--color-surface);
   border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent);
   border-radius: 8px; padding: 14px 18px; }
