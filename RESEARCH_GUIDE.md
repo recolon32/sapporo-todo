@@ -92,7 +92,14 @@
    { "date": "YYYY-MM-DD", "text": "○○の課題を追加。" }
    ```
 5. 画像があれば `images/<id>.png` を置く。
-6. ローカルで表示確認 → `git add -A && git commit -m "課題追加" && git push`。
+6. **課題ページを再生成**：`python3 tools/build_issue_pages.py`
+   - 各課題の静的ページ `i/<id>.html`（クリーンURL＋課題別OGP）を作り直す。
+   - トップ・マップは `i/<id>.html` へリンクするので、**追加・削除したら必ず再生成**する（しないとリンク切れ／プレビュー未反映）。
+   - 公開先URLを変えた場合は `tools/build_issue_pages.py` の `SITE_BASE` を修正してから再生成。
+7. ローカルで表示確認 → `git add -A && git commit -m "課題追加" && git push`。
+
+> **URLとプレビューの仕組み**：詳細ページは `i/<id>.html` という普通のURL（`?` を使わない）で、各ページにその課題のOGP（SNSプレビュー用のタイトル・説明・画像）を静的に埋め込む。クローラはJSを実行しないため、内容は生成時に焼き込んでいる。旧 `issue.html?id=` は `i/<id>.html` へ自動転送。
+> **CSS/JS を変えたとき**は、各HTML（と `build_issue_pages.py`）の `?v=YYYYMMDD` を新しい値に上げ、課題ページも再生成する。
 
 ---
 

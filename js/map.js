@@ -129,7 +129,7 @@ function renderNetwork(catColor) {
   const edgesSvg = links.map(([a, b]) =>
     `<line class="net-edge" data-a="${a}" data-b="${b}" x1="${nodes[a].x.toFixed(1)}" y1="${nodes[a].y.toFixed(1)}" x2="${nodes[b].x.toFixed(1)}" y2="${nodes[b].y.toFixed(1)}"/>`).join("");
   const nodesSvg = nodes.map((n, i) =>
-    `<a class="net-node" data-i="${i}" href="issue.html?id=${encodeURIComponent(n.id)}">
+    `<a class="net-node" data-i="${i}" href="i/${encodeURIComponent(n.id)}.html">
       <circle cx="${n.x.toFixed(1)}" cy="${n.y.toFixed(1)}" r="${n.r}" fill="${catColor[n.cat]}">
         <title>${esc(n.title)}（${esc(CAT_NAME[n.cat])} / 緊急度${n.u}）</title>
       </circle></a>`).join("");
@@ -181,7 +181,7 @@ function renderMatrix() {
     const cells = TF_ORDER.map(tf => {
       const items = ISSUES.filter(it => it.category === c.id && it.timeframe === tf);
       const inner = items.map(it =>
-        `<a href="issue.html?id=${encodeURIComponent(it.id)}">${esc(it.title)}</a>`).join("");
+        `<a href="i/${encodeURIComponent(it.id)}.html">${esc(it.title)}</a>`).join("");
       return `<td>${inner || '<span class="cell-empty">—</span>'}</td>`;
     }).join("");
     return `<tr data-cat="${c.id}"><th class="row-head">${esc(c.name)}</th>${cells}</tr>`;

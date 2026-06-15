@@ -48,7 +48,7 @@ function cardHTML(it) {
   const meta = isPlan
     ? `<span class="plan-tag">進行中の計画・施策</span>`
     : `<span>緊急 ${dots(it.urgency)}</span><span>深刻 ${dots(it.severity)}</span>`;
-  return `<a class="card${isPlan ? " card-plan" : ""}" href="issue.html?id=${encodeURIComponent(it.id)}">
+  return `<a class="card${isPlan ? " card-plan" : ""}" href="i/${encodeURIComponent(it.id)}.html">
     <div class="card-top">
       <span class="card-cat">${esc(CAT_NAME[it.category] || it.category)}</span>
       ${planBadge}<span class="badge ${tfClass(it.timeframe)}">${esc(it.timeframe)}</span>
