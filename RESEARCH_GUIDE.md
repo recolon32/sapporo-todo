@@ -142,6 +142,7 @@ EOF
 - **`data/updates.json`**：初版エントリにリセット。
 - **クレジット・参考サイト**：フッターと `about.html`。
 - **`images/`**：中身を空にして README だけ残す（`images/<id>.png` 運用は同じ）。
+- **`js/analytics.js`（Google アナリティクス）**：`GA_ID` を自分の測定IDに、`ALLOW_HOSTS` を自分の公開先ドメインに変更する。元のままでも**許可ホスト以外（フォーク・別ドメイン・localhost）では計測が動かない**ので元の計測先に送信されることはないが、自分で計測するなら必ず差し替える。計測不要なら `ALLOW_HOSTS = []` にするか、各HTMLの `analytics.js` 読み込みを外す。
 
 ### そのまま使えるもの（変更不要）
 - `css/`（`theme.css` の変数を変えれば配色テーマだけ変更可）
