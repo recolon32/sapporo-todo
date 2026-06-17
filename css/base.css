@@ -9,6 +9,25 @@ body {
 a { color: var(--color-link); }
 .site-header { border-bottom: 1px solid var(--color-border); padding: 24px 0; }
 .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+.site-header .container { position: relative; }
+
+/* 文字サイズ調整（右上） */
+.a11y-fontsize { position: absolute; top: 0; right: 20px; display: flex; gap: 6px;
+  align-items: center; }
+.a11y-fontsize .fs-btn {
+  border: 1px solid var(--color-border); background: var(--color-bg);
+  color: var(--color-text); border-radius: 8px; cursor: pointer;
+  font-family: inherit; line-height: 1; padding: 6px 9px;
+  display: inline-flex; align-items: baseline;
+  transition: border-color .15s, background .15s; }
+.a11y-fontsize .fs-btn:hover { border-color: var(--color-accent); }
+.a11y-fontsize .fs-btn .a { font-weight: 600; }
+.a11y-fontsize .fs-btn[data-fs="dec"] .a { font-size: 12px; }
+.a11y-fontsize .fs-btn[data-fs="reset"] .a { font-size: 14px; }
+.a11y-fontsize .fs-btn[data-fs="inc"] .a { font-size: 17px; }
+.a11y-fontsize .fs-btn .sign { font-size: 11px; margin-left: 1px; }
+@media (max-width: 540px) { .a11y-fontsize { position: static; justify-content: flex-end;
+  margin-bottom: 8px; } }
 .site-title { font-size: 1.5rem; margin: 0; }
 .site-desc { color: var(--color-text-muted); margin: 8px 0 0; }
 .site-nav { margin-top: 12px; }
