@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://recolon32.github.io/sapporo-todo"
-VERSION = "20260617"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260618"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}

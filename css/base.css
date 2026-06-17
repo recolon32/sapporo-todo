@@ -95,7 +95,7 @@ a { color: var(--color-link); }
 .detail-summary { color: var(--color-text-muted); margin: 0 0 12px; font-size: 1.05rem; }
 .detail-meta { display: flex; gap: 18px; font-size: 0.9rem;
   color: var(--color-text-muted); margin-bottom: 8px; }
-.detail-section { margin: 24px 0; max-width: 760px; }
+.detail-section { margin: 24px 0; max-width: 920px; }
 .detail-section h2 { font-size: 1.05rem; border-left: 4px solid var(--color-accent);
   padding-left: 10px; margin-bottom: 8px; }
 .detail-section ul { margin: 0; padding-left: 1.3em; }
@@ -135,7 +135,7 @@ a { color: var(--color-link); }
   border-radius: 8px; padding: 14px 18px; }
 .detail-section.ai-note h2 { border-left: none; padding-left: 0; margin-top: 0; }
 .detail-section.ai-note h2::before { content: "🤖 "; }
-.infographic { margin: 18px 0 8px; max-width: 760px; }
+.infographic { margin: 18px 0 8px; max-width: 920px; }
 .infographic img { width: 100%; height: auto; display: block;
   border: 1px solid var(--color-border); border-radius: 10px; }
 .infographic figcaption { margin-top: 6px; font-size: 0.78rem;
@@ -150,7 +150,7 @@ a { color: var(--color-link); }
 .legend-item { display: inline-flex; align-items: center; gap: 6px; }
 .legend-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
 
-.network-wrap { width: 100%; max-width: 720px; margin: 0 auto; }
+.network-wrap { width: 100%; max-width: 900px; margin: 0 auto; }
 .network-svg { width: 100%; height: auto; display: block; }
 .net-edge { stroke: var(--color-border); stroke-width: 1;
   transition: opacity .12s, stroke .12s, stroke-width .12s; }
@@ -192,5 +192,5 @@ a { color: var(--color-link); }
 
 .site-footer { border-top: 1px solid var(--color-border); padding: 24px 0;
   margin-top: 48px; color: var(--color-text-muted); font-size: 0.85rem; }
-.site-footer p { margin: 6px 0; max-width: 760px; }
+.site-footer p { margin: 6px 0; max-width: 920px; }
 .site-footer a { color: var(--color-link); }
