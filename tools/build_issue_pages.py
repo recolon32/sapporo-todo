@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://recolon32.github.io/sapporo-todo"
-VERSION = "20260618"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260619"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -67,7 +67,7 @@ def build_detail(it, cat_name, by_id, has_image):
         fig = (f'<figure class="infographic">'
                f'<img src="../images/{esc(it["id"])}.png" loading="lazy" '
                f'alt="{esc(it["title"])}の要約インフォグラフィック">'
-               f'<figcaption>Geminiによる自動生成のため、誤字や誤りが含まれる場合があります。</figcaption></figure>')
+               f'<figcaption>Geminiによる自動生成です。AIによる推論でAI独自の課題解決案が付与されている場合があります。</figcaption></figure>')
 
     data = "".join(f'<tr><th>{esc(d.get("label"))}</th><td>{esc(d.get("value"))}</td></tr>'
                    for d in it.get("data", []))
@@ -123,7 +123,9 @@ def page_html(it, cat_name, by_id, has_image):
     og_image = ""
     twitter_card = "summary"
     if has_image:
-        og_image = f'\n  <meta property="og:image" content="{SITE_BASE}/images/{it["id"]}.png">'
+        thumb = f"{it['id']}-thumb.jpg"
+        og_name = thumb if os.path.exists(os.path.join(ROOT, "images", thumb)) else f"{it['id']}.png"
+        og_image = f'\n  <meta property="og:image" content="{SITE_BASE}/images/{og_name}">'
         twitter_card = "summary_large_image"
     detail = build_detail(it, cat_name, by_id, has_image)
     return f"""<!DOCTYPE html>
