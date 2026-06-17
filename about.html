@@ -57,6 +57,11 @@
     </section>
 
     <section class="detail-section">
+      <h2>現在進行中の対策・対応・計画を抽出</h2>
+      <p>それぞれの課題に対して、市・北海道・国が現在どのような対策・対応・計画を進めているかを調査し、それによってどのような変化・変革が起こりうるかを<strong>推論</strong>として追記しています。あわせて、その課題をよりよく考えるために<strong>AIを活用した場合に何ができるか</strong>も記載しています。</p>
+    </section>
+
+    <section class="detail-section">
       <h2>日本全体の課題と照らして</h2>
       <p>人口減少・高齢化・財政悪化・インフラ老朽化・脱炭素・少子化といった課題は、日本全体に共通する構造問題です。本サイトは、それらを札幌の文脈に置き換えたうえで、雪・寒冷地、地下鉄・市電、丘珠空港、ヒグマとの共生など、<strong>札幌に固有の現れ方</strong>を加えて再編成しました。全国共通の課題が、寒冷地・北海道の中枢都市という条件のもとでどう立ち現れるかを示すことを意図しています。</p>
     </section>
@@ -90,13 +95,14 @@
     <section class="detail-section">
       <h2>更新履歴</h2>
       <ul id="update-log" class="update-log"><li>読み込み中…</li></ul>
+      <p id="update-more" class="update-more" hidden><a href="updates.html">すべての更新履歴を見る →</a></p>
     </section>
 
     <section class="detail-section">
       <h2>参考・クレジット</h2>
       <ul>
         <li>参考サイト：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）</li>
-        <li>協力・サイト作成：焚き火の会 AIチーム</li>
+        <li>協力・サイト作成：焚き火会 AIチーム</li>
       </ul>
     </section>
   </main>
@@ -108,8 +114,12 @@
       const log = document.getElementById("update-log");
       try {
         const items = await (await fetch("data/updates.json")).json();
-        log.innerHTML = items.map(u =>
+        const shown = items.slice(0, 5);
+        log.innerHTML = shown.map(u =>
           `<li><span class="update-date">${esc(u.date)}</span> ${esc(u.text)}</li>`).join("");
+        if (items.length > shown.length) {
+          document.getElementById("update-more").hidden = false;
+        }
       } catch (e) {
         log.innerHTML = "<li>更新履歴を読み込めませんでした。</li>";
       }
@@ -119,7 +129,7 @@
   <footer class="site-footer">
     <div class="container">
       <p>本サイトは<strong>生成AIによる評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいています。SNSや出典情報による「ゆらぎ」が存在するものとします。</p>
-      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：焚き火の会 AIチーム</p>
+      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：焚き火会 AIチーム</p>
       <p>最終更新: 2026-06-13</p>
     </div>
   </footer>

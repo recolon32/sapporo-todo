@@ -160,7 +160,7 @@ def page_html(it, cat_name, by_id, has_image):
   <footer class="site-footer">
     <div class="container">
       <p>本サイトは<strong>生成AIによる評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいています。SNSや出典情報による「ゆらぎ」が存在するものとします。</p>
-      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：焚き火の会 AIチーム</p>
+      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：焚き火会 AIチーム</p>
       <p>最終更新: 2026-06-14</p>
     </div>
   </footer>
