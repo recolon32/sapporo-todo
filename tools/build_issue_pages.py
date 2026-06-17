@@ -148,9 +148,9 @@ def page_html(it, cat_name, by_id, has_image):
   <header class="site-header">
     <div class="container">
       <div class="a11y-fontsize" role="group" aria-label="文字サイズの調整">
-        <button type="button" class="fs-btn" data-fs="dec" aria-label="文字を小さく"><span class="a">A</span><span class="sign">−</span></button>
-        <button type="button" class="fs-btn" data-fs="reset" aria-label="標準の文字サイズに戻す"><span class="a">A</span></button>
-        <button type="button" class="fs-btn" data-fs="inc" aria-label="文字を大きく"><span class="a">A</span><span class="sign">＋</span></button>
+        <button type="button" class="fs-btn" data-fs="dec" aria-label="文字を小さく"><span class="a">あ</span><span class="sign">−</span></button>
+        <button type="button" class="fs-btn" data-fs="reset" aria-label="標準の文字サイズに戻す"><span class="a">あ</span></button>
+        <button type="button" class="fs-btn" data-fs="inc" aria-label="文字を大きく"><span class="a">あ</span><span class="sign">＋</span></button>
       </div>
       <h1 class="site-title">札幌市が先送りせず解くべき課題</h1>
       <nav class="site-nav">
