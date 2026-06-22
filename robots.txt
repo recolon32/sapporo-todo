@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://recolon32.github.io/sapporo-todo/sitemap.xml

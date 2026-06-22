@@ -116,6 +116,44 @@ def build_detail(it, cat_name, by_id, has_image):
 """
 
 
+def jsonld(it, cat_name, has_image, url):
+    graph = [{
+        "@type": "Article",
+        "headline": it["title"],
+        "description": it.get("summary", ""),
+        "inLanguage": "ja",
+        "isAccessibleForFree": True,
+        "url": url,
+        "mainEntityOfPage": url,
+        "articleSection": cat_name.get(it["category"], it["category"]),
+        "author": {"@type": "Organization", "name": "焚き火会 AIチーム", "url": SITE_BASE},
+        "publisher": {"@type": "Organization", "name": "焚き火会 AIチーム", "url": SITE_BASE},
+    }]
+    if has_image:
+        graph[0]["image"] = f"{SITE_BASE}/images/{it['id']}.png"
+    graph.append({
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "課題一覧", "item": f"{SITE_BASE}/"},
+            {"@type": "ListItem", "position": 2, "name": it["title"], "item": url},
+        ],
+    })
+    dd = it.get("deepDive")
+    if dd:
+        graph.append({
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": d.get("q", ""),
+                 "acceptedAnswer": {"@type": "Answer", "text": d.get("a", "")}}
+                for d in dd
+            ],
+        })
+    data = {"@context": "https://schema.org", "@graph": graph}
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(data, ensure_ascii=False, indent=2)
+            + '\n  </script>')
+
+
 def page_html(it, cat_name, by_id, has_image):
     title = esc(it["title"])
     summary = esc(it.get("summary"))
@@ -128,16 +166,18 @@ def page_html(it, cat_name, by_id, has_image):
         og_image = f'\n  <meta property="og:image" content="{SITE_BASE}/images/{og_name}">'
         twitter_card = "summary_large_image"
     detail = build_detail(it, cat_name, by_id, has_image)
+    ld = jsonld(it, cat_name, has_image, url)
     return f"""<!DOCTYPE html>
 <html lang="ja" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title} | 札幌市が先送りせず解くべき課題</title>
+  <title>{title}｜札幌市の課題地図（事実・解釈・提案）</title>
   <meta name="description" content="{summary}">
+  <link rel="canonical" href="{url}">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="札幌市が先送りせず解くべき課題">
-  <meta property="og:title" content="{title}｜札幌市が先送りせず解くべき課題">
+  <meta property="og:site_name" content="札幌市の課題地図">
+  <meta property="og:title" content="{title}｜札幌市の課題地図">
   <meta property="og:description" content="{summary}">
   <meta property="og:url" content="{url}">{og_image}
   <meta name="twitter:card" content="{twitter_card}">
@@ -145,6 +185,7 @@ def page_html(it, cat_name, by_id, has_image):
   <link rel="stylesheet" href="../css/base.css?v={VERSION}">
   <script src="../js/analytics.js?v={VERSION}"></script>
   <script src="../js/a11y.js?v={VERSION}"></script>
+  {ld}
 </head>
 <body>
   <header class="site-header">
@@ -197,6 +238,32 @@ def main():
             f.write(page_html(it, cat_name, by_id, has_image))
         n += 1
     print(f"generated {n} pages in i/")
+
+    write_sitemap(issues)
+
+
+def write_sitemap(issues):
+    # 静的ページ（優先度高め）＋各課題ページ
+    static_pages = [
+        ("/", "1.0"),
+        ("/map.html", "0.8"),
+        ("/about.html", "0.5"),
+        ("/updates.html", "0.4"),
+    ]
+    urls = [(f"{SITE_BASE}{path}", pri) for path, pri in static_pages]
+    urls += [(f"{SITE_BASE}/i/{it['id']}.html", "0.7") for it in issues]
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, pri in urls:
+        lines.append(f"  <url><loc>{loc}</loc><priority>{pri}</priority></url>")
+    lines.append("</urlset>")
+    with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    with open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8") as f:
+        f.write("User-agent: *\nAllow: /\n\nSitemap: " + SITE_BASE + "/sitemap.xml\n")
+    print(f"generated sitemap.xml ({len(urls)} urls) and robots.txt")
 
 
 if __name__ == "__main__":
