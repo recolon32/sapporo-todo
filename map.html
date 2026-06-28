@@ -11,10 +11,10 @@
   <meta property="og:description" content="札幌市の課題を関係ネットワーク図と時間軸マトリクスで俯瞰する課題マップ。">
   <meta property="og:url" content="https://recolon32.github.io/sapporo-todo/map.html">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="css/theme.css?v=20260619">
-  <link rel="stylesheet" href="css/base.css?v=20260619">
-  <script src="js/analytics.js?v=20260619"></script>
-  <script src="js/a11y.js?v=20260619"></script>
+  <link rel="stylesheet" href="css/theme.css?v=20260623">
+  <link rel="stylesheet" href="css/base.css?v=20260623">
+  <script src="js/analytics.js?v=20260623"></script>
+  <script src="js/a11y.js?v=20260623"></script>
 </head>
 <body>
   <header class="site-header">
@@ -43,6 +43,10 @@
     <h2 class="map-heading">カテゴリ × 時間軸マトリクス</h2>
     <p class="map-desc">どの分野の課題が、いつ顕在化するかを俯瞰できます。</p>
     <div id="matrix" class="matrix-wrap"></div>
+
+    <h2 class="map-heading">札幌市の人口の見通し（データ）</h2>
+    <p class="map-desc">多くの課題の土台にある人口の動きを、将来推計でまとめました。数値は時点で変わる前提（「ゆらぎ」あり）です。</p>
+    <div id="demographics" class="demographics"></div>
   </main>
 
   <footer class="site-footer">
@@ -52,7 +56,8 @@
     </div>
   </footer>
 
-  <script src="js/data.js?v=20260619"></script>
-  <script src="js/map.js?v=20260619"></script>
+  <script src="js/data.js?v=20260623"></script>
+  <script src="js/map.js?v=20260623"></script>
+  <script src="js/demographics.js?v=20260623"></script>
 </body>
 </html>

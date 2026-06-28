@@ -213,3 +213,26 @@ a { color: var(--color-link); }
   margin-top: 48px; color: var(--color-text-muted); font-size: 0.85rem; }
 .site-footer p { margin: 6px 0; max-width: 920px; }
 .site-footer a { color: var(--color-link); }
+
+/* ===== 人口の見通し（課題マップ下部のグラフ） ===== */
+.demographics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  max-width: 920px; }
+.chart-card { margin: 0; background: var(--color-surface);
+  border: 1px solid var(--color-border); border-radius: 12px; padding: 14px 16px; }
+.chart-title { font-size: 0.95rem; font-weight: 600; color: var(--color-text);
+  display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; }
+.chart-sub { font-size: 0.78rem; font-weight: 400; color: var(--color-text-muted); }
+.chart-card svg { width: 100%; height: auto; display: block; }
+.chart-note { font-size: 0.72rem; color: var(--color-text-muted); margin: 4px 0 0; }
+.chart-src { font-size: 0.72rem; color: var(--color-text-muted); margin: 8px 0 0; }
+.chart-src a { color: var(--color-link); }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; }
+.chart-legend .lg { display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.74rem; color: var(--color-text-muted); }
+.chart-legend .sw { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+.stat-card { text-align: center; padding: 18px 8px 8px; }
+.stat-big { font-size: 3rem; font-weight: 700; line-height: 1; color: var(--color-accent); }
+.stat-unit { font-size: 1.4rem; font-weight: 600; margin-left: 2px; }
+.stat-cap { font-size: 0.9rem; color: var(--color-text); margin-top: 10px; }
+.stat-sub { font-size: 0.78rem; color: var(--color-text-muted); margin-top: 8px; }
+@media (max-width: 700px) { .demographics { grid-template-columns: 1fr; } }
