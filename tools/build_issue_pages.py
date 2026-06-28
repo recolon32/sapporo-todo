@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://recolon32.github.io/sapporo-todo"
-VERSION = "20260623"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260623b"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -206,7 +206,14 @@ def page_html(it, cat_name, by_id, has_image):
       <h1 class="site-title">札幌市が先送りせず解くべき課題</h1>
       <nav class="site-nav">
         <a href="../index.html">課題一覧</a>
-        <a href="../map.html">課題マップ</a>
+        <span class="nav-drop">
+          <a href="../map.html">課題マップ ▾</a>
+          <span class="nav-sub">
+            <a href="../map.html#h-network">関係ネットワーク図</a>
+            <a href="../map.html#h-matrix">時間軸マトリクス</a>
+            <a href="../map.html#h-population">札幌市の人口</a>
+          </span>
+        </span>
         <a href="../about.html">このサイトについて</a>
       </nav>
     </div>

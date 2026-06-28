@@ -236,3 +236,15 @@ a { color: var(--color-link); }
 .stat-cap { font-size: 0.9rem; color: var(--color-text); margin-top: 10px; }
 .stat-sub { font-size: 0.78rem; color: var(--color-text-muted); margin-top: 8px; }
 @media (max-width: 700px) { .demographics { grid-template-columns: 1fr; } }
+
+/* ===== ナビのドロップダウン（課題マップの小項目） ===== */
+.nav-drop { position: relative; display: inline-block; }
+.nav-sub { display: none; position: absolute; left: 0; top: 100%; z-index: 30;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  border-radius: 8px; padding: 6px 0; min-width: 200px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10); }
+.nav-drop:hover .nav-sub, .nav-drop:focus-within .nav-sub { display: block; }
+.nav-sub a { display: block; margin: 0; padding: 7px 16px; font-size: 0.88rem;
+  white-space: nowrap; }
+.nav-sub a:hover { background: var(--color-surface); }
+.map-heading { scroll-margin-top: 16px; }

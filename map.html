@@ -11,10 +11,10 @@
   <meta property="og:description" content="札幌市の課題を関係ネットワーク図と時間軸マトリクスで俯瞰する課題マップ。">
   <meta property="og:url" content="https://recolon32.github.io/sapporo-todo/map.html">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="css/theme.css?v=20260623">
-  <link rel="stylesheet" href="css/base.css?v=20260623">
-  <script src="js/analytics.js?v=20260623"></script>
-  <script src="js/a11y.js?v=20260623"></script>
+  <link rel="stylesheet" href="css/theme.css?v=20260623b">
+  <link rel="stylesheet" href="css/base.css?v=20260623b">
+  <script src="js/analytics.js?v=20260623b"></script>
+  <script src="js/a11y.js?v=20260623b"></script>
 </head>
 <body>
   <header class="site-header">
@@ -27,24 +27,31 @@
       <h1 class="site-title">札幌市が先送りせず解くべき課題</h1>
       <nav class="site-nav">
         <a href="index.html">課題一覧</a>
-        <a href="map.html">課題マップ</a>
+        <span class="nav-drop">
+          <a href="map.html">課題マップ ▾</a>
+          <span class="nav-sub">
+            <a href="map.html#h-network">関係ネットワーク図</a>
+            <a href="map.html#h-matrix">時間軸マトリクス</a>
+            <a href="map.html#h-population">札幌市の人口</a>
+          </span>
+        </span>
         <a href="about.html">このサイトについて</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h2 class="map-heading">関係ネットワーク図</h2>
+    <h2 class="map-heading" id="h-network">関係ネットワーク図</h2>
     <p class="map-desc">点＝課題（色＝分類・大きさ＝緊急度）、線＝関連。点にカーソルを合わせると名前と関連が強調されます。クリックで詳細へ移動します。下のボタンで分類を絞り込めます。</p>
     <div id="map-filter" class="filter-buttons"></div>
     <div id="legend" class="legend"></div>
     <div id="network" class="network-wrap"></div>
 
-    <h2 class="map-heading">カテゴリ × 時間軸マトリクス</h2>
+    <h2 class="map-heading" id="h-matrix">カテゴリ × 時間軸マトリクス</h2>
     <p class="map-desc">どの分野の課題が、いつ顕在化するかを俯瞰できます。</p>
     <div id="matrix" class="matrix-wrap"></div>
 
-    <h2 class="map-heading">札幌市の人口の見通し（データ）</h2>
+    <h2 class="map-heading" id="h-population">札幌市の人口の見通し（データ）</h2>
     <p class="map-desc">多くの課題の土台にある人口の動きを、将来推計でまとめました。数値は時点で変わる前提（「ゆらぎ」あり）です。</p>
     <div id="demographics" class="demographics"></div>
   </main>
@@ -56,8 +63,8 @@
     </div>
   </footer>
 
-  <script src="js/data.js?v=20260623"></script>
-  <script src="js/map.js?v=20260623"></script>
-  <script src="js/demographics.js?v=20260623"></script>
+  <script src="js/data.js?v=20260623b"></script>
+  <script src="js/map.js?v=20260623b"></script>
+  <script src="js/demographics.js?v=20260623b"></script>
 </body>
 </html>
