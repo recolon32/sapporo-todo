@@ -19,6 +19,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
 
 
+def img_file(iid):
+    """課題のインフォグラフィック画像名を返す（png優先、なければjpg。無ければ空文字）。"""
+    for ext in ("png", "jpg"):
+        if os.path.exists(os.path.join(ROOT, "images", f"{iid}.{ext}")):
+            return f"{iid}.{ext}"
+    return ""
+
+
 def esc(s):
     return html.escape(str(s if s is not None else ""), quote=True)
 
@@ -65,7 +73,7 @@ def build_detail(it, cat_name, by_id, has_image):
     fig = ""
     if has_image:
         fig = (f'<figure class="infographic">'
-               f'<img src="../images/{esc(it["id"])}.png" loading="lazy" '
+               f'<img src="../images/{esc(img_file(it["id"]))}" loading="lazy" '
                f'alt="{esc(it["title"])}の要約インフォグラフィック">'
                f'<figcaption>Geminiによる自動生成です。AIによる推論でAI独自の課題解決案が付与されている場合があります。</figcaption></figure>')
 
@@ -130,7 +138,7 @@ def jsonld(it, cat_name, has_image, url):
         "publisher": {"@type": "Organization", "name": "焚き火会 AIチーム", "url": SITE_BASE},
     }]
     if has_image:
-        graph[0]["image"] = f"{SITE_BASE}/images/{it['id']}.png"
+        graph[0]["image"] = f"{SITE_BASE}/images/{img_file(it['id'])}"
     graph.append({
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -162,7 +170,7 @@ def page_html(it, cat_name, by_id, has_image):
     twitter_card = "summary"
     if has_image:
         thumb = f"{it['id']}-thumb.jpg"
-        og_name = thumb if os.path.exists(os.path.join(ROOT, "images", thumb)) else f"{it['id']}.png"
+        og_name = thumb if os.path.exists(os.path.join(ROOT, "images", thumb)) else img_file(it['id'])
         og_image = f'\n  <meta property="og:image" content="{SITE_BASE}/images/{og_name}">'
         twitter_card = "summary_large_image"
     detail = build_detail(it, cat_name, by_id, has_image)
@@ -233,7 +241,7 @@ def main():
 
     n = 0
     for it in issues:
-        has_image = os.path.exists(os.path.join(ROOT, "images", f"{it['id']}.png"))
+        has_image = bool(img_file(it['id']))
         with open(os.path.join(out_dir, f"{it['id']}.html"), "w", encoding="utf-8") as f:
             f.write(page_html(it, cat_name, by_id, has_image))
         n += 1
