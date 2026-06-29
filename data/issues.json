@@ -9,8 +9,14 @@
     "summary": "雪対策予算は年々膨らみ、財政を圧迫している。",
     "background": "札幌は人口約196万人を抱えながら、年間の累積降雪量が約5メートルに達する世界でも例のない豪雪大都市である。道路網を冬季も維持するための除排雪は止められない固定費であり、天候だけでなく担い手確保のコスト上昇によっても予算が押し上げられる構造になっている。",
     "data": [
-      { "label": "雪対策予算（近年）", "value": "280億円台" },
-      { "label": "過去最大を更新した年", "value": "2020年度（当時約220億円）" }
+      {
+        "label": "雪対策予算（近年）",
+        "value": "280億円台"
+      },
+      {
+        "label": "過去最大を更新した年",
+        "value": "2020年度（当時約220億円）"
+      }
     ],
     "facts": [
       "札幌市の雪対策予算は2020年度に約220億円で当時過去最大となり、その後も増加し、近年は280億円台に達している。",
@@ -28,57 +34,103 @@
         "q": "温暖化で暖かくなっているのに、雪は増えているの？ これからも増え続ける前提で備えるべき？",
         "a": "長期の総量は「減少」が予測です。札幌管区気象台・道総研の予測では、21世紀末に4℃上昇シナリオで北海道日本海側の年降雪量は約28%減少（2℃シナリオでは有意な変化なし）。観測でも年最深積雪・大雪の日は減少傾向です。ただし厳冬期の北海道はなお十分に寒く、温暖化で大気中の水蒸気が増えるため、短期間の『ドカ雪』のリスクはなくなりません。結論として、総量は減る前提でよい一方、極端な大雪への即応体制はむしろ強化して備えるのが妥当です。",
         "sources": [
-          { "title": "北海道地方のこれからの気候変動（札幌管区気象台）", "url": "https://www.jma-net.go.jp/sapporo/tenki/kikou/sp_ccreport/hokkaido/future.html" },
-          { "title": "気候変動で北海道の冬はどうなる？（道総研）", "url": "https://www.hro.or.jp/industrial/research/eeg/development/publications/projection.html" }
+          {
+            "title": "北海道地方のこれからの気候変動（札幌管区気象台）",
+            "url": "https://www.jma-net.go.jp/sapporo/tenki/kikou/sp_ccreport/hokkaido/future.html"
+          },
+          {
+            "title": "気候変動で北海道の冬はどうなる？（道総研）",
+            "url": "https://www.hro.or.jp/industrial/research/eeg/development/publications/projection.html"
+          }
         ]
       },
       {
         "q": "人口減・高齢化で人件費が増えていると言うけれど、具体的にはどれくらい？",
         "a": "除雪オペレーターは半数が50歳超で、作業員数は年々減少し世代交代が進みません。確保のため労務単価の引き上げが毎年行われ、地域が費用を分担するパートナーシップ排雪の支払額（燃料費・人件費・機械経費で構成）も近年急騰しています。雪対策予算は2020年度の約220億円から近年は280億円台へ増え、増加の主因は人件費とされます。なお、市は単価の上昇率を一括では公表していないため、正確な数値は市資料での確認が必要です。",
         "sources": [
-          { "title": "除雪オペレーター高齢化・排雪費高騰（北海道ニュースUHB）", "url": "https://news.yahoo.co.jp/articles/0f308563805320f74200478b3bd4a84155587634" },
-          { "title": "札幌市の除雪事業者向けの支援制度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/jigyousha_shien.html" }
+          {
+            "title": "除雪オペレーター高齢化・排雪費高騰（北海道ニュースUHB）",
+            "url": "https://news.yahoo.co.jp/articles/0f308563805320f74200478b3bd4a84155587634"
+          },
+          {
+            "title": "札幌市の除雪事業者向けの支援制度（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/jigyousha_shien.html"
+          }
         ]
       },
       {
         "q": "使っている重機はちゃんと減価償却されているの？ 古い機械を使い続けてコスト高になっていない？",
         "a": "除雪機械の多くは委託先の事業者が保有し、市は人件費・機械経費・燃料費を含む委託費（パートナーシップ排雪では地域支払額）として支払います。市単位での機械ごとの減価償却額は公表されていませんが、近年は『機械経費の高騰』が費用増の一因と説明されています。機械の確保・更新の難しさ自体が担い手不足と並ぶ課題で、正確な算定には市・事業者の内部資料が必要です（本サイトの推定の限界）。",
         "sources": [
-          { "title": "パートナーシップ排雪制度（費用構成・札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html" }
+          {
+            "title": "パートナーシップ排雪制度（費用構成・札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html"
+          }
         ]
       },
       {
         "q": "機械さえあれば、若手が一時的に担う民間パートナーを作れないの？",
         "a": "方向性としては有効で、市も動いています。大型特殊免許の取得費用助成（上限4万円）などの担い手確保策に加え、『除雪業務の担い手不足の解消』を民間提案の募集テーマに掲げています。機械を市・事業者がそろえ、免許・研修を支援して若手やスポット人材が参入できる仕組み（機材プール＋育成・短期就労マッチング）は現実的な選択肢です。課題は、不規則な勤務時間と繁忙期の偏り、安全確保、機械の所有・保守コストで、ここをどう設計するかが鍵になります。",
         "sources": [
-          { "title": "除雪業務の担い手不足の解消（札幌市・課題募集）", "url": "https://www4.city.sapporo.jp/scg/task/post-ot0001.html" },
-          { "title": "札幌市の除雪事業者向けの支援制度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/jigyousha_shien.html" }
+          {
+            "title": "除雪業務の担い手不足の解消（札幌市・課題募集）",
+            "url": "https://www4.city.sapporo.jp/scg/task/post-ot0001.html"
+          },
+          {
+            "title": "札幌市の除雪事業者向けの支援制度（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/jigyousha_shien.html"
+          }
         ]
       },
       {
         "q": "ロードヒーティングや融雪施設はどれくらい使われていて、止めているの？ 増やす予定は？",
         "a": "市はコストと環境の観点から、除雪回数の増加や凍結防止剤の散布など他の方法で安全を確保できる幹線道路の一部で、ロードヒーティングを計画的に停止しています（停止区間は年度ごとに公表）。一方で、下水処理水の熱などを使う融雪槽・流雪溝・地域密着型雪処理施設も整備。全体としては新設よりも、停止＋代替管理と融雪施設の活用にシフトする方向です。市全体の稼働箇所数・停止割合の集計値は市資料での確認が必要です。",
         "sources": [
-          { "title": "ロードヒーティング（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/05.html" },
-          { "title": "ロードヒーティング停止区間 令和5年度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/rh_info_r05.html" },
-          { "title": "融雪槽（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/02.html" }
+          {
+            "title": "ロードヒーティング（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/05.html"
+          },
+          {
+            "title": "ロードヒーティング停止区間 令和5年度（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/rh_info_r05.html"
+          },
+          {
+            "title": "融雪槽（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/02.html"
+          }
         ]
       },
       {
         "q": "今の排雪基準は何？ どうすれば圧縮できて、どれくらいの金額規模になる？",
         "a": "幹線道路の新雪除雪は降雪10cmが出動の目安です。排雪は幹線・通学路を1月頃から行い、生活道路は市と地域が費用を出し合うパートナーシップ排雪で実施します。排雪はコストが突出し、市の資料では『6車線道路1kmの除雪が1回約3万円に対し、排雪はその約80倍＝約240万円』とされます。圧縮の鍵は“排雪量そのものを減らす”ことで、雪押し・雪置き場の工夫、対象路線と頻度の重点化、融雪施設の活用、出動基準の運用最適化が効きます。排雪の対象・回数を見直すだけで億単位の影響が出うる規模ですが、具体の圧縮額は対象範囲しだいで、市の積算が必要です。",
         "sources": [
-          { "title": "生活道路の新雪除雪の出動情報（降雪10cm基準・札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/josetsu_info.html" },
-          { "title": "除雪と排雪の費用比較ほか（札幌市 広報さっぽろ）", "url": "https://www.city.sapporo.jp/somu/koho-shi/200611/documents/p02_1.pdf" }
+          {
+            "title": "生活道路の新雪除雪の出動情報（降雪10cm基準・札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/josetsu_info.html"
+          },
+          {
+            "title": "除雪と排雪の費用比較ほか（札幌市 広報さっぽろ）",
+            "url": "https://www.city.sapporo.jp/somu/koho-shi/200611/documents/p02_1.pdf"
+          }
         ]
       }
     ],
-    "related": ["snow-02", "snow-03", "finance-01"],
+    "related": [
+      "snow-02",
+      "snow-03",
+      "finance-01"
+    ],
     "plans": [
-      { "title": "札幌市冬のみちづくりプラン（雪対策）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/index.html" }
+      {
+        "title": "札幌市冬のみちづくりプラン（雪対策）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/index.html"
+      }
     ],
     "sources": [
-      { "title": "雪対策の現状と課題（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/keikaku/documents/03genjoutokadai.pdf" }
+      {
+        "title": "雪対策の現状と課題（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/keikaku/documents/03genjoutokadai.pdf"
+      }
     ]
   },
   {
@@ -102,10 +154,20 @@
     ],
     "team": "札幌市建設局が事業者支援を所管する。検討会には除雪事業者・建設業協会、労働組合、職業訓練校・ハローワーク、外国人材の受け入れ支援、機械自動化の研究者、地域コミュニティ代表を含めると、人材確保と省人化の双方を扱える。",
     "aiNote": "AIの貢献度は大。自動運転・遠隔操作除雪と作業支援AIは、限られた人員で広域をカバーする鍵になる。熟練者の操作ノウハウを学習させた教習支援も有効。短期は人の補助、長期は省人化で効果が大きい。",
-    "related": ["snow-01", "snow-03", "pop-02"],
+    "related": [
+      "snow-01",
+      "snow-03",
+      "pop-02"
+    ],
     "sources": [
-      { "title": "札幌市の除雪事業者向けの支援制度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/jigyousha_shien.html" },
-      { "title": "新福祉除雪26年度から実施（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1248607/" }
+      {
+        "title": "札幌市の除雪事業者向けの支援制度（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/jigyousha_shien.html"
+      },
+      {
+        "title": "新福祉除雪26年度から実施（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1248607/"
+      }
     ]
   },
   {
@@ -128,13 +190,25 @@
     ],
     "team": "札幌市建設局と各区土木センターが地域と調整している。検討会には町内会・住民代表、除雪事業者、福祉部局（高齢者世帯の事情に詳しい人材）、制度設計・行政学の専門家を入れ、負担の公平性を制度として再設計するのが望ましい。",
     "aiNote": "AIの貢献度は中。世帯構成や道路状況のデータを使った負担額の公平な算定や、排雪要望のオンライン集約・最適スケジューリングに役立つ。合意形成そのものは人の対話が中心で、AIは判断材料の提供役にとどまる。",
-    "related": ["snow-01", "snow-02"],
+    "related": [
+      "snow-01",
+      "snow-02"
+    ],
     "plans": [
-      { "title": "パートナーシップ排雪制度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html" },
-      { "title": "生活道路除排雪の試験施工（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/new/torikumi03.html" }
+      {
+        "title": "パートナーシップ排雪制度（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html"
+      },
+      {
+        "title": "生活道路除排雪の試験施工（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/new/torikumi03.html"
+      }
     ],
     "sources": [
-      { "title": "パートナーシップ排雪制度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html" }
+      {
+        "title": "パートナーシップ排雪制度（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html"
+      }
     ]
   },
   {
@@ -156,9 +230,15 @@
     ],
     "team": "札幌市建設局が堆積場運営と路面管理を担う。検討会には都市計画・土地利用の部局、融雪技術やエネルギーの専門家、河川・環境部局、用地周辺の住民代表を加え、処理方式と立地を一体で検討するとよい。",
     "aiNote": "AIの貢献度は中。堆積場の搬入量予測と運搬配車の最適化、融雪施設のエネルギー制御に役立つ。路面状態のセンシングとAI判定で凍結防止剤の散布を最適化すれば、コストと環境負荷を同時に下げられる可能性がある。",
-    "related": ["snow-01", "energy-04"],
+    "related": [
+      "snow-01",
+      "energy-04"
+    ],
     "sources": [
-      { "title": "ロードヒーティング（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/05.html" }
+      {
+        "title": "ロードヒーティング（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/05.html"
+      }
     ]
   },
   {
@@ -171,9 +251,18 @@
     "summary": "予算は毎年膨らむ一方、稼働実績の見える化・見積もり精度・地域差・固定費の妥当性の検証が追いついていない。",
     "background": "札幌の除排雪は、建設局・雪対策室が計画し、各区の土木センター（10区）の指示のもと、地区（ゾーン）ごとの除雪センターで民間の共同企業体（JV）が24時間体制で担う重層構造である。費用は人件費・機械経費・燃料費・排雪が中心。雪対策の当初予算は、2020年度の約220億円（当時過去最大）から2024年度 約276億円、2025年度 約285億円、2026年度 約286億円（過去最大）へと近年は増加傾向にある（2021年度は少雪見込みで約214億円に一時減額された年もある）。さらに大雪の年は補正予算が加わり、2025年度は当初の約285億円に除排雪費73億円が追加された。一方で出動回数・排雪量といった稼働実績の体系的な公開は乏しく、見積もり精度や地域差を含めてコストの妥当性を市民が検証しにくい。",
     "data": [
-      { "label": "実施体制", "value": "雪対策室＋10区土木センター＋地区ごとの除雪センター（民間JV）" },
-      { "label": "予算規模（当初）", "value": "2026年度 約286億円（過去最大）。2025年度は当初約285億円＋補正73億円" },
-      { "label": "国補助の差", "value": "5年間で実績と申請額に約150億円差（見積もりの甘さを国交省が指摘）" }
+      {
+        "label": "実施体制",
+        "value": "雪対策室＋10区土木センター＋地区ごとの除雪センター（民間JV）"
+      },
+      {
+        "label": "予算規模（当初）",
+        "value": "2026年度 約286億円（過去最大）。2025年度は当初約285億円＋補正73億円"
+      },
+      {
+        "label": "国補助の差",
+        "value": "5年間で実績と申請額に約150億円差（見積もりの甘さを国交省が指摘）"
+      }
     ],
     "facts": [
       "市域を地区（ゾーン）に分け、各除雪センターで複数企業のJVが24時間体制で待機・作業し、各区土木センターが管理・指示する重層体制をとっている。",
@@ -194,59 +283,113 @@
         "q": "雪が少ない年でも費用が高いまま。予算は下げられないの？",
         "a": "下げにくい構造です。除排雪は、待機作業の有無にかかわらず、オペレーターと除雪機械を平時から確保するための固定費が大きく、少雪の年は稼働収入が減るぶん事業者の負担が増します。このため国の検討でも、少雪期にオペレーターの人件費などを補う『基本待機料』のような固定費補償の仕組みが論点になっています。札幌でも少雪だった2020年度に市の負担割合が高まるなど、単純な減額が難しいことがうかがえます。つまり“雪が少ない＝安く済む”とはならず、待機・確保のコストが下限を作っています。",
         "sources": [
-          { "title": "道路除雪工における積算方法の改善（国土技術政策総合研究所）", "url": "https://www.nilim.go.jp/lab/peg/img/file1691.pdf" },
-          { "title": "雪対策費実績（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/library/budget.html" }
+          {
+            "title": "道路除雪工における積算方法の改善（国土技術政策総合研究所）",
+            "url": "https://www.nilim.go.jp/lab/peg/img/file1691.pdf"
+          },
+          {
+            "title": "雪対策費実績（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/library/budget.html"
+          }
         ]
       },
       {
         "q": "逆に、記録的な大雪のときに追いつかないのはなぜ？",
         "a": "平時の待機体制と非常時の即応力のジレンマです。2026年1月25日には24時間降雪量54cmという1月として観測史上最多のドカ雪となり、多くの区で排雪よりも除雪・道路幅の拡幅・人命を優先する対応に切り替え、苦情も相次ぎました。需要のピークに合わせて人材・機械を抱えると平時は過剰になり、平時に合わせると非常時に足りない——どこに体制の水準を置くかが構造的な課題です。大雪の年は補正予算が加わり、2025年度は当初の約285億円に除排雪費73億円が追加されました。",
         "sources": [
-          { "title": "記録的ドカ雪で札幌が機能不全に（北海道ニュースUHB）", "url": "https://www.uhb.jp/news/single.html?id=56865" },
-          { "title": "札幌市、除排雪費73億円を追加（日本経済新聞）", "url": "https://www.nikkei.com/article/DGXZQOFC06BIU0W6A200C2000000/" }
+          {
+            "title": "記録的ドカ雪で札幌が機能不全に（北海道ニュースUHB）",
+            "url": "https://www.uhb.jp/news/single.html?id=56865"
+          },
+          {
+            "title": "札幌市、除排雪費73億円を追加（日本経済新聞）",
+            "url": "https://www.nikkei.com/article/DGXZQOFC06BIU0W6A200C2000000/"
+          }
         ]
       },
       {
         "q": "予算は増えるのに、実際どれだけ働いたかのデータはあるの？",
         "a": "限定的です。公開されているのは主に予算・決算の推移で、新雪除雪の出動はリアルタイムに知らせる仕組みがありますが、拡幅除雪・運搬排雪など他作業の出動情報や、年間の出動回数・排雪量といった稼働実績は体系的に公開されていません。予算の増加と実際の稼働量を市民が突き合わせて検証することが難しいのが現状です。",
         "sources": [
-          { "title": "雪対策費実績（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/library/budget.html" },
-          { "title": "生活道路の新雪除雪の出動情報（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/josetsu_info.html" }
+          {
+            "title": "雪対策費実績（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/library/budget.html"
+          },
+          {
+            "title": "生活道路の新雪除雪の出動情報（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/josetsu_info.html"
+          }
         ]
       },
       {
         "q": "『見積もりが甘い』とはどういうこと？",
         "a": "除雪費の見積もりの甘さにより、国の補助金で5年間に実績と申請額の間に約150億円の差が生じ、国交省の指摘に市は『不十分だった』と認めました。雪対策審議会でも見積もりの甘さやコスト縮減効果の可視化が論点になっており、より高精度な見積もりが求められています。",
         "sources": [
-          { "title": "札幌市除雪費、甘い見積もりで国の補助金減か（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1262240/" },
-          { "title": "札幌市雪対策審議会 会議録（2026年1月14日）", "url": "https://www.city.sapporo.jp/kikaku/miraisousei/documents/yukitaisakusingikai-gijiroku-2.pdf" }
+          {
+            "title": "札幌市除雪費、甘い見積もりで国の補助金減か（北海道新聞）",
+            "url": "https://www.hokkaido-np.co.jp/article/1262240/"
+          },
+          {
+            "title": "札幌市雪対策審議会 会議録（2026年1月14日）",
+            "url": "https://www.city.sapporo.jp/kikaku/miraisousei/documents/yukitaisakusingikai-gijiroku-2.pdf"
+          }
         ]
       },
       {
         "q": "地域によって負担や排雪に差があるのは公平なの？",
         "a": "現状は差があります。生活道路の排雪は地域が費用を分担するパートナーシップ排雪が基本ですが、2025・2026年度は厚別区・清田区の全域（約570km）で市が全額負担する排雪モデル事業を実施しています。つまり『市が全額負担の区』と『地域負担のある区』が併存し、区によって負担の有無に差が生じています。モデル事業の検証を経て、負担の公平性をどう設計するかが問われます。",
         "sources": [
-          { "title": "パートナーシップ排雪制度（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html" },
-          { "title": "生活道路除排雪の試験施工（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/new/torikumi03.html" }
+          {
+            "title": "パートナーシップ排雪制度（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html"
+          },
+          {
+            "title": "生活道路除排雪の試験施工（札幌市）",
+            "url": "https://www.city.sapporo.jp/kensetsu/yuki/new/torikumi03.html"
+          }
         ]
       },
       {
         "q": "結局、どうすればいいんだろう？",
         "a": "『自然相手で過不足を完全には調整できない』ことを前提に置くのが出発点です。そのうえで現実解は、(1) 出動回数・排雪量・区別配分などの稼働実績を見える化して予算と対応づける、(2) デジタル技術で見積もり精度を上げ、少雪年の固定費・待機料の扱いを整理する、(3) 平時の待機と非常時の即応のバランス（応援動員・優先順位ルール）を明確にする、の3点です。排雪頻度の最適化を費用便益で検討する研究もあり、感覚ではなくデータで水準を決める方向が示されています。",
         "sources": [
-          { "title": "札幌市雪対策審議会 会議録（2026年1月14日）", "url": "https://www.city.sapporo.jp/kikaku/miraisousei/documents/yukitaisakusingikai-gijiroku-2.pdf" },
-          { "title": "費用便益分析を用いた排雪頻度の最適化に関する研究（小樽商科大学）", "url": "https://www.otaru-uc.ac.jp/wp-content/themes/main/pdf/cgs/esd/gakuron/h27/Y_4.pdf" }
+          {
+            "title": "札幌市雪対策審議会 会議録（2026年1月14日）",
+            "url": "https://www.city.sapporo.jp/kikaku/miraisousei/documents/yukitaisakusingikai-gijiroku-2.pdf"
+          },
+          {
+            "title": "費用便益分析を用いた排雪頻度の最適化に関する研究（小樽商科大学）",
+            "url": "https://www.otaru-uc.ac.jp/wp-content/themes/main/pdf/cgs/esd/gakuron/h27/Y_4.pdf"
+          }
         ]
       }
     ],
-    "related": ["snow-01", "snow-02", "snow-03", "snow-04", "finance-01"],
+    "related": [
+      "snow-01",
+      "snow-02",
+      "snow-03",
+      "snow-04",
+      "finance-01"
+    ],
     "plans": [
-      { "title": "札幌市冬のみちづくりプラン（雪対策の主な取組）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/new/index.html" }
+      {
+        "title": "札幌市冬のみちづくりプラン（雪対策の主な取組）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/new/index.html"
+      }
     ],
     "sources": [
-      { "title": "マルチゾーン除雪・除雪センター（札幌市）", "url": "https://www.city.sapporo.jp/kensetsu/yuki/sagyou/multi.html" },
-      { "title": "札幌市雪対策審議会 会議録（2026年1月14日）", "url": "https://www.city.sapporo.jp/kikaku/miraisousei/documents/yukitaisakusingikai-gijiroku-2.pdf" },
-      { "title": "札幌市除雪費、甘い見積もりで国の補助金減か（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1262240/" }
+      {
+        "title": "マルチゾーン除雪・除雪センター（札幌市）",
+        "url": "https://www.city.sapporo.jp/kensetsu/yuki/sagyou/multi.html"
+      },
+      {
+        "title": "札幌市雪対策審議会 会議録（2026年1月14日）",
+        "url": "https://www.city.sapporo.jp/kikaku/miraisousei/documents/yukitaisakusingikai-gijiroku-2.pdf"
+      },
+      {
+        "title": "札幌市除雪費、甘い見積もりで国の補助金減か（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1262240/"
+      }
     ]
   },
   {
@@ -259,8 +402,14 @@
     "summary": "増え続けてきた札幌の人口がピークを越え、減少に転じた。",
     "background": "札幌は政令市移行後ほぼ一貫して人口を増やしてきた数少ない大都市だったが、近年ピークを越えた。インフラ・公共施設・税収の多くは人口増を前提に設計されており、縮小局面に合わせた作り替えが必要になる。",
     "data": [
-      { "label": "推計人口（2025年8月）", "value": "約196.8万人" },
-      { "label": "2045年の推計人口", "value": "約180.5万人（約1割減）" }
+      {
+        "label": "推計人口（2025年8月）",
+        "value": "約196.8万人"
+      },
+      {
+        "label": "2045年の推計人口",
+        "value": "約180.5万人（約1割減）"
+      }
     ],
     "facts": [
       "札幌市の人口は政令指定都市移行後ほぼ一貫して増加してきたが、近年ピークを越えて減少局面に入った。",
@@ -273,12 +422,23 @@
     ],
     "team": "札幌市まちづくり政策局（未来創生）が司令塔となる。検討会には人口学・都市計画の研究者、財政部局、各分野（住宅・交通・福祉・産業）の担当、若者・子育て世代・移住者の当事者代表を横断的に集め、縮小を前提にした都市像を描く必要がある。",
     "aiNote": "AIの貢献度は中。将来人口・世帯の精緻なシミュレーションや、施設配置・行政サービスの需要予測で政策判断を支える。ただし人口減そのものを反転させる力はなく、AIは「縮小にどう備えるか」の意思決定支援が中心となる。",
-    "related": ["pop-03", "pop-04", "finance-02", "infra-01"],
+    "related": [
+      "pop-03",
+      "pop-04",
+      "finance-02",
+      "infra-01"
+    ],
     "plans": [
-      { "title": "さっぽろ未来創生プラン（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/miraisousei/gaiyou.html" }
+      {
+        "title": "さっぽろ未来創生プラン（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/miraisousei/gaiyou.html"
+      }
     ],
     "sources": [
-      { "title": "札幌市の現状と課題（札幌市 ICT活用戦略 有識者会議資料）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/yushikishakaigi/documents/01siryo.pdf" }
+      {
+        "title": "札幌市の現状と課題（札幌市 ICT活用戦略 有識者会議資料）",
+        "url": "https://www.city.sapporo.jp/kikaku/ictplan/yushikishakaigi/documents/01siryo.pdf"
+      }
     ]
   },
   {
@@ -291,8 +451,14 @@
     "summary": "現状の高齢化率は全国より低いが、2040年に向け急速に高まる。",
     "background": "札幌は若年層の流入で支えられてきたため、現在の高齢化率は全国より低い。しかし流入が細り団塊ジュニアが高齢期に入ると、医療・介護・除雪などの需要が同時に急増する。",
     "data": [
-      { "label": "高齢化率（現状）", "value": "約28.5%" },
-      { "label": "全国を上回る見込み", "value": "2040年（令和22年）" }
+      {
+        "label": "高齢化率（現状）",
+        "value": "約28.5%"
+      },
+      {
+        "label": "全国を上回る見込み",
+        "value": "2040年（令和22年）"
+      }
     ],
     "facts": [
       "札幌市の高齢化率は約28.5%で、北海道や全国と比べると低い水準にある。",
@@ -305,9 +471,16 @@
     ],
     "team": "札幌市保健福祉局が高齢者支援計画を担う。検討会には医療・介護の専門職、地域包括支援センター、町内会・民生委員、住宅・交通の部局、当事者である高齢者・家族の代表を入れ、生活全体を支える視点でまとめるとよい。",
     "aiNote": "AIの貢献度は中〜大。見守りセンサーやチャットによる相談、ケアプラン作成支援、介護記録の自動化で担い手の負担を軽減できる。需要予測で医療・介護資源の配置も改善できるが、ケアの中心は人の手であり、AIは支援役となる。",
-    "related": ["snow-02", "transit-03", "finance-02"],
+    "related": [
+      "snow-02",
+      "transit-03",
+      "finance-02"
+    ],
     "sources": [
-      { "title": "第1節 高齢者人口や世帯などの状況（札幌市 高齢者支援計画）", "url": "https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" }
+      {
+        "title": "第1節 高齢者人口や世帯などの状況（札幌市 高齢者支援計画）",
+        "url": "https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf"
+      }
     ]
   },
   {
@@ -320,8 +493,14 @@
     "summary": "北海道の人口が札幌に集中し、道全体の縮小と表裏一体で進む。",
     "background": "札幌の相対的な安定は、道内他地域の急速な縮小の裏返しでもある。周辺自治体の機能低下は、食料・医療・物流などを通じて札幌自身の持続性にも跳ね返る。",
     "data": [
-      { "label": "道人口に占める札幌のシェア（現状）", "value": "3分の1超" },
-      { "label": "2040年のシェア", "value": "40.8%" }
+      {
+        "label": "道人口に占める札幌のシェア（現状）",
+        "value": "3分の1超"
+      },
+      {
+        "label": "2040年のシェア",
+        "value": "40.8%"
+      }
     ],
     "facts": [
       "北海道の総人口の3分の1超が札幌市に集中している。",
@@ -334,9 +513,15 @@
     ],
     "team": "札幌市と北海道庁、道内市町村による広域連携の協議体が要となる。検討会には地域経済・地理の研究者、農業・物流・医療など道全体を支える産業の代表、近隣自治体の首長級を加え、札幌と道内のWin-Winを設計する。",
     "aiNote": "AIの貢献度は小〜中。人口移動の分析や、遠隔医療・物流最適化で広域の機能維持を補える。ただし一極集中は雇用・進学の構造に根ざすため、AIは現状把握と個別サービス改善にとどまり、流れ自体を変える力は限定的。",
-    "related": ["pop-01", "industry-01"],
+    "related": [
+      "pop-01",
+      "industry-01"
+    ],
     "sources": [
-      { "title": "日本の地域別将来推計人口（令和5年推計）の概要（北海道）", "url": "https://www.pref.hokkaido.lg.jp/fs/9/6/7/2/7/3/6/_/03_shiryou2-2.pdf" }
+      {
+        "title": "日本の地域別将来推計人口（令和5年推計）の概要（北海道）",
+        "url": "https://www.pref.hokkaido.lg.jp/fs/9/6/7/2/7/3/6/_/03_shiryou2-2.pdf"
+      }
     ]
   },
   {
@@ -349,8 +534,14 @@
     "summary": "合計特殊出生率が過去最低を更新し、政令市の中でも著しく低い。",
     "background": "札幌の出生率の低さは「結婚する人が少ない・結婚しても子を持たない・持っても1人」という複合要因による。雇用の質や住環境とも結びついた構造問題で、移動による補充が細れば人口減を加速させる根因となる。",
     "data": [
-      { "label": "合計特殊出生率（令和5年）", "value": "0.96（過去最低）" },
-      { "label": "前年（令和4年）", "value": "1.02" }
+      {
+        "label": "合計特殊出生率（令和5年）",
+        "value": "0.96（過去最低）"
+      },
+      {
+        "label": "前年（令和4年）",
+        "value": "1.02"
+      }
     ],
     "facts": [
       "札幌市の令和5年の合計特殊出生率は0.96で、前年の1.02から低下し過去最低となった。",
@@ -363,10 +554,19 @@
     ],
     "team": "札幌市まちづくり政策局（未来創生）と子ども未来局が中心。検討会には人口学・社会学の研究者、企業・労働の代表、保育・教育の現場、若い世代・子育て世帯の当事者を入れ、雇用と暮らしの両面から議論することが欠かせない。",
     "aiNote": "AIの貢献度は小。要因分析や施策効果の検証、相談・手続きの利便化には役立つが、出生は個人の価値観と経済環境に深く依存し、AIで直接動かせるものではない。過度な期待は禁物で、人の安心を支える政策が本筋。",
-    "related": ["industry-01", "pop-01"],
+    "related": [
+      "industry-01",
+      "pop-01"
+    ],
     "sources": [
-      { "title": "札幌市の令和5年人口動態統計（確定数）の概況（札幌市）", "url": "https://www.city.sapporo.jp/hokenjo/f9sonota/documents/hokenjof9sonotadocumentsgaikyou_2025.pdf" },
-      { "title": "データ分析に基づく少子化の要因調査（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/miraisousei/3rd/documents/datebunsekigaiyo.pdf" }
+      {
+        "title": "札幌市の令和5年人口動態統計（確定数）の概況（札幌市）",
+        "url": "https://www.city.sapporo.jp/hokenjo/f9sonota/documents/hokenjof9sonotadocumentsgaikyou_2025.pdf"
+      },
+      {
+        "title": "データ分析に基づく少子化の要因調査（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/miraisousei/3rd/documents/datebunsekigaiyo.pdf"
+      }
     ]
   },
   {
@@ -379,9 +579,18 @@
     "summary": "人手不足を背景に外国人材の受け入れが進むなか、定着と多文化共生の生活基盤づくりが追いつくかが問われる。",
     "background": "札幌の外国人住民は2025年1月時点で約2万人（市人口の約1%）と、10年で約2倍に増えた。在留資格は『留学』が最多で、卒業後の就職・定着が鍵となる。国は2027年度から育成就労制度を始め特定技能を拡大し、介護・建設・宿泊などの人手不足を外国人材で補う方向にある（受け入れ上限案は両制度で計約123万人）。札幌市も多文化共生・国際交流基本方針（2023年策定・今後10年）を掲げ、特定技能で採用する中小企業への補助（外国人受入・定着支援事業）やスタートアップビザ補助などで受け入れ・定着を推進している。一方で、最多の留学生の道外流出、日本語・行政手続き・子どもの教育・孤立といった生活面の共生基盤は途上で、受け入れ拡大の速度に追いつくかが課題となる。",
     "data": [
-      { "label": "外国人住民（2025年1月）", "value": "約20,665人（市人口の約1%、10年で約2倍）" },
-      { "label": "在留資格の最多", "value": "留学 30.9%（次いで永住者20.9%）" },
-      { "label": "国の受け入れ上限案", "value": "育成就労 約42.6万＋特定技能 約80.5万＝計約123万人（2027年度〜）" }
+      {
+        "label": "外国人住民（2025年1月）",
+        "value": "約20,665人（市人口の約1%、10年で約2倍）"
+      },
+      {
+        "label": "在留資格の最多",
+        "value": "留学 30.9%（次いで永住者20.9%）"
+      },
+      {
+        "label": "国の受け入れ上限案",
+        "value": "育成就労 約42.6万＋特定技能 約80.5万＝計約123万人（2027年度〜）"
+      }
     ],
     "facts": [
       "札幌市の外国人住民は2025年1月時点で約20,665人（市人口の約1%）で、10年で約2倍に増え、在留資格は留学が最多である。",
@@ -403,59 +612,112 @@
         "q": "外国人が増えているの？ なぜ受け入れるの？",
         "a": "増えています。札幌の外国人住民は2025年1月で約2万人（市人口の約1%）と10年で約2倍になり、在留資格は留学が最多です。背景には生産年齢人口の減少による深刻な人手不足があり（道内の介護施設は7割超が人手不足）、国は2027年度から育成就労制度を始め特定技能を拡大して、両制度で計約123万人を受け入れる方針を示しています。外国人材は、人口減を補う担い手として位置づけられつつあります。",
         "sources": [
-          { "title": "札幌に暮らす外国人住民（札幌国際プラザ）", "url": "https://www.plaza-sapporo.or.jp/citizen_j/article/?cat=1&scat=36" },
-          { "title": "外国人労働者、上限123万人の政府案（毎日新聞）", "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9" }
+          {
+            "title": "札幌に暮らす外国人住民（札幌国際プラザ）",
+            "url": "https://www.plaza-sapporo.or.jp/citizen_j/article/?cat=1&scat=36"
+          },
+          {
+            "title": "外国人労働者、上限123万人の政府案（毎日新聞）",
+            "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9"
+          }
         ]
       },
       {
         "q": "日本全体の流れとどうつながっているの？",
         "a": "国は技能実習を改組した育成就労制度を2027年度から始め、特定技能と合わせて受け入れを大きく広げます。同時に、東京・大阪など8都府県では採用枠や転籍枠を厳しくし、地方からの人材流出を防ぐ方針です。札幌は全国では『地方』側で受け入れの追い風がある一方、道内では人材を集めるハブでもあり、二面性があります。日本の人口減対策としての受け入れ拡大と、地域の受け皿づくりが噛み合うかが論点です。",
         "sources": [
-          { "title": "外国人育成就労の上限42万人案（共同通信）", "url": "https://kumanichi.com/articles/1939741" },
-          { "title": "外国人労働者、上限123万人の政府案（毎日新聞）", "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9" }
+          {
+            "title": "外国人育成就労の上限42万人案（共同通信）",
+            "url": "https://kumanichi.com/articles/1939741"
+          },
+          {
+            "title": "外国人労働者、上限123万人の政府案（毎日新聞）",
+            "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9"
+          }
         ]
       },
       {
         "q": "札幌市は何をしているの？（補助・施策）",
         "a": "札幌市は『多文化共生・国際交流基本方針』（2023年策定・今後10年）を掲げ、孤立防止と共生を進めています。雇用面では2025年度から『外国人受入・定着支援事業』を始め、特定技能で採用する中小企業が登録支援機関に委託する費用を半額補助し、入国前から採用後まで伴走支援します（介護・建設・外食・宿泊など）。起業ではスタートアップビザの外国人に最大30万円の補助もあります。つまり受け入れ・定着は“ビジョンに沿って推進中”の領域です。",
         "sources": [
-          { "title": "特定技能外国人の採用を検討している企業の皆さまへ（札幌市）", "url": "https://www.city.sapporo.jp/keizai/koyo/jigyo/r7gaikokujin-c.html" },
-          { "title": "札幌市多文化共生・国際交流基本方針（札幌市）", "url": "https://www.city.sapporo.jp/kokusai/policy2023.html" }
+          {
+            "title": "特定技能外国人の採用を検討している企業の皆さまへ（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/koyo/jigyo/r7gaikokujin-c.html"
+          },
+          {
+            "title": "札幌市多文化共生・国際交流基本方針（札幌市）",
+            "url": "https://www.city.sapporo.jp/kokusai/policy2023.html"
+          }
         ]
       },
       {
         "q": "受け入れても、札幌に定着するの？",
         "a": "ここが課題です。札幌は在留資格で留学が最多ですが、育てた若い人材が道外へ流出する傾向は日本人の若者と共通します（理工系などで道外就職が多い）。受け入れを増やしても、就職・住宅・キャリア形成の支援がなければ定着しません。外国人材の定着は、若者の道外流出や札幌一極集中といった既存の課題と地続きで考える必要があります。",
         "sources": [
-          { "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）", "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php" },
-          { "title": "札幌に暮らす外国人住民（札幌国際プラザ）", "url": "https://www.plaza-sapporo.or.jp/citizen_j/article/?cat=1&scat=36" }
+          {
+            "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）",
+            "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php"
+          },
+          {
+            "title": "札幌に暮らす外国人住民（札幌国際プラザ）",
+            "url": "https://www.plaza-sapporo.or.jp/citizen_j/article/?cat=1&scat=36"
+          }
         ]
       },
       {
         "q": "生活の面で困っていることは？",
         "a": "2020年の外国人市民アンケートでは、日本語学習の必要性（約6割）や、行政窓口での言語・手続きの分かりにくさ（各約4割）が挙がり、相談先は家族・知人が中心でした。日本語教育・多言語の行政サービス・子どもの教育・孤立防止といった共生の生活基盤はなお途上で、受け入れ拡大の速度に追いつけるかが問われます。",
         "sources": [
-          { "title": "札幌市外国人市民アンケート結果（札幌市）", "url": "https://www.city.sapporo.jp/kokusai/tabunka/gaikokusimin_anke.html" }
+          {
+            "title": "札幌市外国人市民アンケート結果（札幌市）",
+            "url": "https://www.city.sapporo.jp/kokusai/tabunka/gaikokusimin_anke.html"
+          }
         ]
       },
       {
         "q": "結局、どうすればいいんだろう？",
         "a": "受け入れの“量”だけでなく“定着と共生の質”を一緒に高めることが要点です。具体的には、(1) 留学生・外国人材の市内定着支援（就職マッチング・住宅・キャリア）、(2) 日本語教育・多言語の行政サービス・子どもの教育といった共生基盤の整備、(3) 低賃金・使い捨てを防ぐ雇用の質の確保——を、受け入れの速度と両立させることです。人手不足の穴埋めに終わらせず、隣人として暮らせる地域づくりが目標になります。",
         "sources": [
-          { "title": "札幌市多文化共生・国際交流基本方針（札幌市）", "url": "https://www.city.sapporo.jp/kokusai/policy2023.html" },
-          { "title": "北海道における外国人材の現状・課題等に関する調査報告書（JICA）", "url": "https://openjicareport.jica.go.jp/pdf/12355814.pdf" }
+          {
+            "title": "札幌市多文化共生・国際交流基本方針（札幌市）",
+            "url": "https://www.city.sapporo.jp/kokusai/policy2023.html"
+          },
+          {
+            "title": "北海道における外国人材の現状・課題等に関する調査報告書（JICA）",
+            "url": "https://openjicareport.jica.go.jp/pdf/12355814.pdf"
+          }
         ]
       }
     ],
-    "related": ["industry-01", "industry-02", "pop-03", "city-05"],
+    "related": [
+      "industry-01",
+      "industry-02",
+      "pop-03",
+      "city-05"
+    ],
     "plans": [
-      { "title": "札幌市多文化共生・国際交流基本方針（札幌市）", "url": "https://www.city.sapporo.jp/kokusai/policy2023.html" },
-      { "title": "外国人受入・定着支援事業（特定技能採用企業向け・札幌市）", "url": "https://www.city.sapporo.jp/keizai/koyo/jigyo/r7gaikokujin-c.html" }
+      {
+        "title": "札幌市多文化共生・国際交流基本方針（札幌市）",
+        "url": "https://www.city.sapporo.jp/kokusai/policy2023.html"
+      },
+      {
+        "title": "外国人受入・定着支援事業（特定技能採用企業向け・札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/koyo/jigyo/r7gaikokujin-c.html"
+      }
     ],
     "sources": [
-      { "title": "札幌に暮らす外国人住民（札幌国際プラザ）", "url": "https://www.plaza-sapporo.or.jp/citizen_j/article/?cat=1&scat=36" },
-      { "title": "札幌市多文化共生・国際交流基本方針（札幌市）", "url": "https://www.city.sapporo.jp/kokusai/policy2023.html" },
-      { "title": "外国人労働者、上限123万人の政府案（毎日新聞）", "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9" }
+      {
+        "title": "札幌に暮らす外国人住民（札幌国際プラザ）",
+        "url": "https://www.plaza-sapporo.or.jp/citizen_j/article/?cat=1&scat=36"
+      },
+      {
+        "title": "札幌市多文化共生・国際交流基本方針（札幌市）",
+        "url": "https://www.city.sapporo.jp/kokusai/policy2023.html"
+      },
+      {
+        "title": "外国人労働者、上限123万人の政府案（毎日新聞）",
+        "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9"
+      }
     ]
   },
   {
@@ -478,12 +740,22 @@
     ],
     "team": "札幌市まちづくり政策局・都市局が制度を運用する。検討会にはビルオーナー・デベロッパー、建築・都市デザインの専門家、エネルギー・防災の技術者、商店街や来街者の代表を加え、民間投資と公共目標を両立させる枠組みが要る。",
     "aiNote": "AIの貢献度は中。人流・日照・風環境のシミュレーションや、街区単位のエネルギー・脱炭素設計の最適化、合意形成のための3D可視化で計画の質を上げられる。判断の主体は事業者と行政で、AIは設計と検討の高度化を担う。",
-    "related": ["energy-01", "city-04", "infra-01"],
+    "related": [
+      "energy-01",
+      "city-04",
+      "infra-01"
+    ],
     "plans": [
-      { "title": "都心エネルギーアクションプラン 後半期間編（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf" }
+      {
+        "title": "都心エネルギーアクションプラン 後半期間編（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf"
+      }
     ],
     "sources": [
-      { "title": "都心エネルギーアクションプラン 後半期間編（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf" }
+      {
+        "title": "都心エネルギーアクションプラン 後半期間編（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf"
+      }
     ]
   },
   {
@@ -506,12 +778,22 @@
     ],
     "team": "札幌市都市局・まちづくり政策局が郊外住宅地施策を担う。検討会には団地の自治会・住民、不動産・住宅事業者、まちづくりの専門家、子育て・福祉・交通の部局を入れ、住み替えと用途転換を地域と合意しながら進める必要がある。",
     "aiNote": "AIの貢献度は中。空き家・世帯動態の把握と将来予測、需要に応じた生活サービス（買い物・移動）の設計に役立つ。デマンド交通やオンライン見守りで生活を支えられるが、団地再生は住民の合意と投資が前提で、AIは判断材料の提供役。",
-    "related": ["city-03", "pop-02", "transit-03"],
+    "related": [
+      "city-03",
+      "pop-02",
+      "transit-03"
+    ],
     "plans": [
-      { "title": "郊外住宅地のまちづくり（札幌市）", "url": "https://www.city.sapporo.jp/keikaku/kougai/index.html" }
+      {
+        "title": "郊外住宅地のまちづくり（札幌市）",
+        "url": "https://www.city.sapporo.jp/keikaku/kougai/index.html"
+      }
     ],
     "sources": [
-      { "title": "郊外住宅地のまちづくり（札幌市）", "url": "https://www.city.sapporo.jp/keikaku/kougai/index.html" }
+      {
+        "title": "郊外住宅地のまちづくり（札幌市）",
+        "url": "https://www.city.sapporo.jp/keikaku/kougai/index.html"
+      }
     ]
   },
   {
@@ -533,12 +815,21 @@
     ],
     "team": "札幌市都市局が空家等対策検討委員会を設置している。検討会には建築・法律（私権と公益の調整）の専門家、不動産・解体事業者、町内会、福祉部局（所有者の高齢・孤立への対応）を加えると、発生抑制から活用・除却まで一貫して扱える。",
     "aiNote": "AIの貢献度は中。航空写真・水道使用量・登記などから空き家を効率的に把握・危険度判定でき、優先対応の選別に役立つ。所有者とのマッチングや活用提案にも使えるが、最終的な是正措置は法的手続きと人の対応が必要。",
-    "related": ["city-02", "pop-01"],
+    "related": [
+      "city-02",
+      "pop-01"
+    ],
     "plans": [
-      { "title": "札幌市空家等対策計画（札幌市）", "url": "https://www.city.sapporo.jp/toshi/k-shido/akiya/akiyakeikaku.html" }
+      {
+        "title": "札幌市空家等対策計画（札幌市）",
+        "url": "https://www.city.sapporo.jp/toshi/k-shido/akiya/akiyakeikaku.html"
+      }
     ],
     "sources": [
-      { "title": "空き家対策（札幌市）", "url": "https://www.city.sapporo.jp/toshi/k-shido/akiya-tekiseikannri.html" }
+      {
+        "title": "空き家対策（札幌市）",
+        "url": "https://www.city.sapporo.jp/toshi/k-shido/akiya-tekiseikannri.html"
+      }
     ]
   },
   {
@@ -551,8 +842,14 @@
     "summary": "札幌延伸の開業が大幅に遅れ、まちづくりの前提が揺らいでいる。",
     "background": "新幹線札幌延伸を見据えて都心再開発が進められてきたが、トンネル工事の難航で開業が当初目標から大きく後ろ倒しになった。投資のタイミングや需要見込みの前提が崩れ、再開発・交通計画に影響する。",
     "data": [
-      { "label": "当初目標の開業時期", "value": "2030年度末" },
-      { "label": "見込まれる開業時期", "value": "2038年度末以降" }
+      {
+        "label": "当初目標の開業時期",
+        "value": "2030年度末"
+      },
+      {
+        "label": "見込まれる開業時期",
+        "value": "2038年度末以降"
+      }
     ],
     "facts": [
       "建設主体は2024年5月、当初目指していた2030年度末の開業は困難と国に報告した。",
@@ -565,10 +862,19 @@
     ],
     "team": "国・鉄道運輸機構・JR北海道・北海道・札幌市の協議が前提となる。市の検討会には都心再開発の事業者、交通・観光の専門家、商業者を加え、開業時期に依存しすぎないまちづくりの工程を組み直すことが現実的。",
     "aiNote": "AIの貢献度は小。複数の開業シナリオに基づく需要・投資の試算や、リスク分析には役立つが、トンネル工事の遅延という物理的制約はAIでは解消できない。意思決定の前提整理を支える程度にとどまる。",
-    "related": ["city-01", "transit-02"],
+    "related": [
+      "city-01",
+      "transit-02"
+    ],
     "sources": [
-      { "title": "北海道新幹線の札幌延伸2038年度末に（日経クロステック）", "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00142/02190/" },
-      { "title": "札幌延伸、2030年度末開業「極めて困難」（マイナビニュース）", "url": "https://news.mynavi.jp/article/20240512-hokkaidoshinkansen/" }
+      {
+        "title": "北海道新幹線の札幌延伸2038年度末に（日経クロステック）",
+        "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00142/02190/"
+      },
+      {
+        "title": "札幌延伸、2030年度末開業「極めて困難」（マイナビニュース）",
+        "url": "https://news.mynavi.jp/article/20240512-hokkaidoshinkansen/"
+      }
     ]
   },
   {
@@ -582,8 +888,14 @@
     "summary": "年齢・障害・国籍を超えて誰もが暮らしやすい都市づくりが進行中の取り組み。",
     "background": "札幌市は、年齢・性別・国籍・障害の有無にかかわらず誰もが暮らしやすい共生社会を目指し、ユニバーサルデザインや心のバリアフリー、カラーユニバーサルデザインを推進している。第2次まちづくり戦略ビジョンでは「ユニバーサル（共生）」を重要概念の一つに位置づけている。これは深刻な危機ではなく、着実に進めるべき前向きな取り組みとして整理した。",
     "data": [
-      { "label": "位置づけ", "value": "第2次まちづくり戦略ビジョンの重要概念（ユニバーサル＝共生）" },
-      { "label": "考え方", "value": "障害の社会モデル（社会の側の障壁を取り除く）" }
+      {
+        "label": "位置づけ",
+        "value": "第2次まちづくり戦略ビジョンの重要概念（ユニバーサル＝共生）"
+      },
+      {
+        "label": "考え方",
+        "value": "障害の社会モデル（社会の側の障壁を取り除く）"
+      }
     ],
     "facts": [
       "札幌市はユニバーサルデザインの推進、心のバリアフリーの普及、カラーユニバーサルデザインなどの施策を進めている。",
@@ -596,13 +908,25 @@
     ],
     "team": "札幌市まちづくり政策局がユニバーサル（共生）を所管する。検討会には障害当事者・高齢者・外国人住民、福祉・建築・情報デザインの専門家、交通・広報など各分野の担当を入れ、当事者参加で標準仕様を磨くことが望ましい。",
     "aiNote": "AIの貢献度は中。多言語翻訳・音声読み上げ・字幕、画像認識による視覚支援、色覚配慮のチェックなど、情報のバリアを下げる場面で実用的に役立つ。当事者の声を反映する設計プロセスと組み合わせれば効果が高い。",
-    "related": ["pop-02", "transit-03"],
+    "related": [
+      "pop-02",
+      "transit-03"
+    ],
     "plans": [
-      { "title": "ユニバーサル（共生）の推進（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/universal/index.html" }
+      {
+        "title": "ユニバーサル（共生）の推進（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/universal/index.html"
+      }
     ],
     "sources": [
-      { "title": "ユニバーサルデザインの推進（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/universal/universal-design.html" },
-      { "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023（札幌市）", "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html" }
+      {
+        "title": "ユニバーサルデザインの推進（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/universal/universal-design.html"
+      },
+      {
+        "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023（札幌市）",
+        "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html"
+      }
     ]
   },
   {
@@ -613,31 +937,126 @@
     "urgency": 1,
     "severity": 2,
     "timeframe": "10年以内",
-    "summary": "市政の最上位の指針。2022〜2031年度の都市像と基本目標を定める計画材料。",
+    "summary": "市政の最上位の指針（2022〜2031年度）。3つの重要概念・8分野・20基本目標を定め、その実装計画『アクションプラン2023』（2023〜2027年度・599事業・計画事業費1兆7,854億円）で具体的な取り組みが動いている。",
     "background": "第2次札幌市まちづくり戦略ビジョンは、市の計画体系で最上位に位置する基本的な指針で、令和4年度（2022年度）から令和13年度（2031年度）までの10年間が対象。「ユニバーサル（共生）」「ウェルネス（健康）」「スマート（快適・先端）」の3つの重要概念とSDGsを踏まえ、8の分野と20の基本目標を定めている。本サイトの多くの課題は、このビジョンの基本目標の実現に向けた取り組みと結びつく。",
     "data": [
-      { "label": "対象期間", "value": "2022〜2031年度（10年）" },
-      { "label": "構成", "value": "3つの重要概念／8分野／20の基本目標" },
-      { "label": "札幌への愛着度", "value": "92.3%（市民調査）" }
+      {
+        "label": "対象期間",
+        "value": "2022〜2031年度（10年）／実装計画アクションプラン2023は2023〜2027年度"
+      },
+      {
+        "label": "構成",
+        "value": "3つの重要概念／8分野／20の基本目標／5つの分野横断プロジェクト"
+      },
+      {
+        "label": "アクションプラン2023の規模",
+        "value": "599事業・計画事業費 約1兆7,854億円（AP2019は約1兆3,125億円、+36%）"
+      },
+      {
+        "label": "分野別事業費（上位）",
+        "value": "都市空間 約6,673億円／経済 約5,087億円／安全・安心 約2,034億円／子ども・若者 約1,188億円"
+      },
+      {
+        "label": "今日的な重点課題",
+        "value": "脱炭素社会の実現／半導体関連産業の集積"
+      },
+      {
+        "label": "札幌への愛着度",
+        "value": "92.3%（市民調査）"
+      }
     ],
     "facts": [
-      "第2次まちづくり戦略ビジョンは市の計画体系の最上位に位置する指針で、2022〜2031年度の10年間を対象とする。",
-      "ユニバーサル（共生）・ウェルネス（健康）・スマート（快適・先端）の3つの重要概念のもと、8分野・20の基本目標を定めている。"
+      "第2次まちづくり戦略ビジョンは市の計画体系の最上位に位置する指針で、2022〜2031年度の10年間を対象とし、目指す都市像を「『ひと』『ゆき』『みどり』の織りなす輝きが、豊かな暮らしと新たな価値を創る、持続可能な世界都市・さっぽろ」と定める。",
+      "ユニバーサル（共生）・ウェルネス（健康）・スマート（快適・先端）の3つの重要概念のもと、8分野・20の基本目標と、分野をまたぐ5つの分野横断プロジェクトを設定している。",
+      "実装計画である「アクションプラン2023」（2023〜2027年度）は599事業・計画事業費 約1兆7,854億円で、前回のAP2019（約1兆3,125億円）から約36%増。中期財政フレームと成果指標による進行管理を組み込んでいる。",
+      "分野横断プロジェクトに加え、今日的課題として「脱炭素社会の実現」と「半導体関連産業の集積」に重点を置く。",
+      "子ども・若者分野では、子ども医療費助成の高校3年生までの拡大、第2子以降の保育料無償化（2024年度〜）、学校施設への冷房設備整備（約137.6億円）などを実施。",
+      "経済分野では、半導体関連産業集積促進事業、新展示場整備（アクセスサッポロ後継／約269.5億円）、スタートアップ・エコシステム構築事業（約22.6億円）、美食のまち・さっぽろブランド推進事業などが動く。",
+      "環境分野では『ゼロカーボンの推進』（約299.6億円）として住宅の高断熱化補助・エネルギー源転換・水素利活用・GX投資推進を、安全・安心分野では防災・減災DXや救急体制強化（救急隊36隊へ増強）を進めている。"
     ],
-    "interpretation": "個々の課題は単独で対応するのではなく、この上位ビジョンの目標群の中で優先順位づけられる。課題地図をビジョンと照らすと、どの基本目標が手薄かを点検できる。",
+    "interpretation": "個々の課題は単独で対応するのではなく、この上位ビジョンの目標群と、その実装計画であるアクションプラン2023の事業として優先順位づけ・予算化される。課題地図をビジョンと照らすと、どの基本目標にどれだけの事業費が配分され、何が手薄かを点検できる。事業費が前回比+36%へ膨らむ一方で財政の持続可能性も同時に問われており、『やりたいこと』と『財源』の緊張関係が最上位計画の最大の論点になっている。",
     "proposals": [
-      "各課題への取り組みをビジョンの基本目標に紐づけ、進捗を管理する。",
-      "分野横断のプロジェクトで縦割りを越える（部局間調整が前提）。"
+      "各課題への取り組みをビジョンの20基本目標とアクションプラン2023の個別事業に紐づけ、事業費と成果指標で進捗を管理する。",
+      "分野横断プロジェクトを軸に縦割りを越える（庁内横断の検討会議・進捗管理が前提）。",
+      "事業費が増える局面だからこそ、中期財政フレーム・30年の長期財政見通しと突き合わせ、選択と集中を可視化する。"
     ],
     "team": "札幌市まちづくり政策局が策定・進捗管理を担う。検討・推進には各分野の部局に加え、外部有識者、パブリックコメントを通じた市民の参加がある。",
-    "aiNote": "AIの貢献度は中。20の基本目標の指標（KPI）モニタリングのダッシュボード化、市民意見の分析、進捗の可視化に役立つ。方向性の決定は市民・行政の合意が中心となる。",
-    "related": ["pop-01", "city-01", "transit-01", "energy-01", "finance-01", "city-05"],
+    "aiNote": "AIの貢献度は中。20基本目標・約600事業の成果指標（KPI）モニタリングのダッシュボード化、計画事業費と進捗の可視化、市民意見（パブリックコメント）の分析に役立つ。実際にアクションプラン2023にもAIを用いた結婚支援（若者出会い創出事業）など、行政自身がAIを使う事業が現れ始めている。方向性の決定は市民・行政の合意が中心となる。",
+    "related": [
+      "pop-01",
+      "city-01",
+      "transit-01",
+      "energy-01",
+      "finance-01",
+      "city-05"
+    ],
     "plans": [
-      { "title": "第2次札幌市まちづくり戦略ビジョン（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/" }
+      {
+        "title": "第2次札幌市まちづくり戦略ビジョン（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/"
+      },
+      {
+        "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023（札幌市）",
+        "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html"
+      },
+      {
+        "title": "アクションプラン2023 計画の進捗報告（札幌市）",
+        "url": "https://www.city.sapporo.jp/chosei/actionplan2023-shinchoku.html"
+      }
     ],
     "sources": [
-      { "title": "第2次札幌市まちづくり戦略ビジョン＜ビジョン編＞概要（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/summary.html" },
-      { "title": "第2次札幌市まちづくり戦略ビジョン（戦略編）概要版（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/documents/senryakuhenn_gaiyo.pdf" }
+      {
+        "title": "第2次札幌市まちづくり戦略ビジョン＜ビジョン編＞概要（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/summary.html"
+      },
+      {
+        "title": "第2次札幌市まちづくり戦略ビジョン（戦略編）概要版（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/vision/vision2/documents/senryakuhenn_gaiyo.pdf"
+      },
+      {
+        "title": "アクションプラン2023の概要（札幌市）",
+        "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf"
+      },
+      {
+        "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023（札幌市）",
+        "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html"
+      }
+    ],
+    "deepDive": [
+      {
+        "q": "3つの重要概念ごとに、具体的にどんな事業が動いている？",
+        "a": "ユニバーサル（共生）では、（仮称）共生社会推進条例の制定を目指す『ユニバーサル（共生）の推進』（約1,197.5億円）や公共施設・旅客施設のバリアフリー化（約268.2億円）。ウェルネス（健康）では、地域包括支援センター機能強化（全27か所に専門員配置／約88.7億円）や健康寿命延伸・産後ケアの拡充。スマート（快適・先端）では、デジタル化による市民サービス向上、ICT活用による除排雪の効率化、防災・減災DX・救急DXなどが進む。いずれもアクションプラン2023に事業費つきで位置づけられている。",
+        "sources": [
+          {
+            "title": "アクションプラン2023の概要（札幌市）",
+            "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf"
+          },
+          {
+            "title": "第2次札幌市まちづくり戦略ビジョン・アクションプラン2023（札幌市）",
+            "url": "https://www.city.sapporo.jp/chosei/actionplan2023.html"
+          }
+        ]
+      },
+      {
+        "q": "事業費はどの分野に厚い？前回からどう増えた？",
+        "a": "アクションプラン2023の計画事業費は約1兆7,854億円で、AP2019の約1兆3,125億円から約36%増。分野別では都市空間（約6,673億円）と経済（約5,087億円）が大きい。中小企業貸付・企業会計の影響を除いた実質増2,436億円の主因は、学校・清掃工場の更新や再開発などの建設事業費増（+1,920億円）、除排雪（+258億円）や公共交通ネットワーク確保（バス補助等+64億円）など市民生活直結事業の維持・向上（+368億円）、少子化対策の子育て支援強化（+68億円）。事業費は伸びる一方、市債残高や基金取崩しは想定より抑制する方針も明記されている。",
+        "sources": [
+          {
+            "title": "アクションプラン2023の概要（計画事業費／札幌市）",
+            "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf"
+          }
+        ]
+      },
+      {
+        "q": "前回計画（アクションプラン2019）の達成度はどうだった？",
+        "a": "AP2019では、まちづくりの取組の計画事業費総額1兆254億円に対し執行は約1兆371億円（進捗率101.1%）。主要事業407項目のうち237項目（58.2%）で目標を達成した一方、新型コロナの影響等で154項目（37.8%）が未達成だった。8つの政策目標で設定した成果指標53項目（重複あり）では、上昇23項目（43.4%）・下降28項目（52.8%）と、指標の半数超が悪化していた。アクションプラン2023はこの結果を踏まえ、事業効果を精査して事業を再構築したとしている。課題地図は、こうした『達成・未達成』を市民目線で点検する補助線になる。",
+        "sources": [
+          {
+            "title": "アクションプラン2023の概要（AP2019の評価／札幌市）",
+            "url": "https://www.city.sapporo.jp/chosei/documents/ap2023-gaiyou.pdf"
+          }
+        ]
+      }
     ]
   },
   {
@@ -650,9 +1069,18 @@
     "summary": "需要減と運転手不足の両面から、交通網の維持が難しくなっている。",
     "background": "公共交通は札幌の高密度な都市構造を支える基盤である。人口減・行動変容による需要減と、路線バス運転手の不足という供給制約が同時に進み、不採算路線から先に維持が難しくなる。2024年4月の運転者の労働時間規制強化（『2024年問題』）も重なり、主要バス各社が相次いで減便・路線廃止に踏み切っている。",
     "data": [
-      { "label": "中央バス（2025年4月改定）", "value": "平日合計440便を減便（6%強）。2020年12月の950便に次ぐ過去2番目の規模" },
-      { "label": "じょうてつバス（2024年）", "value": "南区中心に4月で86便減。前年10月＋2月の計97便減と合わせ大幅縮小" },
-      { "label": "JR北海道バス（2024年12月）", "value": "札幌圏で平日146便・土日祝86便減（平日約5%）。乗務員40〜50人不足" }
+      {
+        "label": "中央バス（2025年4月改定）",
+        "value": "平日合計440便を減便（6%強）。2020年12月の950便に次ぐ過去2番目の規模"
+      },
+      {
+        "label": "じょうてつバス（2024年）",
+        "value": "南区中心に4月で86便減。前年10月＋2月の計97便減と合わせ大幅縮小"
+      },
+      {
+        "label": "JR北海道バス（2024年12月）",
+        "value": "札幌圏で平日146便・土日祝86便減（平日約5%）。乗務員40〜50人不足"
+      }
     ],
     "facts": [
       "バスの利用者数が大幅に減少している。",
@@ -674,30 +1102,67 @@
         "q": "北区・南区・清田など、自分の地域のバスはどれくらい減っているの？",
         "a": "主要3社が相次いで減便している。北海道中央バスは2025年4月に平日440便（6%強）を減らし、新道西線（北・西区）、駒岡線・空沼線（南区）などを廃止（南・東区の一部は『交通空白地』に）。南区はじょうてつバスも2024年に86便、前年からの分も含め計約180便超を削減。北区・清田などを含む札幌圏ではJR北海道バスが2024年12月に平日146便（約5%）を減らした。路線によっては『1時間に1本』が続く区間も出ている。",
         "sources": [
-          { "title": "中央バス、4月に平日440便を減便（北海道ニュースUHB）", "url": "https://www.uhb.jp/news/single.html?id=48457" },
-          { "title": "中央バス、札幌市内6路線廃止 来春ダイヤ改正（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1067702/" },
-          { "title": "JR北海道バス、札幌圏で減便拡大 12月から平日146便（日本経済新聞）", "url": "https://www.nikkei.com/article/DGXZQOFC215P90R21C24A0000000/" }
+          {
+            "title": "中央バス、4月に平日440便を減便（北海道ニュースUHB）",
+            "url": "https://www.uhb.jp/news/single.html?id=48457"
+          },
+          {
+            "title": "中央バス、札幌市内6路線廃止 来春ダイヤ改正（北海道新聞）",
+            "url": "https://www.hokkaido-np.co.jp/article/1067702/"
+          },
+          {
+            "title": "JR北海道バス、札幌圏で減便拡大 12月から平日146便（日本経済新聞）",
+            "url": "https://www.nikkei.com/article/DGXZQOFC215P90R21C24A0000000/"
+          }
         ]
       },
       {
         "q": "通勤・通学のピーク時間でも減っているの？ なぜ減らさざるを得ないの？",
         "a": "減便は特定の時間帯だけでなくダイヤ全体に及ぶため、もともと本数の少ない郊外路線では朝夕の通勤・通学時間帯でも選択肢が減る。背景は、利用者減による採算の悪化に加え、2024年4月に運転者の労働時間規制が強まった『2024年問題』と、高齢化・新規採用減による運転手不足。各社は「ダイヤを維持できない苦渋の決断」として、便数や路線の見直しを進めている。",
         "sources": [
-          { "title": "「ダイヤ維持できず苦渋の決断」中央バスが4月から平日440便の大幅減便（北海道ニュースUHB）", "url": "https://www.uhb.jp/news/single.html?id=48457" },
-          { "title": "運転手不足で6%強減便 北海道中央バス、4月ダイヤ改正（日本経済新聞）", "url": "https://www.nikkei.com/article/DGKKZO86567670W5A200C2L41000/" }
+          {
+            "title": "「ダイヤ維持できず苦渋の決断」中央バスが4月から平日440便の大幅減便（北海道ニュースUHB）",
+            "url": "https://www.uhb.jp/news/single.html?id=48457"
+          },
+          {
+            "title": "運転手不足で6%強減便 北海道中央バス、4月ダイヤ改正（日本経済新聞）",
+            "url": "https://www.nikkei.com/article/DGKKZO86567670W5A200C2L41000/"
+          }
         ]
       }
     ],
-    "related": ["transit-02", "transit-03", "pop-02"],
+    "related": [
+      "transit-02",
+      "transit-03",
+      "pop-02"
+    ],
     "plans": [
-      { "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）", "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html" }
+      {
+        "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）",
+        "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html"
+      }
     ],
     "sources": [
-      { "title": "公共交通の利用人員の推移と課題（札幌市 総合交通計画）", "url": "https://www.city.sapporo.jp/sogokotsu/shisaku/sogokotsukeikaku/h24plan/documents/5kokyokotsu_kadai.pdf" },
-      { "title": "運転手不足で6%強減便 北海道中央バス、4月ダイヤ改正（日本経済新聞）", "url": "https://www.nikkei.com/article/DGKKZO86567670W5A200C2L41000/" },
-      { "title": "中央バス、札幌市内6路線廃止 来春ダイヤ改正（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1067702/" },
-      { "title": "札幌の路線バスが再び大幅減便 じょうてつバス86便減（北海道ニュースUHB）", "url": "https://www.uhb.jp/news/single.html?id=41336" },
-      { "title": "JR北海道バス、札幌圏で減便拡大 平日146便（日本経済新聞）", "url": "https://www.nikkei.com/article/DGXZQOFC215P90R21C24A0000000/" }
+      {
+        "title": "公共交通の利用人員の推移と課題（札幌市 総合交通計画）",
+        "url": "https://www.city.sapporo.jp/sogokotsu/shisaku/sogokotsukeikaku/h24plan/documents/5kokyokotsu_kadai.pdf"
+      },
+      {
+        "title": "運転手不足で6%強減便 北海道中央バス、4月ダイヤ改正（日本経済新聞）",
+        "url": "https://www.nikkei.com/article/DGKKZO86567670W5A200C2L41000/"
+      },
+      {
+        "title": "中央バス、札幌市内6路線廃止 来春ダイヤ改正（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1067702/"
+      },
+      {
+        "title": "札幌の路線バスが再び大幅減便 じょうてつバス86便減（北海道ニュースUHB）",
+        "url": "https://www.uhb.jp/news/single.html?id=41336"
+      },
+      {
+        "title": "JR北海道バス、札幌圏で減便拡大 平日146便（日本経済新聞）",
+        "url": "https://www.nikkei.com/article/DGXZQOFC215P90R21C24A0000000/"
+      }
     ]
   },
   {
@@ -710,8 +1175,14 @@
     "summary": "市電は赤字が続き、黒字の地下鉄も将来見通しが下振れしている。",
     "background": "公営交通の収支は利用者数に直結する。人口減・行動変容に加え、大型施設の移転など個別要因も乗客動向を左右し、長期の投資計画の前提を揺るがす。",
     "data": [
-      { "label": "市電の収支", "value": "5年連続赤字（2023年度決算まで）" },
-      { "label": "地下鉄2028年度営業利益見通し", "value": "約60億円→約37億円に下方修正" }
+      {
+        "label": "市電の収支",
+        "value": "5年連続赤字（2023年度決算まで）"
+      },
+      {
+        "label": "地下鉄2028年度営業利益見通し",
+        "value": "約60億円→約37億円に下方修正"
+      }
     ],
     "facts": [
       "市電（路面電車）は2023年度決算まで5年連続の赤字となっている。",
@@ -724,10 +1195,20 @@
     ],
     "team": "札幌市交通局が経営を担う。検討会には交通経済・経営の専門家、財政部局、沿線のまちづくり担当・商業者、利用者代表を加え、運賃やダイヤと沿線開発を一体で需要創出につなげる視点が要る。",
     "aiNote": "AIの貢献度は中。乗降データの分析による需要予測、ダイヤ・運賃の最適化、設備保全の予知メンテナンスで収支改善を後押しできる。需要そのものは人口とまちづくりに左右されるため、AIは運営効率化が主な役割。",
-    "related": ["transit-01", "city-04", "finance-01"],
+    "related": [
+      "transit-01",
+      "city-04",
+      "finance-01"
+    ],
     "sources": [
-      { "title": "札幌市地下鉄104億円の黒字 市電5年連続赤字（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1113807/" },
-      { "title": "札幌市、交通計画改定 地下鉄黒字37億円に下方修正（日本経済新聞）", "url": "https://www.nikkei.com/article/DGXZQOFC021XI0S4A400C2000000/" }
+      {
+        "title": "札幌市地下鉄104億円の黒字 市電5年連続赤字（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1113807/"
+      },
+      {
+        "title": "札幌市、交通計画改定 地下鉄黒字37億円に下方修正（日本経済新聞）",
+        "url": "https://www.nikkei.com/article/DGXZQOFC021XI0S4A400C2000000/"
+      }
     ]
   },
   {
@@ -750,12 +1231,22 @@
     ],
     "team": "札幌市総合交通計画部と福祉部局、各区が地域ごとに検討する。検討会には地域住民・高齢者、バス・タクシー事業者、福祉・医療の担当、移動サービスの専門家を加え、地域の実情に合う移動手段を一緒に設計するとよい。",
     "aiNote": "AIの貢献度は中〜大。オンデマンド交通の配車最適化や、相乗りマッチング、需要予測で薄い需要を効率よく束ねられる。予約のしにくさには音声・簡易UIで対応。高齢者が使いやすい設計と組み合わせれば実効性が高い。",
-    "related": ["transit-01", "city-02", "pop-02"],
+    "related": [
+      "transit-01",
+      "city-02",
+      "pop-02"
+    ],
     "plans": [
-      { "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）", "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html" }
+      {
+        "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）",
+        "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html"
+      }
     ],
     "sources": [
-      { "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）", "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html" }
+      {
+        "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）",
+        "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html"
+      }
     ]
   },
   {
@@ -768,11 +1259,26 @@
     "summary": "鉄道空白地の延伸要望に対し、巨額の建設費と人口減が壁となる。",
     "background": "清田区は市10区で唯一、地下鉄もJRの駅もない鉄道空白区で、東豊線の清田方面への延伸が長年要望されてきた。東西線の手稲区への延伸要望もある。路線バスの減便・運転手不足を背景に、市は2026年度に地下鉄延伸を含む交通体系見直しの調査へ着手する方針を示した。清田延伸は2001年の市審議会答申で構想され（福住〜清田 約4.2km・4駅）、概算工事費は2011年度調査で約853億円とされたが、採算性や「開業30年で黒字化」という国の認可目安を理由に2011年に市が「困難」と説明し、長く停滞してきた。一方で建設費は1kmあたり約400億円規模ともされ、人口減局面での採算性が大きな壁となる。",
     "data": [
-      { "label": "鉄道空白区", "value": "清田区（市10区で唯一）" },
-      { "label": "清田延伸の概算工事費", "value": "約853億円（2011年度調査・福住〜清田 約4.2km/4駅）。2001年答申では約1,050億円" },
-      { "label": "延伸建設費の目安", "value": "1kmあたり約400億円（東西線手稲延伸の試算）" },
-      { "label": "調査着手", "value": "2026年度予算案に計上の方針" },
-      { "label": "手稲延伸の民間試算（2026年6月）", "value": "宮の沢から西へ約6km・2駅増設、総額約2,080億円で30年黒字化（期成会・北海道科学大の試算。市の試算ではない・要確認）" }
+      {
+        "label": "鉄道空白区",
+        "value": "清田区（市10区で唯一）"
+      },
+      {
+        "label": "清田延伸の概算工事費",
+        "value": "約853億円（2011年度調査・福住〜清田 約4.2km/4駅）。2001年答申では約1,050億円"
+      },
+      {
+        "label": "延伸建設費の目安",
+        "value": "1kmあたり約400億円（東西線手稲延伸の試算）"
+      },
+      {
+        "label": "調査着手",
+        "value": "2026年度予算案に計上の方針"
+      },
+      {
+        "label": "手稲延伸の民間試算（2026年6月）",
+        "value": "宮の沢から西へ約6km・2駅増設、総額約2,080億円で30年黒字化（期成会・北海道科学大の試算。市の試算ではない・要確認）"
+      }
     ],
     "facts": [
       "清田区は札幌10区で唯一、地下鉄・JRの駅がない区で、東豊線の清田方面延伸が長年要望されている。",
@@ -794,37 +1300,83 @@
         "q": "清田の地下鉄延伸は、なぜ長く止まっていたの？",
         "a": "東豊線の清田延伸（福住〜清田 約4.2km・4駅、2011年度調査で概算約853億円）は、バブル崩壊後の財政難と採算性重視のなかで、市が『開業30年で黒字化』という国の認可目安をクリアできないとして2011年に『困難』と説明し、停滞してきた。ただしこの『30年』は絶対的な基準ではなく、2022年に国土交通省が国会で地方の公営交通には柔軟に対応すると答弁。これを機に市は再検討へ向かい、2026年度に交通体系見直しの調査へ着手する。",
         "sources": [
-          { "title": "地下鉄清田延伸計画の経緯（地下鉄東豊線建設促進期成会連合会）", "url": "https://kiyota-chikatetsu.com/%E6%B8%85%E7%94%B0%E5%BB%B6%E4%BC%B8%E3%81%AE%E7%B5%8C%E7%B7%AF" },
-          { "title": "清田延伸『できない』理由としてきた『国の30年基準』を考える（ひろまある清田）", "url": "https://hiromaaru.org/archives/16940" }
+          {
+            "title": "地下鉄清田延伸計画の経緯（地下鉄東豊線建設促進期成会連合会）",
+            "url": "https://kiyota-chikatetsu.com/%E6%B8%85%E7%94%B0%E5%BB%B6%E4%BC%B8%E3%81%AE%E7%B5%8C%E7%B7%AF"
+          },
+          {
+            "title": "清田延伸『できない』理由としてきた『国の30年基準』を考える（ひろまある清田）",
+            "url": "https://hiromaaru.org/archives/16940"
+          }
         ]
       },
       {
         "q": "【2026年6月追記】高架＆シェルターにすれば、本当に安く作れるの？",
         "a": "期成会と北海道科学大学は、地下方式より高架方式＋ガラス繊維製シェルター（東京ドーム屋根と同種素材）で線路・駅を覆う方が、従来工法比2〜3割安くできると試算している。ただしこれは提案側の試算で、市の精査を経た数字ではない。寒冷地ゆえの着雪・除雪、景観、泥炭地の地盤対策などで想定どおり下がるかは要確認。",
         "sources": [
-          { "title": "地下鉄手稲延伸 期成会が高架方式・ガラス繊維シェルター構想（STVニュース北海道, 2026-06-01）", "url": "https://www.stv.jp/news/stvnews/kiji/stbf535b8aa83544b698130a1efe962a19.html" },
-          { "title": "北海道科学大、地下鉄手稲延伸へ膜製シェルター提案／建設費を抑制（北海道建設新聞）", "url": "https://e-kensin.net/n/n417ba6ac5e21" }
+          {
+            "title": "地下鉄手稲延伸 期成会が高架方式・ガラス繊維シェルター構想（STVニュース北海道, 2026-06-01）",
+            "url": "https://www.stv.jp/news/stvnews/kiji/stbf535b8aa83544b698130a1efe962a19.html"
+          },
+          {
+            "title": "北海道科学大、地下鉄手稲延伸へ膜製シェルター提案／建設費を抑制（北海道建設新聞）",
+            "url": "https://e-kensin.net/n/n417ba6ac5e21"
+          }
         ]
       },
       {
         "q": "【2026年6月追記】30年で黒字化できるなら、作るべきでは？",
         "a": "期成会側は、宮の沢から西へ約6km・2駅増設し、総額約2,080億円でも1日約2.67万人・運賃収入年約66億円で30年で黒字化できると試算している。国の補助は「30年で黒字化」が一つの目安とされるが、人口減局面で需要前提が崩れれば成立しない。市は採算性から慎重で、まず2026年度の交通体系調査の結果を見る段階にある。",
         "sources": [
-          { "title": "手稲への地下鉄延伸でシェルター構想 地元期成会が公表（北海道新聞, 2026-06-01）", "url": "https://www.hokkaido-np.co.jp/article/1318948/" },
-          { "title": "延伸望む期成会がイベント 高架化＆シェルター構想 約6km・2駅増設を要望（北海道ニュースUHB, 2026-06-01）", "url": "https://news.yahoo.co.jp/articles/000fa9b6f14232c9dd8482cb7e8d710a4bf0accc" }
+          {
+            "title": "手稲への地下鉄延伸でシェルター構想 地元期成会が公表（北海道新聞, 2026-06-01）",
+            "url": "https://www.hokkaido-np.co.jp/article/1318948/"
+          },
+          {
+            "title": "延伸望む期成会がイベント 高架化＆シェルター構想 約6km・2駅増設を要望（北海道ニュースUHB, 2026-06-01）",
+            "url": "https://news.yahoo.co.jp/articles/000fa9b6f14232c9dd8482cb7e8d710a4bf0accc"
+          }
         ]
       }
     ],
-    "related": ["transit-01", "transit-03", "infra-01"],
+    "related": [
+      "transit-01",
+      "transit-03",
+      "infra-01"
+    ],
     "sources": [
-      { "title": "札幌市、地下鉄延伸を調査へ 清田？手稲？（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1265775/" },
-      { "title": "地下鉄清田延伸計画の経緯（地下鉄東豊線建設促進期成会連合会）", "url": "https://kiyota-chikatetsu.com/%E6%B8%85%E7%94%B0%E5%BB%B6%E4%BC%B8%E3%81%AE%E7%B5%8C%E7%B7%AF" },
-      { "title": "清田延伸と『国の30年基準』を考える（ひろまある清田）", "url": "https://hiromaaru.org/archives/16940" },
-      { "title": "東豊線『清田延伸』札幌ドーム周辺開発など踏まえ議論 市長が方針（鉄道プレスネット）", "url": "https://news.railway-pressnet.com/archives/37339" },
-      { "title": "東西線の手稲区延伸 高架化でコスト減？（HTB北海道ニュース）", "url": "https://www.htb.co.jp/news/archives_37888.html" },
-      { "title": "地下鉄手稲延伸 期成会が高架方式・ガラス繊維シェルター構想（STVニュース北海道, 2026-06-01）", "url": "https://www.stv.jp/news/stvnews/kiji/stbf535b8aa83544b698130a1efe962a19.html" },
-      { "title": "手稲への地下鉄延伸でシェルター構想 地元期成会が公表（北海道新聞, 2026-06-01）", "url": "https://www.hokkaido-np.co.jp/article/1318948/" },
-      { "title": "北海道科学大、地下鉄手稲延伸へ膜製シェルター提案／建設費を抑制（北海道建設新聞）", "url": "https://e-kensin.net/n/n417ba6ac5e21" }
+      {
+        "title": "札幌市、地下鉄延伸を調査へ 清田？手稲？（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1265775/"
+      },
+      {
+        "title": "地下鉄清田延伸計画の経緯（地下鉄東豊線建設促進期成会連合会）",
+        "url": "https://kiyota-chikatetsu.com/%E6%B8%85%E7%94%B0%E5%BB%B6%E4%BC%B8%E3%81%AE%E7%B5%8C%E7%B7%AF"
+      },
+      {
+        "title": "清田延伸と『国の30年基準』を考える（ひろまある清田）",
+        "url": "https://hiromaaru.org/archives/16940"
+      },
+      {
+        "title": "東豊線『清田延伸』札幌ドーム周辺開発など踏まえ議論 市長が方針（鉄道プレスネット）",
+        "url": "https://news.railway-pressnet.com/archives/37339"
+      },
+      {
+        "title": "東西線の手稲区延伸 高架化でコスト減？（HTB北海道ニュース）",
+        "url": "https://www.htb.co.jp/news/archives_37888.html"
+      },
+      {
+        "title": "地下鉄手稲延伸 期成会が高架方式・ガラス繊維シェルター構想（STVニュース北海道, 2026-06-01）",
+        "url": "https://www.stv.jp/news/stvnews/kiji/stbf535b8aa83544b698130a1efe962a19.html"
+      },
+      {
+        "title": "手稲への地下鉄延伸でシェルター構想 地元期成会が公表（北海道新聞, 2026-06-01）",
+        "url": "https://www.hokkaido-np.co.jp/article/1318948/"
+      },
+      {
+        "title": "北海道科学大、地下鉄手稲延伸へ膜製シェルター提案／建設費を抑制（北海道建設新聞）",
+        "url": "https://e-kensin.net/n/n417ba6ac5e21"
+      }
     ]
   },
   {
@@ -837,8 +1389,14 @@
     "summary": "丘珠空港の滑走路延伸が進む一方、空港への軌道系アクセスは課題が残る。",
     "background": "都心に近い丘珠空港は、滑走路を現行1,500mから1,800mへ延ばす計画が進み、冬季のジェット機運航や就航路線の拡大が期待される。市は2025年に丘珠空港と周辺地域の共生に関する基本構想を示した。一方、東豊線の丘珠空港方面への延伸構想は採算面などから具体化しておらず、空港アクセスの強化が残る課題となっている。",
     "data": [
-      { "label": "滑走路延伸", "value": "1,500m→1,800m（2030年の実現を目指す方針）" },
-      { "label": "期待効果", "value": "冬季のジェット機運航、夏季便数を約50→約70便へ" }
+      {
+        "label": "滑走路延伸",
+        "value": "1,500m→1,800m（2030年の実現を目指す方針）"
+      },
+      {
+        "label": "期待効果",
+        "value": "冬季のジェット機運航、夏季便数を約50→約70便へ"
+      }
     ],
     "facts": [
       "国土交通省は丘珠空港の滑走路を1,500mから1,800mに延ばす案を提示し、札幌市は2030年の実現を目指す方針を示した。",
@@ -852,10 +1410,19 @@
     ],
     "team": "国・北海道・札幌市と空港運営者が連携する。市の検討会には航空・観光の専門家、周辺住民（騒音・共生）、交通アクセスの担当、経済界を加え、滑走路延伸の効果とアクセス整備、地域との共生を一体で議論する。",
     "aiNote": "AIの貢献度は小〜中。就航需要や経済波及の予測、騒音シミュレーション、アクセス交通の需要分析で計画判断を支える。滑走路工事や路線誘致そのものはAIの範囲外で、検討材料の精度向上が主な役割。",
-    "related": ["transit-04", "city-01"],
+    "related": [
+      "transit-04",
+      "city-01"
+    ],
     "sources": [
-      { "title": "札幌丘珠空港の滑走路1800メートルに延長 国交省が提示（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1224232/" },
-      { "title": "丘珠空港と周辺地域の共生に関する基本構想（札幌市）", "url": "https://www.city.sapporo.jp/shimin/okadama/rikatsuyo/kihonkousou/documents/kihonkousou.pdf" }
+      {
+        "title": "札幌丘珠空港の滑走路1800メートルに延長 国交省が提示（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1224232/"
+      },
+      {
+        "title": "丘珠空港と周辺地域の共生に関する基本構想（札幌市）",
+        "url": "https://www.city.sapporo.jp/shimin/okadama/rikatsuyo/kihonkousou/documents/kihonkousou.pdf"
+      }
     ]
   },
   {
@@ -868,7 +1435,10 @@
     "summary": "市の借金にあたる市債残高が過去最大規模に積み上がっている。",
     "background": "借入の多くは将来世代の負担となる。低金利下で積み上がった残高は、金利上昇や歳入減と重なると財政の自由度を急速に奪い、政策的な投資の余地を狭める。",
     "data": [
-      { "label": "市債残高（2023年度末見込み）", "value": "約1兆1456億円（臨財債含む・過去最大）" }
+      {
+        "label": "市債残高（2023年度末見込み）",
+        "value": "約1兆1456億円（臨財債含む・過去最大）"
+      }
     ],
     "facts": [
       "2023年度末見込みの市債残高は、臨時財政対策債を含め過去最大の約1兆1456億円となった。",
@@ -881,12 +1451,21 @@
     ],
     "team": "札幌市財政局が行財政改革を主導する。検討会には財政・公会計の専門家、各事業部局、市民代表（負担と受益の合意）、議会を交え、投資の優先順位と将来負担を透明に議論する場が必要。",
     "aiNote": "AIの貢献度は中。歳入・歳出の長期シミュレーション、金利・人口シナリオ別の財政予測、事業の費用対効果分析で優先順位付けを支える。最終判断は政治・市民合意だが、AIは選択肢の見える化に寄与する。",
-    "related": ["finance-02", "infra-01"],
+    "related": [
+      "finance-02",
+      "infra-01"
+    ],
     "plans": [
-      { "title": "行財政改革の取組（札幌市）", "url": "https://www.city.sapporo.jp/suishinshitsu/gyokaku/index.html" }
+      {
+        "title": "行財政改革の取組（札幌市）",
+        "url": "https://www.city.sapporo.jp/suishinshitsu/gyokaku/index.html"
+      }
     ],
     "sources": [
-      { "title": "老朽化施設、将来の重荷 市債残高過去最大（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/794496/" }
+      {
+        "title": "老朽化施設、将来の重荷 市債残高過去最大（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/794496/"
+      }
     ]
   },
   {
@@ -909,9 +1488,15 @@
     ],
     "team": "札幌市財政局と保健福祉局が連携する。検討会には社会保障・医療経済の専門家、医療・介護の現場、予防・健康づくりの担当、当事者代表を加え、給付の持続性と予防投資のバランスを設計する。",
     "aiNote": "AIの貢献度は中。レセプト等のデータ分析で予防・重症化防止の効果が高い対象を見つけ、健康づくりを後押しできる。給付の不正・重複チェックの効率化にも有効だが、給付水準は制度設計と合意の問題で、AIは支援役。",
-    "related": ["pop-02", "finance-01"],
+    "related": [
+      "pop-02",
+      "finance-01"
+    ],
     "sources": [
-      { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" }
+      {
+        "title": "公共施設等総合管理計画（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+      }
     ]
   },
   {
@@ -924,10 +1509,22 @@
     "summary": "限られた人員で増える行政需要を支えるため、業務のデジタル化が急務となる。",
     "background": "人口減で税収の伸びが見込めない一方、高齢化で行政需要は増える。限られた職員数で質を保つには、デジタル技術による業務効率化と組織の再編が避けられない。市は『第2次札幌市ICT活用戦略』（計画期間 令和6〜13年度／2024〜2031年度、施策部分は2024〜2027年度）や『札幌DX推進方針』に基づき、行政手続のオンライン化・システム標準化・生成AI活用などを進めている。",
     "data": [
-      { "label": "計画", "value": "第2次札幌市ICT活用戦略（2024〜2031年度。施策は2024〜2027年度、2027年度に中間見直し）" },
-      { "label": "推進体制", "value": "2024年に行政改革・DX推進室を新設。区役所の後方業務を集約・省スペース化" },
-      { "label": "国の標準化", "value": "住民記録・税・介護など基幹20業務システムを国の統一仕様へ標準化" },
-      { "label": "背景（担い手）", "value": "生産年齢人口は2020年約121万人→2060年に約40万人減の見通し。デジタル人材は全国で2030年に約45万人不足の予測" }
+      {
+        "label": "計画",
+        "value": "第2次札幌市ICT活用戦略（2024〜2031年度。施策は2024〜2027年度、2027年度に中間見直し）"
+      },
+      {
+        "label": "推進体制",
+        "value": "2024年に行政改革・DX推進室を新設。区役所の後方業務を集約・省スペース化"
+      },
+      {
+        "label": "国の標準化",
+        "value": "住民記録・税・介護など基幹20業務システムを国の統一仕様へ標準化"
+      },
+      {
+        "label": "背景（担い手）",
+        "value": "生産年齢人口は2020年約121万人→2060年に約40万人減の見通し。デジタル人材は全国で2030年に約45万人不足の予測"
+      }
     ],
     "facts": [
       "札幌市は行政改革・DX推進室を新設し、区役所の後方業務の集約や省スペース化など業務効率化を進めている。",
@@ -947,29 +1544,62 @@
         "q": "行政DXで、具体的にどれくらいコストや時間が減るの？",
         "a": "札幌市は『原則すべての手続のオンライン化』、基幹システムの国標準化、RPA・生成AIの活用、ペーパーレス、窓口の待ち時間短縮などで、職員の業務時間とコストの削減をねらっている。ただし『何時間・何円減らす』といった定量的な削減目標は大きくは公表しておらず、効果は施策ごとの検証待ち。第2次ICT活用戦略は2027年度に中間見直しを行う予定で、ここで進み具合が問われる。",
         "sources": [
-          { "title": "第2次札幌市ICT活用戦略（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf" },
-          { "title": "札幌市DXの概要（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxgaiyou.pdf" }
+          {
+            "title": "第2次札幌市ICT活用戦略（札幌市）",
+            "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf"
+          },
+          {
+            "title": "札幌市DXの概要（札幌市）",
+            "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxgaiyou.pdf"
+          }
         ]
       },
       {
         "q": "なぜ今、行政DXを急ぐの？",
         "a": "生産年齢人口は2020年の約121万人から2060年に約40万人減る見通しで、職員を増やす余地は乏しい。一方で高齢化により行政需要は増え続ける。全国でもデジタル人材は2030年に約45万人不足すると予測され、限られた人員で行政サービスの質を保つには、定型業務の自動化やオンライン化が前提になる。だからこそ効率化を『今のうちに』進める必要がある。",
         "sources": [
-          { "title": "第2次札幌市ICT活用戦略（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf" },
-          { "title": "札幌市が行政改革・DX推進室を新設（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1295590/" }
+          {
+            "title": "第2次札幌市ICT活用戦略（札幌市）",
+            "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf"
+          },
+          {
+            "title": "札幌市が行政改革・DX推進室を新設（北海道新聞）",
+            "url": "https://www.hokkaido-np.co.jp/article/1295590/"
+          }
         ]
       }
     ],
-    "related": ["finance-01", "industry-03"],
+    "related": [
+      "finance-01",
+      "industry-03"
+    ],
     "plans": [
-      { "title": "第2次札幌市ICT活用戦略（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf" },
-      { "title": "札幌DX推進方針（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxhonsyo2.pdf" },
-      { "title": "札幌市DXの概要（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxgaiyou.pdf" }
+      {
+        "title": "第2次札幌市ICT活用戦略（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf"
+      },
+      {
+        "title": "札幌DX推進方針（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxhonsyo2.pdf"
+      },
+      {
+        "title": "札幌市DXの概要（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxgaiyou.pdf"
+      }
     ],
     "sources": [
-      { "title": "札幌市が行政改革・DX推進室を新設（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1295590/" },
-      { "title": "第2次札幌市ICT活用戦略（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf" },
-      { "title": "札幌DX推進方針（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxhonsyo2.pdf" }
+      {
+        "title": "札幌市が行政改革・DX推進室を新設（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1295590/"
+      },
+      {
+        "title": "第2次札幌市ICT活用戦略（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/ictplan/plan/documents/02_ictplan.pdf"
+      },
+      {
+        "title": "札幌DX推進方針（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxhonsyo2.pdf"
+      }
     ]
   },
   {
@@ -982,11 +1612,26 @@
     "summary": "高度成長期以降に整備した施設が一斉に更新時期を迎える。",
     "background": "施設を建てた時期が集中しているため更新も集中する。札幌市は冬季五輪（1972年）と政令市移行に合わせて1970〜80年代に施設を大量整備したため、いま一斉に更新期を迎えている。人口減で利用者が減る中、すべてを同じ規模で建て替えれば財政が持たず、総量と配置の見直しが避けられない。都心では更新が札幌駅・大通に集中する一方、建築費の高騰や北海道新幹線の札幌延伸の遅れも事業の重しとなっている。",
     "data": [
-      { "label": "有形固定資産減価償却率（老朽化の度合い）", "value": "政令市平均より高め＝施設を長く使い続け、建築物の更新が追いついていない" },
-      { "label": "公共施設の保有量", "value": "約578万㎡（2022年度末。学校が4割強、次いで市営住宅）" },
-      { "label": "築30年以上の割合", "value": "公共施設の約6割超（1970〜80年代の集中整備が主因）" },
-      { "label": "更新等の事業費（試算）", "value": "対策なしの自然体で年平均約1,643億円→長寿命化・総量見直し後 約1,148億円（年平均約495億円の縮減見込み）" },
-      { "label": "市役所本庁舎", "value": "1971年完成・築55年。2025年に専門委員会は建替えが最適と整理も資材高騰で結論先送り（建替えなら大通西1丁目の旧NHK跡地が候補・着工は早くて7年後以降）" }
+      {
+        "label": "有形固定資産減価償却率（老朽化の度合い）",
+        "value": "政令市平均より高め＝施設を長く使い続け、建築物の更新が追いついていない"
+      },
+      {
+        "label": "公共施設の保有量",
+        "value": "約578万㎡（2022年度末。学校が4割強、次いで市営住宅）"
+      },
+      {
+        "label": "築30年以上の割合",
+        "value": "公共施設の約6割超（1970〜80年代の集中整備が主因）"
+      },
+      {
+        "label": "更新等の事業費（試算）",
+        "value": "対策なしの自然体で年平均約1,643億円→長寿命化・総量見直し後 約1,148億円（年平均約495億円の縮減見込み）"
+      },
+      {
+        "label": "市役所本庁舎",
+        "value": "1971年完成・築55年。2025年に専門委員会は建替えが最適と整理も資材高騰で結論先送り（建替えなら大通西1丁目の旧NHK跡地が候補・着工は早くて7年後以降）"
+      }
     ],
     "facts": [
       "都市基盤の老朽化が進み、公共施設等の更新需要が本格化すると札幌市は見込んでいる。",
@@ -1008,37 +1653,79 @@
         "q": "資産の老朽化って、具体的にどれくらい進んでいるの？",
         "a": "公共施設（企業会計を除く）の保有量は約578万㎡で、その約6割超が築30年以上。資産の古さを示す有形固定資産減価償却率も政令市平均より高めで、施設を長く使い続けている＝更新が追いついていないことを意味する。1972年の冬季五輪や政令市移行期（1970〜80年代）に集中整備した施設が、いま一斉に更新期を迎えている。",
         "sources": [
-          { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" },
-          { "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf" }
+          {
+            "title": "公共施設等総合管理計画（札幌市）",
+            "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+          },
+          {
+            "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）",
+            "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf"
+          }
         ]
       },
       {
         "q": "全部建て替えると、いくらかかるの？",
         "a": "何も手を打たない『自然体』だと更新等の建設事業費は2030年代にかけて急増し、年平均で約1,643億円規模になる試算。長寿命化やムダの削減、施設総量の見直しで年平均約1,148億円（約495億円/年の圧縮）に抑える計画だが、人口減で利用が減るなか『同じ規模では建て替えない』判断が避けられない。",
         "sources": [
-          { "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf" },
-          { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" }
+          {
+            "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）",
+            "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf"
+          },
+          {
+            "title": "公共施設等総合管理計画（札幌市）",
+            "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+          }
         ]
       },
       {
         "q": "市役所など大きな建物の建替え計画はあるの？ 建築費高騰の影響は？",
         "a": "市役所本庁舎（1971年完成・築55年）は2025年の専門委員会で建替えが最適と整理されたが、建築資材の高騰で方針決定が先送りされ、建替え・改修を継続検討中（建替えなら大通西1丁目の旧NHK跡地が候補、着工は早くて7年後以降）。同じ建築費高騰は、都心の民間ビル建替えや、札幌駅・大通に集中する再開発の遅れにもつながっている。",
         "sources": [
-          { "title": "市役所本庁舎のあり方検討（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/shomu/honchosya.html" },
-          { "title": "材料費高騰などで判断見送り 札幌市役所本庁舎『建て替え』と『改修』来年度も検討（STVニュース北海道）", "url": "https://news.yahoo.co.jp/articles/23391d95838df3b58c9ba6a44d93abda8899171f" }
+          {
+            "title": "市役所本庁舎のあり方検討（札幌市）",
+            "url": "https://www.city.sapporo.jp/kikaku/shomu/honchosya.html"
+          },
+          {
+            "title": "材料費高騰などで判断見送り 札幌市役所本庁舎『建て替え』と『改修』来年度も検討（STVニュース北海道）",
+            "url": "https://news.yahoo.co.jp/articles/23391d95838df3b58c9ba6a44d93abda8899171f"
+          }
         ]
       }
     ],
-    "related": ["infra-02", "finance-01", "pop-01", "city-01", "city-04"],
+    "related": [
+      "infra-02",
+      "finance-01",
+      "pop-01",
+      "city-01",
+      "city-04"
+    ],
     "plans": [
-      { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" },
-      { "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf" },
-      { "title": "市役所本庁舎のあり方検討（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/shomu/honchosya.html" }
+      {
+        "title": "公共施設等総合管理計画（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+      },
+      {
+        "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf"
+      },
+      {
+        "title": "市役所本庁舎のあり方検討（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/shomu/honchosya.html"
+      }
     ],
     "sources": [
-      { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" },
-      { "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf" },
-      { "title": "材料費高騰などで判断見送り 札幌市役所本庁舎『建て替え』と『改修』来年度も検討（STVニュース北海道）", "url": "https://news.yahoo.co.jp/articles/23391d95838df3b58c9ba6a44d93abda8899171f" }
+      {
+        "title": "公共施設等総合管理計画（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+      },
+      {
+        "title": "市有建築物及びインフラ施設等の管理に関する基本的な方針（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/documents/shisetsukanri_kihonhoshin.pdf"
+      },
+      {
+        "title": "材料費高騰などで判断見送り 札幌市役所本庁舎『建て替え』と『改修』来年度も検討（STVニュース北海道）",
+        "url": "https://news.yahoo.co.jp/articles/23391d95838df3b58c9ba6a44d93abda8899171f"
+      }
     ]
   },
   {
@@ -1051,12 +1738,30 @@
     "summary": "設置から50年超の管路更新へ、約30年ぶりの料金値上げが迫る。",
     "background": "高度成長期に整備した上下水道管が一斉に更新期を迎える一方、人口減で使用料収入は先細る。更新財源を確保するため、札幌市は約30年ぶりに下水道料金を引き上げる方針を固めた。全国で道路陥没事故も起きており、更新の緊急性は高い。",
     "data": [
-      { "label": "下水道料金の改定", "value": "2026年10月に平均約23%値上げ方針" },
-      { "label": "前回改定", "value": "1997年（約30年ぶり）" },
-      { "label": "下水道管の総延長", "value": "約8,334km（2025年度。政令市で3番目に長い）" },
-      { "label": "50年超の管路（見通し）", "value": "2034年度に約5,652kmへ急増（1970〜80年代に集中整備）" },
-      { "label": "道路陥没", "value": "年間約150件（2023年度153件、大きな事故はなし）" },
-      { "label": "改築（更新）事業費", "value": "約355億円（プラン2015）→約810億円（プラン2025）。今後さらに増の見通し" }
+      {
+        "label": "下水道料金の改定",
+        "value": "2026年10月に平均約23%値上げ方針"
+      },
+      {
+        "label": "前回改定",
+        "value": "1997年（約30年ぶり）"
+      },
+      {
+        "label": "下水道管の総延長",
+        "value": "約8,334km（2025年度。政令市で3番目に長い）"
+      },
+      {
+        "label": "50年超の管路（見通し）",
+        "value": "2034年度に約5,652kmへ急増（1970〜80年代に集中整備）"
+      },
+      {
+        "label": "道路陥没",
+        "value": "年間約150件（2023年度153件、大きな事故はなし）"
+      },
+      {
+        "label": "改築（更新）事業費",
+        "value": "約355億円（プラン2015）→約810億円（プラン2025）。今後さらに増の見通し"
+      }
     ],
     "facts": [
       "札幌市は老朽化した下水道管の更新や維持管理費の増加を背景に、2026年10月に下水道料金を平均約23%引き上げる方針を固めた。",
@@ -1077,29 +1782,62 @@
         "q": "下水道管が原因で、道路が陥没することはあるの？",
         "a": "ある。札幌でも下水道管の破損などを要因とする小規模な道路陥没が年間約150件（2023年度は153件で大きな事故はなし）起きている。最も古い管は大正期＝約100年前の敷設で、標準耐用年数50年を超える管路は2034年度に約5,652kmへ急増する見通し。2025年1月の埼玉県八潮市の大規模陥没を受け、市は直径2m以上・設置30年以上の約185kmを緊急調査した。",
         "sources": [
-          { "title": "札幌市で道路陥没153件 23年度、下水道管破損など要因（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1131265/" },
-          { "title": "老朽化した下水道管 腐食や破損がないか調査（STVニュース北海道）", "url": "https://news.yahoo.co.jp/articles/a6469778318e193302498b225bf68b402d0893c8" }
+          {
+            "title": "札幌市で道路陥没153件 23年度、下水道管破損など要因（北海道新聞）",
+            "url": "https://www.hokkaido-np.co.jp/article/1131265/"
+          },
+          {
+            "title": "老朽化した下水道管 腐食や破損がないか調査（STVニュース北海道）",
+            "url": "https://news.yahoo.co.jp/articles/a6469778318e193302498b225bf68b402d0893c8"
+          }
         ]
       },
       {
         "q": "更新にはどれくらいお金がかかるの？ 料金値上げと関係あるの？",
         "a": "下水道の改築（更新）事業費は、プラン2015の約355億円からプラン2025で約810億円へ増え、老朽管の急増で今後さらに膨らむ見通し。市は約210km/年の管内調査で劣化を把握し、こまめな修繕で延命化することで標準更新に比べ約6割（年約120億円規模）に費用を抑える方針。それでも財源は不足するため、2026年10月の下水道料金 平均約23%の値上げ（約30年ぶり）でまかなう構図になっている。",
         "sources": [
-          { "title": "下水道の改築（札幌市）", "url": "https://www.city.sapporo.jp/gesui/01yakuwari/03_genkyo03.html" },
-          { "title": "受益者負担のあり方 資料（札幌市営企業調査審議会・下水道部会, 2025-03-14）", "url": "https://www.city.sapporo.jp/gesui/shingikai/documents/05_r6_bukai2_siryo4n.pdf" }
+          {
+            "title": "下水道の改築（札幌市）",
+            "url": "https://www.city.sapporo.jp/gesui/01yakuwari/03_genkyo03.html"
+          },
+          {
+            "title": "受益者負担のあり方 資料（札幌市営企業調査審議会・下水道部会, 2025-03-14）",
+            "url": "https://www.city.sapporo.jp/gesui/shingikai/documents/05_r6_bukai2_siryo4n.pdf"
+          }
         ]
       }
     ],
-    "related": ["infra-01", "finance-02"],
+    "related": [
+      "infra-01",
+      "finance-02"
+    ],
     "plans": [
-      { "title": "配水管更新事業（札幌市水道局）", "url": "https://www.city.sapporo.jp/suido/overview/shisetu/haisui/koushinnkeikaku.html" },
-      { "title": "下水道使用料改定のお知らせ（札幌市）", "url": "https://www.city.sapporo.jp/gesui/kaitei2026.html" }
+      {
+        "title": "配水管更新事業（札幌市水道局）",
+        "url": "https://www.city.sapporo.jp/suido/overview/shisetu/haisui/koushinnkeikaku.html"
+      },
+      {
+        "title": "下水道使用料改定のお知らせ（札幌市）",
+        "url": "https://www.city.sapporo.jp/gesui/kaitei2026.html"
+      }
     ],
     "sources": [
-      { "title": "札幌の下水道料金、26年10月に23%値上げ方針（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1229593/" },
-      { "title": "札幌市で道路陥没153件 23年度、下水道管破損など要因（北海道新聞）", "url": "https://www.hokkaido-np.co.jp/article/1131265/" },
-      { "title": "下水道の改築（札幌市）", "url": "https://www.city.sapporo.jp/gesui/01yakuwari/03_genkyo03.html" },
-      { "title": "受益者負担のあり方 資料（札幌市営企業調査審議会・下水道部会, 2025-03-14）", "url": "https://www.city.sapporo.jp/gesui/shingikai/documents/05_r6_bukai2_siryo4n.pdf" }
+      {
+        "title": "札幌の下水道料金、26年10月に23%値上げ方針（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1229593/"
+      },
+      {
+        "title": "札幌市で道路陥没153件 23年度、下水道管破損など要因（北海道新聞）",
+        "url": "https://www.hokkaido-np.co.jp/article/1131265/"
+      },
+      {
+        "title": "下水道の改築（札幌市）",
+        "url": "https://www.city.sapporo.jp/gesui/01yakuwari/03_genkyo03.html"
+      },
+      {
+        "title": "受益者負担のあり方 資料（札幌市営企業調査審議会・下水道部会, 2025-03-14）",
+        "url": "https://www.city.sapporo.jp/gesui/shingikai/documents/05_r6_bukai2_siryo4n.pdf"
+      }
     ]
   },
   {
@@ -1121,12 +1859,21 @@
     ],
     "team": "札幌市建設局（道路・橋梁）と各区土木センターが維持管理を担う。検討会には橋梁・土木の技術者、点検技術（ドローン・センサー）の専門家、財政部局を入れ、限られた予算での予防保全の優先順位を決める。",
     "aiNote": "AIの貢献度は中〜大。ドローン・カメラ画像のAI判定でひび割れや劣化を効率的に検出し、点検の省力化と精度向上に直結する。劣化予測で更新の優先順位を最適化でき、寒冷地特有の劣化パターンの学習も有効。",
-    "related": ["infra-01", "finance-01"],
+    "related": [
+      "infra-01",
+      "finance-01"
+    ],
     "plans": [
-      { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" }
+      {
+        "title": "公共施設等総合管理計画（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+      }
     ],
     "sources": [
-      { "title": "公共施設等総合管理計画（札幌市）", "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html" }
+      {
+        "title": "公共施設等総合管理計画（札幌市）",
+        "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
+      }
     ]
   },
   {
@@ -1149,9 +1896,17 @@
     ],
     "team": "札幌市経済観光局が企業誘致・雇用施策を担う。検討会には地元・進出企業の経営者、大学・専門学校のキャリア担当、若者・学生の当事者、労働経済の専門家を入れ、求められる雇用と教育のミスマッチを埋める。",
     "aiNote": "AIの貢献度は小〜中。求人・求職のマッチングや、リモートワーク・地方分散の流れを活かした働き方支援には役立つ。ただし高付加価値な雇用の創出は産業構造の問題で、AIは雇用の質向上を補助する程度にとどまる。",
-    "related": ["pop-03", "pop-04", "industry-02", "industry-03"],
+    "related": [
+      "pop-03",
+      "pop-04",
+      "industry-02",
+      "industry-03"
+    ],
     "sources": [
-      { "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）", "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php" }
+      {
+        "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）",
+        "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php"
+      }
     ]
   },
   {
@@ -1174,9 +1929,15 @@
     ],
     "team": "札幌市経済観光局と観光関連団体が中心。検討会には観光・宿泊・飲食の事業者、地域経済の専門家、文化・食・MICEの担い手、労働環境の代表を加え、量から質への転換と雇用の質向上を同時に議論する。",
     "aiNote": "AIの貢献度は中。需要予測による混雑分散・ダイナミックプライシング、多言語対応、データに基づく高付加価値な観光体験の設計に役立つ。産業の多角化そのものは投資と政策の問題で、AIは観光の高度化を支える。",
-    "related": ["industry-01", "industry-03"],
+    "related": [
+      "industry-01",
+      "industry-03"
+    ],
     "sources": [
-      { "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）", "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php" }
+      {
+        "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）",
+        "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php"
+      }
     ]
   },
   {
@@ -1189,11 +1950,26 @@
     "summary": "札幌の基幹産業に育ったIT産業も、人材の確保・育成が成長の鍵となる。",
     "background": "北海道大学発のベンチャーなどから「サッポロバレー」と呼ばれるIT集積が生まれ、IT関連産業の売上高は約4,230億円（令和元年度）に達する基幹産業となった。首都圏の人材難を背景に進出企業も増えるが、優秀な人材の確保・育成と、受託から自社プロダクトへの転換が課題となる。近年は千歳市へのRapidus（次世代半導体、道内最大級・約5兆円規模の投資、2027年量産目標）の進出を起点に、千歳〜札幌〜石狩〜苫小牧を先端産業の集積地にする『北海道バレー構想』が動き出し、札幌は設計・ソフトウェア・AI・人材育成の担い手と位置づけられる。石狩市には再生可能エネルギーを活用したデータセンターが集積しており、半導体・データセンター・ソフト人材をつなぐ広域連携が期待される。",
     "data": [
-      { "label": "市内IT関連産業の売上高（令和元年度）", "value": "約4,230億円" },
-      { "label": "IT等の立地件数（2022年度）", "value": "過去最多の17件（旧最多は2014年度の12件）" },
-      { "label": "Rapidus（千歳）", "value": "次世代半導体、道内最大級・約5兆円規模の投資。2025年試作・2027年量産を目標" },
-      { "label": "本社・IT誘致補助", "value": "ゼロカーボン推進ビルへの本社移転で年間賃料の10/10・上限1億円を2年補助 等（IT・コンテンツ・バイオ立地促進補助金ほか）" },
-      { "label": "AI人材育成", "value": "SAPPORO AI Labの勉強会受講者が累計1,000人超" }
+      {
+        "label": "市内IT関連産業の売上高（令和元年度）",
+        "value": "約4,230億円"
+      },
+      {
+        "label": "IT等の立地件数（2022年度）",
+        "value": "過去最多の17件（旧最多は2014年度の12件）"
+      },
+      {
+        "label": "Rapidus（千歳）",
+        "value": "次世代半導体、道内最大級・約5兆円規模の投資。2025年試作・2027年量産を目標"
+      },
+      {
+        "label": "本社・IT誘致補助",
+        "value": "ゼロカーボン推進ビルへの本社移転で年間賃料の10/10・上限1億円を2年補助 等（IT・コンテンツ・バイオ立地促進補助金ほか）"
+      },
+      {
+        "label": "AI人材育成",
+        "value": "SAPPORO AI Labの勉強会受講者が累計1,000人超"
+      }
     ],
     "facts": [
       "市内IT関連産業の売上高は約4,230億円（令和元年度）で、札幌の基幹産業となっている。",
@@ -1216,39 +1992,85 @@
         "q": "千歳のラピダス進出で、札幌のIT産業には何か準備があるの？",
         "a": "千歳〜札幌〜石狩〜苫小牧を先端産業の集積地にする『北海道バレー構想』が動き出し、札幌は半導体の設計・ソフトウェア・AI・人材育成の担い手と位置づけられている。北海道大学等の研究とIT企業群、SAPPORO AI Labやスタートアップ支援がその受け皿になる。ただし波及は始まったばかりで、製造の中心はあくまで千歳。札幌にどんな高付加価値の開発・設計拠点が根づくかはこれからで、半導体との人材の奪い合いという逆風もある。",
         "sources": [
-          { "title": "次世代半導体産業立地推進ポータル（北海道）", "url": "https://www.pref.hokkaido.lg.jp/kz/zhs/" },
-          { "title": "北海道の投資誘致力、ラピダスがけん引（日本経済新聞）", "url": "https://www.nikkei.com/article/DGXZQOFC073QB0X00C26A1000000/" }
+          {
+            "title": "次世代半導体産業立地推進ポータル（北海道）",
+            "url": "https://www.pref.hokkaido.lg.jp/kz/zhs/"
+          },
+          {
+            "title": "北海道の投資誘致力、ラピダスがけん引（日本経済新聞）",
+            "url": "https://www.nikkei.com/article/DGXZQOFC073QB0X00C26A1000000/"
+          }
         ]
       },
       {
         "q": "IT人材を呼び込むために、札幌はどんな支援やイベントをしているの？",
         "a": "企業向けには、IT・コンテンツ・バイオ立地促進補助金や本社機能移転補助（ゼロカーボン推進ビルで年間賃料の10/10・上限1億円を2年）で誘致を進めている。人材向けには、道外からの高度ITエンジニア採用経費の補助、『札幌市IT人材確保プログラム認定制度』、エレクトロニクスセンターの育成事業、そして No Maps や SAPPORO AI Lab（勉強会受講者累計1,000人超）といったイベント・コミュニティ支援で、確保・育成・定着を図っている。",
         "sources": [
-          { "title": "IT人材の確保育成に向けた取組（札幌市）", "url": "https://www.city.sapporo.jp/keizai/top/topics/it/it_kakuhoikusei.html" },
-          { "title": "優遇措置（SAPPORO企業進出総合ナビ）", "url": "https://www2.city.sapporo.jp/invest/subsidy/" },
-          { "title": "SAPPORO AI LAB", "url": "https://www.s-ail.org/" }
+          {
+            "title": "IT人材の確保育成に向けた取組（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/top/topics/it/it_kakuhoikusei.html"
+          },
+          {
+            "title": "優遇措置（SAPPORO企業進出総合ナビ）",
+            "url": "https://www2.city.sapporo.jp/invest/subsidy/"
+          },
+          {
+            "title": "SAPPORO AI LAB",
+            "url": "https://www.s-ail.org/"
+          }
         ]
       },
       {
         "q": "石狩のデータセンターと、札幌のIT産業は組み合わさるの？",
         "a": "石狩市には再生可能エネルギー100%をうたうデータセンターが集積し、寒冷な気候による冷却コストの低さと豊富な再エネが強み。これに札幌のソフト・AI人材、千歳の半導体を組み合わせれば、『設計〜製造〜データ処理』を道内で一体化できる可能性がある。ただしデータセンター自体は雇用規模が大きくなく、電力需要の増加という課題もあるため、札幌側の付加価値（人材・サービス・AI活用）とどう結ぶかが鍵になる。",
         "sources": [
-          { "title": "次世代をトリガーに世界に挑む北海道（北海道庁・広報）", "url": "https://kohoshi-hokkaido.com/2023/feature/2403/01/" },
-          { "title": "次世代半導体産業立地推進ポータル（北海道）", "url": "https://www.pref.hokkaido.lg.jp/kz/zhs/" }
+          {
+            "title": "次世代をトリガーに世界に挑む北海道（北海道庁・広報）",
+            "url": "https://kohoshi-hokkaido.com/2023/feature/2403/01/"
+          },
+          {
+            "title": "次世代半導体産業立地推進ポータル（北海道）",
+            "url": "https://www.pref.hokkaido.lg.jp/kz/zhs/"
+          }
         ]
       }
     ],
-    "related": ["industry-01", "finance-03", "energy-01"],
+    "related": [
+      "industry-01",
+      "finance-03",
+      "energy-01"
+    ],
     "plans": [
-      { "title": "IT人材の確保育成に向けた取組（札幌市）", "url": "https://www.city.sapporo.jp/keizai/top/topics/it/it_kakuhoikusei.html" },
-      { "title": "スタートアップ支援（札幌市）", "url": "https://www.city.sapporo.jp/keizai/it/scs_menu.html" },
-      { "title": "優遇措置・IT等立地促進補助（SAPPORO企業進出総合ナビ）", "url": "https://www2.city.sapporo.jp/invest/subsidy/" },
-      { "title": "次世代半導体産業立地推進ポータル（北海道）", "url": "https://www.pref.hokkaido.lg.jp/kz/zhs/" }
+      {
+        "title": "IT人材の確保育成に向けた取組（札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/top/topics/it/it_kakuhoikusei.html"
+      },
+      {
+        "title": "スタートアップ支援（札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/it/scs_menu.html"
+      },
+      {
+        "title": "優遇措置・IT等立地促進補助（SAPPORO企業進出総合ナビ）",
+        "url": "https://www2.city.sapporo.jp/invest/subsidy/"
+      },
+      {
+        "title": "次世代半導体産業立地推進ポータル（北海道）",
+        "url": "https://www.pref.hokkaido.lg.jp/kz/zhs/"
+      }
     ],
     "sources": [
-      { "title": "IT産業への支援（札幌市）", "url": "https://www.city.sapporo.jp/keizai/top/topics/it/itsangyo.html" },
-      { "title": "北海道の投資誘致力、ラピダスがけん引（日本経済新聞）", "url": "https://www.nikkei.com/article/DGXZQOFC073QB0X00C26A1000000/" },
-      { "title": "SAPPORO AI LAB", "url": "https://www.s-ail.org/" }
+      {
+        "title": "IT産業への支援（札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/top/topics/it/itsangyo.html"
+      },
+      {
+        "title": "北海道の投資誘致力、ラピダスがけん引（日本経済新聞）",
+        "url": "https://www.nikkei.com/article/DGXZQOFC073QB0X00C26A1000000/"
+      },
+      {
+        "title": "SAPPORO AI LAB",
+        "url": "https://www.s-ail.org/"
+      }
     ]
   },
   {
@@ -1259,30 +2081,148 @@
     "urgency": 1,
     "severity": 2,
     "timeframe": "10年以内",
-    "summary": "産業政策の指針。2023〜2032年度で重点5分野と横断戦略を定める計画材料。",
+    "summary": "産業政策の10年指針。観光・食・IT・クリエイティブ・健康福祉/医療の重点5分野と、スタートアップを軸にした横断戦略を定める。すでにSTARTUP CITY SAPPORO・札幌AI道場など多くの事業が動いている。",
     "background": "第2次札幌市産業振興ビジョンは令和5年度（2023年度）から令和14年度（2032年度）の10年間が対象で、施策編は2023〜2027年度の5年間。重点分野として「観光」「食」「IT」「クリエイティブ」「健康福祉・医療」を位置づけ、横断的戦略として「持続可能な札幌経済の構築」を掲げる。産業・雇用に関する課題の多くがこの枠組みに連なる。",
     "data": [
-      { "label": "対象期間", "value": "2023〜2032年度（施策編は2023〜2027年度）" },
-      { "label": "重点5分野", "value": "観光／食／IT／クリエイティブ／健康福祉・医療" },
-      { "label": "横断戦略", "value": "持続可能な札幌経済の構築" }
+      {
+        "label": "対象期間",
+        "value": "2023〜2032年度（施策編は2023〜2027年度）"
+      },
+      {
+        "label": "重点5分野",
+        "value": "観光／食／IT／クリエイティブ／健康福祉・医療"
+      },
+      {
+        "label": "リーディングプロジェクト",
+        "value": "「観光」「食」と、横断的な担い手としての「スタートアップ」"
+      },
+      {
+        "label": "スタートアップ資金調達",
+        "value": "道内 2019年度 約1.6億円 → 2022年度 約83億円"
+      },
+      {
+        "label": "IT・コンテンツ等の立地補助",
+        "value": "2022年度 17件（過去最多）"
+      },
+      {
+        "label": "札幌AI道場の育成",
+        "value": "2022年8月開始、延べ1,000人超が参加"
+      }
     ],
     "facts": [
-      "第2次札幌市産業振興ビジョンは2023〜2032年度を対象とし、重点分野に観光・食・IT・クリエイティブ・健康福祉/医療を据えている。",
-      "横断的戦略として「持続可能な札幌経済の構築」を掲げている。"
+      "第2次札幌市産業振興ビジョンは2023〜2032年度を対象とし、重点分野に観光・食・IT・クリエイティブ・健康福祉/医療を据え、横断戦略として「持続可能な札幌経済の構築」を掲げている。",
+      "「観光」「食」と、イノベーションの担い手となる「スタートアップ」をリーディングプロジェクトに位置づけている。",
+      "スタートアップ分野では、札幌市が2019年に開始した「STARTUP CITY SAPPORO」を基盤に、2023年に札幌市・北海道・北海道経済産業局による「STARTUP HOKKAIDO実行委員会」を設立し、オール北海道の支援体制を整えた。",
+      "「J-Startup HOKKAIDO」（有望スタートアップの選定・集中支援）、「Local Innovation Challenge HOKKAIDO」（5年で40件超の実証を採択）など、具体的な支援プログラムが進行している。",
+      "IT・AI分野では、さっぽろ産業振興財団が事務局を担う「SAPPORO AI LAB」のもと、課題解決型の人材育成「札幌AI道場」（2022年8月開始、延べ1,000人超）やE資格チャレンジ、JDLAと共催の「Sapporo AI Connect」などを実施している。",
+      "補助制度として、デジタル・イノベーション創出補助金、展示会出展支援補助金、IT・コンテンツ・バイオ立地促進補助金などが運用され、IT・コンテンツ等の立地補助は2022年度に17件で過去最多となった。",
+      "クリエイティブ分野ではデザイン経営の体験プログラムや映像制作・人材育成、創造性を扱うイベント「No Maps」との連携が、健康福祉・医療分野では「サッポロ・ヘルスケアビジネス・サポートプログラム」やMICE誘致が動いている。"
     ],
-    "interpretation": "若者の流出・観光依存・IT人材といった産業課題は、このビジョンの重点分野・横断戦略の中で扱われる。課題地図は、ビジョンの進捗を補完的に点検する材料になる。",
+    "interpretation": "若者の流出・観光依存・IT人材といった個別の産業課題は、このビジョンの重点分野・横断戦略の中で扱われる。すでに数多くの事業が走っており、課題地図は『計画が掲げた目標』と『実際に動いている事業の成果』を突き合わせて点検する材料になる。とくにスタートアップ資金調達が3年で約1.6億円から約83億円へ伸びたように、定量的な変化が現れ始めた分野もある。",
     "proposals": [
       "重点分野ごとのKPIと、雇用の質（正規化・賃金）の指標を結びつけて点検する。",
-      "観光偏重を是正する産業多角化の進捗を管理する。"
+      "観光偏重を是正する産業多角化の進捗を、立地補助件数・資金調達額・新規創業数などの実績で管理する。",
+      "STARTUP CITY SAPPORO／AI道場など既存事業の成果を一覧化し、ビジョンの重点分野との対応づけを継続的に公開する。"
     ],
     "team": "札幌市経済観光局が策定・推進を担う。経済界、重点分野の事業者、有識者、スタートアップ・大学と連携して進める。",
-    "aiNote": "AIの貢献度は中。産業統計・求人データの分析で重点分野の成長や雇用の質をモニタリングできる。さらにAI自体が重点分野（IT・クリエイティブ）の成長ドライバにもなりうる。",
-    "related": ["industry-01", "industry-02", "industry-03", "pop-04"],
+    "aiNote": "AIの貢献度は中。産業統計・求人データの分析で重点分野の成長や雇用の質をモニタリングできるほか、本ページの『推定で紐づけた事業』のように、計画文書と実際の事業群を突き合わせて対応関係を可視化する作業もAIが補助しやすい。さらにAI自体が重点分野（IT・クリエイティブ）の成長ドライバにもなりうる。",
+    "related": [
+      "industry-01",
+      "industry-02",
+      "industry-03",
+      "pop-04"
+    ],
     "plans": [
-      { "title": "第2次札幌市産業振興ビジョン（札幌市）", "url": "https://www.city.sapporo.jp/keizai/top/keikaku/2ndvision.html" }
+      {
+        "title": "第2次札幌市産業振興ビジョン（札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/top/keikaku/2ndvision.html"
+      },
+      {
+        "title": "STARTUP HOKKAIDO（札幌市スタートアップ支援）",
+        "url": "https://www.city.sapporo.jp/keizai/it/scs_menu.html"
+      },
+      {
+        "title": "SAPPORO AI LAB（札幌AIラボ）",
+        "url": "https://www.s-ail.org/"
+      }
     ],
     "sources": [
-      { "title": "第2次札幌市産業振興ビジョン（令和5〜14年度／札幌市）", "url": "https://www.city.sapporo.jp/keizai/top/keikaku/2ndvision.html" }
+      {
+        "title": "第2次札幌市産業振興ビジョン（令和5〜14年度／札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/top/keikaku/2ndvision.html"
+      },
+      {
+        "title": "STARTUP HOKKAIDOプロジェクト（札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/it/startup/project.html"
+      },
+      {
+        "title": "IT産業への支援（札幌市）",
+        "url": "https://www.city.sapporo.jp/keizai/top/topics/it/itsangyo.html"
+      },
+      {
+        "title": "SAPPORO AI LAB（札幌AIラボ）",
+        "url": "https://www.s-ail.org/"
+      },
+      {
+        "title": "北海道・札幌市・北海道経済産業局がSTARTUP HOKKAIDOを設立（PR TIMES）",
+        "url": "https://prtimes.jp/main/html/rd/p/000000001.000128637.html"
+      }
+    ],
+    "deepDive": [
+      {
+        "q": "ビジョンの重点分野で、実際に動いている事業は？",
+        "a": "スタートアップでは、2019年開始の「STARTUP CITY SAPPORO」を土台に、2023年設立の「STARTUP HOKKAIDO実行委員会」（札幌市・北海道・北海道経済産業局）が司令塔となり、「J-Startup HOKKAIDO」や5年で40件超を採択した「Local Innovation Challenge HOKKAIDO」が進む。IT・AIでは、さっぽろ産業振興財団が事務局の「SAPPORO AI LAB」を中心に「札幌AI道場」（延べ1,000人超）やE資格チャレンジ、JDLA共催の「Sapporo AI Connect」を実施。クリエイティブは「No Maps」やデザイン経営・映像人材育成、健康福祉・医療は「サッポロ・ヘルスケアビジネス・サポートプログラム」、観光・食はMICE誘致や食関連支援が動いている。",
+        "sources": [
+          {
+            "title": "STARTUP HOKKAIDOプロジェクト（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/it/startup/project.html"
+          },
+          {
+            "title": "スタートアップ支援メニュー（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/it/scs_menu.html"
+          },
+          {
+            "title": "IT産業への支援（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/top/topics/it/itsangyo.html"
+          },
+          {
+            "title": "SAPPORO AI LAB（札幌AIラボ）",
+            "url": "https://www.s-ail.org/"
+          }
+        ]
+      },
+      {
+        "q": "成果は数字で見えている？",
+        "a": "道内スタートアップの資金調達額は2019年度の約1.6億円から2022年度には約83億円へと大きく伸び、農業・宇宙・AIなど多様な分野に資金が集まり始めた。IT・コンテンツ・バイオの立地補助は2022年度に17件で過去最多。札幌AI道場は2022年8月の開始以来、延べ1,000人超の人材育成と、協業・起業の創出につながっている。いずれも札幌市・北海道・財団・経産局などが連携した成果で、ビジョンの重点分野が実体を伴いつつあることを示す。",
+        "sources": [
+          {
+            "title": "北海道・札幌市・北海道経済産業局がSTARTUP HOKKAIDOを設立（PR TIMES）",
+            "url": "https://prtimes.jp/main/html/rd/p/000000001.000128637.html"
+          },
+          {
+            "title": "札幌AI道場（SAPPORO AI LAB）",
+            "url": "https://www.s-ail.org/ai-dojo/"
+          }
+        ]
+      },
+      {
+        "q": "このビジョンから生まれた、札幌市が関与・後援している事業には何がある？（推定を含む）",
+        "a": "以下は、ビジョンの重点分野・横断戦略と連動して走る取組を、AIが推定的に紐づけたものです（各事業の予算根拠を一件ずつ照合したものではありません）。スタートアップ＝STARTUP CITY SAPPORO、STARTUP HOKKAIDO、J-Startup HOKKAIDO、Local Innovation Challenge HOKKAIDO、運営パートナーのD2Garage。IT・クリエイティブ＝SAPPORO AI LAB／札幌AI道場、Sapporo AI Connect、No Maps、各種立地・開発補助金、札幌市IoTイノベーション推進コンソーシアム。健康福祉・医療＝サッポロ・ヘルスケアビジネス・サポートプログラム。観光・食＝MICE誘致・支援制度や食関連産業支援。これらは札幌市が主催・共催・後援・補助のいずれかで関与しており、ビジョンが掲げる『重点5分野＋スタートアップ横断戦略』の実装層にあたると考えられる。",
+        "sources": [
+          {
+            "title": "札幌市イノベーション推進コンソーシアム（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/top/topics/it/consortium.html"
+          },
+          {
+            "title": "令和6年度 企業支援ガイドブック（札幌市経済観光局）",
+            "url": "https://www.sapporo-cci.or.jp/web/purpose/04/files/521f8720eedd6f7437ce5a87683e6781094c4274.pdf"
+          },
+          {
+            "title": "第2次札幌市産業振興ビジョン（札幌市）",
+            "url": "https://www.city.sapporo.jp/keizai/top/keikaku/2ndvision.html"
+          }
+        ]
+      }
     ]
   },
   {
@@ -1295,8 +2235,14 @@
     "summary": "2050年実質ゼロに向け、都市のエネルギー構造を作り替える必要がある。",
     "background": "寒冷地で暖房需要が大きい札幌は脱炭素のハードルが高い反面、達成できれば寒冷地都市のモデルになりうる。都心の建替えピークと重なる今が、都市構造を脱炭素型に変える数少ない機会である。",
     "data": [
-      { "label": "ゼロカーボンシティ宣言", "value": "2020年2月（2050年実質ゼロ目標）" },
-      { "label": "国の脱炭素先行地域", "value": "選定済み" }
+      {
+        "label": "ゼロカーボンシティ宣言",
+        "value": "2020年2月（2050年実質ゼロ目標）"
+      },
+      {
+        "label": "国の脱炭素先行地域",
+        "value": "選定済み"
+      }
     ],
     "facts": [
       "札幌市は2020年2月にゼロカーボンシティを宣言し、2050年の温室効果ガス実質ゼロを目指している。",
@@ -1309,13 +2255,25 @@
     ],
     "team": "札幌市環境局が脱炭素施策を担う。検討会にはエネルギー・建築環境の専門家、電力・ガス・熱供給の事業者、デベロッパー、市民・事業者の代表を入れ、目標と実装、コスト負担の合意を一体で進める必要がある。",
     "aiNote": "AIの貢献度は中。建物・地域のエネルギー需給の最適制御、再エネの出力予測と需給調整（デマンドレスポンス）、脱炭素シナリオの分析に役立つ。技術導入と投資が本筋で、AIは運用効率と計画精度を高める役割。",
-    "related": ["city-01", "energy-04"],
+    "related": [
+      "city-01",
+      "energy-04"
+    ],
     "plans": [
-      { "title": "札幌市ゼロカーボンシティ宣言（札幌市）", "url": "https://www.city.sapporo.jp/kankyo/ondanka/zero_carbon/index.html" },
-      { "title": "脱炭素先行地域づくり事業（札幌市）", "url": "https://www.city.sapporo.jp/kankyo/ondanka/sennkouchiiki/index.html" }
+      {
+        "title": "札幌市ゼロカーボンシティ宣言（札幌市）",
+        "url": "https://www.city.sapporo.jp/kankyo/ondanka/zero_carbon/index.html"
+      },
+      {
+        "title": "脱炭素先行地域づくり事業（札幌市）",
+        "url": "https://www.city.sapporo.jp/kankyo/ondanka/sennkouchiiki/index.html"
+      }
     ],
     "sources": [
-      { "title": "札幌市ゼロカーボンシティ宣言（札幌市）", "url": "https://www.city.sapporo.jp/kankyo/ondanka/zero_carbon/index.html" }
+      {
+        "title": "札幌市ゼロカーボンシティ宣言（札幌市）",
+        "url": "https://www.city.sapporo.jp/kankyo/ondanka/zero_carbon/index.html"
+      }
     ]
   },
   {
@@ -1328,8 +2286,14 @@
     "summary": "全道停電を経験した札幌は、電力供給の脆弱さへの備えが問われる。",
     "background": "2018年の胆振東部地震では、特定の大規模電源への依存が引き金となり北海道全域が停電（ブラックアウト）した。寒冷地の札幌で冬季に長時間停電すれば暖房が止まり、生命に関わる。電源の分散と非常時のエネルギー確保が重い課題となる。",
     "data": [
-      { "label": "胆振東部地震", "value": "2018年9月6日" },
-      { "label": "ブラックアウトの停電戸数", "value": "道内約295万戸" }
+      {
+        "label": "胆振東部地震",
+        "value": "2018年9月6日"
+      },
+      {
+        "label": "ブラックアウトの停電戸数",
+        "value": "道内約295万戸"
+      }
     ],
     "facts": [
       "2018年の北海道胆振東部地震では、地震直後に道内全域の約295万戸が停電するブラックアウトが発生した。",
@@ -1342,12 +2306,21 @@
     ],
     "team": "札幌市危機管理局と環境・エネルギー部局、電力事業者が連携する。検討会には電力系統・防災の専門家、医療・福祉施設の代表、避難所運営に関わる地域住民を入れ、停電時の暖房と電源確保を具体的に設計する。",
     "aiNote": "AIの貢献度は中。電力需給の予測と分散電源・蓄電の最適制御、停電時の優先供給の判断支援に役立つ。再エネ変動の調整にも有効だが、電源の分散・蓄電設備の整備という物理的投資が前提となる。",
-    "related": ["energy-03", "energy-01"],
+    "related": [
+      "energy-03",
+      "energy-01"
+    ],
     "plans": [
-      { "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）", "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf" }
+      {
+        "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf"
+      }
     ],
     "sources": [
-      { "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）", "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf" }
+      {
+        "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf"
+      }
     ]
   },
   {
@@ -1360,9 +2333,18 @@
     "summary": "盛土造成地の液状化に加え、手稲山地区の地すべりなど、地盤災害への備えが問われる。",
     "background": "胆振東部地震では、谷を火山灰質の土で埋めた盛土造成地である清田区里塚などで液状化が起き、住宅が大きく損壊した。市街地拡大の過程で造成された地盤の弱い区域が市内各地にあり、地盤リスクの把握と対策が課題となる。さらに、手稲山の一部では大規模な地すべり地形が確認され、地すべり防止区域・土砂災害警戒区域に指定されている。住宅や公共施設に加え、札樽自動車道・国道5号・JR函館本線といった重要交通網への影響が懸念され、国・北海道・市が連携して未然防止の対策を進めている。",
     "data": [
-      { "label": "手稲山地区の地すべり", "value": "大規模な地すべり地形を確認。地すべり防止区域・土砂災害警戒区域に指定（現時点で大きな被害は未発生）" },
-      { "label": "国の直轄事業化", "value": "2026年（令和8）4月から国（北海道開発局）が実施する地すべり対策事業に" },
-      { "label": "影響しうる重要インフラ", "value": "札樽自動車道・国道5号・JR函館本線、周辺の住宅・公共施設" }
+      {
+        "label": "手稲山地区の地すべり",
+        "value": "大規模な地すべり地形を確認。地すべり防止区域・土砂災害警戒区域に指定（現時点で大きな被害は未発生）"
+      },
+      {
+        "label": "国の直轄事業化",
+        "value": "2026年（令和8）4月から国（北海道開発局）が実施する地すべり対策事業に"
+      },
+      {
+        "label": "影響しうる重要インフラ",
+        "value": "札樽自動車道・国道5号・JR函館本線、周辺の住宅・公共施設"
+      }
     ],
     "facts": [
       "胆振東部地震では、清田区里塚など盛土造成地で液状化が発生し、多数の住宅が損壊した。",
@@ -1384,28 +2366,58 @@
         "q": "手稲山の地すべりって、どれくらい危ないの？",
         "a": "手稲山の一部で大規模な地すべり地形が確認され、地すべり防止区域・土砂災害警戒区域に指定されている。今のところ大きな被害は出ていないが、動き出せば周辺の住宅や公共施設、札樽自動車道・国道5号・JR函館本線といった重要交通網に影響しうるため、未然防止の対策が進められている。市道の亀裂箇所はライブカメラで常時監視・配信されている。",
         "sources": [
-          { "title": "手稲山地区地すべり対策について（札幌市）", "url": "https://www.city.sapporo.jp/kikikanri/torikumi/oshirase/teine_landslide.html" },
-          { "title": "手稲山地区地すべり対策（札幌開発建設部）", "url": "https://www.hkd.mlit.go.jp/sp/kasen_keikaku/nk4vg60000001w6m.html" }
+          {
+            "title": "手稲山地区地すべり対策について（札幌市）",
+            "url": "https://www.city.sapporo.jp/kikikanri/torikumi/oshirase/teine_landslide.html"
+          },
+          {
+            "title": "手稲山地区地すべり対策（札幌開発建設部）",
+            "url": "https://www.hkd.mlit.go.jp/sp/kasen_keikaku/nk4vg60000001w6m.html"
+          }
         ]
       },
       {
         "q": "対策は誰が、どうやって進めるの？ 費用は？",
         "a": "規模が大きく広域に影響しうるため、2026年（令和8）4月から国（北海道開発局）の直轄地すべり対策事業として実施される。工法は、地下水を抜く抑制工（集水井・横ボーリング・集水トンネル）や、杭で支える抑止工（深礎杭）に加え、危険な場所の住宅の集団移転も選択肢で、複数案を比較中（札樽自動車道の移転は困難とされる）。総事業費は計画段階評価の途中で、現時点で確定額は公表されていない。",
         "sources": [
-          { "title": "手稲山地区の地すべり対策について（北海道・計画段階評価資料 2025-07-24）", "url": "https://www.pref.hokkaido.lg.jp/fs/1/2/9/8/1/3/6/7/_/kyokushiryou1.pdf" },
-          { "title": "手稲山地区の地すべり対策（北海道 空知総合振興局 札幌建設管理部）", "url": "https://www.sorachi.pref.hokkaido.lg.jp/kk/skk/a0006/b0005.html" }
+          {
+            "title": "手稲山地区の地すべり対策について（北海道・計画段階評価資料 2025-07-24）",
+            "url": "https://www.pref.hokkaido.lg.jp/fs/1/2/9/8/1/3/6/7/_/kyokushiryou1.pdf"
+          },
+          {
+            "title": "手稲山地区の地すべり対策（北海道 空知総合振興局 札幌建設管理部）",
+            "url": "https://www.sorachi.pref.hokkaido.lg.jp/kk/skk/a0006/b0005.html"
+          }
         ]
       }
     ],
-    "related": ["energy-02", "infra-03"],
+    "related": [
+      "energy-02",
+      "infra-03"
+    ],
     "plans": [
-      { "title": "手稲山地区地すべり対策について（札幌市）", "url": "https://www.city.sapporo.jp/kikikanri/torikumi/oshirase/teine_landslide.html" }
+      {
+        "title": "手稲山地区地すべり対策について（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikikanri/torikumi/oshirase/teine_landslide.html"
+      }
     ],
     "sources": [
-      { "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）", "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf" },
-      { "title": "手稲山地区地すべり対策について（札幌市）", "url": "https://www.city.sapporo.jp/kikikanri/torikumi/oshirase/teine_landslide.html" },
-      { "title": "手稲山地区地すべり対策（札幌開発建設部）", "url": "https://www.hkd.mlit.go.jp/sp/kasen_keikaku/nk4vg60000001w6m.html" },
-      { "title": "手稲山地区の地すべり対策について（北海道・計画段階評価資料）", "url": "https://www.pref.hokkaido.lg.jp/fs/1/2/9/8/1/3/6/7/_/kyokushiryou1.pdf" }
+      {
+        "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf"
+      },
+      {
+        "title": "手稲山地区地すべり対策について（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikikanri/torikumi/oshirase/teine_landslide.html"
+      },
+      {
+        "title": "手稲山地区地すべり対策（札幌開発建設部）",
+        "url": "https://www.hkd.mlit.go.jp/sp/kasen_keikaku/nk4vg60000001w6m.html"
+      },
+      {
+        "title": "手稲山地区の地すべり対策について（北海道・計画段階評価資料）",
+        "url": "https://www.pref.hokkaido.lg.jp/fs/1/2/9/8/1/3/6/7/_/kyokushiryou1.pdf"
+      }
     ]
   },
   {
@@ -1428,12 +2440,22 @@
     ],
     "team": "札幌市環境局・まちづくり政策局が連携する。検討会には熱供給・断熱建築の専門家、熱供給事業者、デベロッパー、住宅所有者の代表を入れ、建替え・改修の機会に合わせた熱の脱炭素と費用負担を設計する。",
     "aiNote": "AIの貢献度は中。地域熱供給の需給最適制御、建物ごとの省エネ診断と断熱改修の効果予測、面的エネルギー利用の設計支援に役立つ。導入の主役は建築・設備投資で、AIは運用効率と計画の最適化を担う。",
-    "related": ["energy-01", "city-01", "snow-04"],
+    "related": [
+      "energy-01",
+      "city-01",
+      "snow-04"
+    ],
     "plans": [
-      { "title": "都心エネルギーアクションプラン 後半期間編（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf" }
+      {
+        "title": "都心エネルギーアクションプラン 後半期間編（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf"
+      }
     ],
     "sources": [
-      { "title": "都心エネルギーアクションプラン 後半期間編（札幌市）", "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf" }
+      {
+        "title": "都心エネルギーアクションプラン 後半期間編（札幌市）",
+        "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf"
+      }
     ]
   },
   {
@@ -1446,8 +2468,14 @@
     "summary": "市街地・郊外でのヒグマ出没が増え、安全確保とすみ分けが課題となる。",
     "background": "札幌では市街地やその周辺でヒグマの出没が増えている。市域の多くが森林に接し、郊外の住宅地が森と隣り合うため、人とヒグマの生活圏が重なりやすい。市は2023年3月に『さっぽろヒグマ基本計画2023』を策定し、『人は街で、ヒグマは森で』というすみ分けを掲げている。",
     "data": [
-      { "label": "計画", "value": "さっぽろヒグマ基本計画2023（2023年3月策定）" },
-      { "label": "基本方針", "value": "すみ分けによる安全・安心（人は街で、ヒグマは森で）" }
+      {
+        "label": "計画",
+        "value": "さっぽろヒグマ基本計画2023（2023年3月策定）"
+      },
+      {
+        "label": "基本方針",
+        "value": "すみ分けによる安全・安心（人は街で、ヒグマは森で）"
+      }
     ],
     "facts": [
       "札幌市では近年、市街地やその周辺でのヒグマの出没が増加している。",
@@ -1461,13 +2489,24 @@
     ],
     "team": "札幌市環境局が札幌市ヒグマ対策委員会を組織している。検討会にはヒグマ生態の研究者（北海道立総合研究機構等）、猟友会、警察、緩衝帯・森林管理の担当、出没地域の住民を入れ、駆除と予防、共生を総合的に扱う。",
     "aiNote": "AIの貢献度は中〜大。カメラ・センサーによる出没のリアルタイム検知と通知、出没予測（餌・季節・地形の分析）、ドローン監視で、駆除に頼らない予防型の対応を強化できる。市民への迅速な注意喚起にも有効。",
-    "related": ["city-02"],
+    "related": [
+      "city-02"
+    ],
     "plans": [
-      { "title": "さっぽろヒグマ基本計画2023（札幌市）", "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/housin/index.html" }
+      {
+        "title": "さっぽろヒグマ基本計画2023（札幌市）",
+        "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/housin/index.html"
+      }
     ],
     "sources": [
-      { "title": "ヒグマ対策（札幌市）", "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/index.html" },
-      { "title": "さっぽろヒグマ基本計画2023 概要版（札幌市）", "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/housin/documents/2higumakeikaku2023_gaiyou.pdf" }
+      {
+        "title": "ヒグマ対策（札幌市）",
+        "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/index.html"
+      },
+      {
+        "title": "さっぽろヒグマ基本計画2023 概要版（札幌市）",
+        "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/housin/documents/2higumakeikaku2023_gaiyou.pdf"
+      }
     ]
   }
 ]
