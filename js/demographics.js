@@ -61,18 +61,22 @@
 
   // 単純な縦棒グラフ（カテゴリ比較）
   function simpleBar(cols, opts) {
-    const { max, ticks, fmt, valFmt } = opts;
+    const { max, ticks, fmt, valFmt, bw = 46, valSize = 9.5, labSize = 9.5, refLine } = opts;
     let s = svgOpen() + gridY(ticks, 0, max, fmt);
-    const bw = 46;
     const slot = (X1 - X0) / cols.length;
     cols.forEach((col, ci) => {
       const cx = X0 + slot * (ci + 0.5);
       const h = col.val / max * (Y1 - Y0);
       const yTop = Y1 - h;
       s += `<rect x="${(cx - bw / 2).toFixed(1)}" y="${yTop.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" fill="${col.color}"/>`;
-      s += `<text x="${cx.toFixed(1)}" y="${(yTop - 6).toFixed(1)}" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--color-text)">${valFmt(col.val)}</text>`;
-      s += `<text x="${cx.toFixed(1)}" y="${H - 10}" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--color-text)">${esc(col.label)}</text>`;
+      s += `<text x="${cx.toFixed(1)}" y="${(yTop - 5).toFixed(1)}" text-anchor="middle" font-size="${valSize}" font-weight="600" fill="var(--color-text)">${valFmt(col.val)}</text>`;
+      s += `<text x="${cx.toFixed(1)}" y="${H - 10}" text-anchor="middle" font-size="${labSize}" font-weight="600" fill="var(--color-text)">${esc(col.label)}</text>`;
     });
+    if (refLine) {
+      const y = Y1 - refLine.val / max * (Y1 - Y0);
+      s += `<line x1="${X0}" y1="${y.toFixed(1)}" x2="${X1}" y2="${y.toFixed(1)}" stroke="var(--color-text)" stroke-width="1" stroke-dasharray="4 3"/>`;
+      s += `<text x="${X1}" y="${(y - 4).toFixed(1)}" text-anchor="end" font-size="8.5" fill="var(--color-text)">${esc(refLine.label)}</text>`;
+    }
     return s + "</svg>";
   }
 
@@ -130,12 +134,18 @@
       { ymin: 0, ymax: 3.5, ticks: [1, 2, 3], fmt: v => v + "人", valFmt: v => v.toFixed(1) + "人", color: "#8e44ad" }
     ) + '<p class="chart-note">65歳以上1人を支える20〜64歳の人数。2040年はほぼ「1人が1人を支える」肩車型へ。</p>';
 
-    // 6. 区別の高齢化率の格差（2023年10月1日）
-    const wardGap = simpleBar(
-      [{ label: "中央区", val: 24.6, color: "#1a5fb4" },
-       { label: "南区", val: 36.2, color: "#c0392b" }],
-      { max: 45, ticks: [0, 15, 30, 45], fmt: v => v + "%", valFmt: v => v + "%" }
-    ) + '<p class="chart-note">最も低い中央区と最も高い南区で11.6ポイント差。まちづくりセンター区域単位では最大42.5ポイントの差がある。</p>';
+    // 6. 区別の高齢化率の格差（10区・令和2年国勢調査）
+    const wardColor = v => v >= 30 ? "#c0392b" : (v < 26 ? "#1a5fb4" : "var(--color-accent)");
+    const wardData = [
+      { label: "南", val: 35.9 }, { label: "厚別", val: 32.7 }, { label: "手稲", val: 31.8 },
+      { label: "清田", val: 30.6 }, { label: "西", val: 28.2 }, { label: "北", val: 27.1 },
+      { label: "東", val: 26.3 }, { label: "豊平", val: 25.6 }, { label: "白石", val: 25.2 },
+      { label: "中央", val: 23.8 },
+    ].map(w => ({ ...w, color: wardColor(w.val) }));
+    const wardGap = simpleBar(wardData,
+      { max: 40, ticks: [0, 20, 40], fmt: v => v + "%", valFmt: v => v.toFixed(1),
+        bw: 20, valSize: 7.5, labSize: 8, refLine: { val: 27.8, label: "全市 27.8%" } }
+    ) + '<p class="chart-note">最も高い南区（35.9%）と最も低い中央区（23.8%）で12.1ポイント差。区名は「区」を省略（数値は%）。さらにまちづくりセンター区域単位では最大42.5ポイントの差がある。</p>';
 
     wrap.innerHTML =
       card("高齢化率の見通し", "65歳以上人口の割合", aging,
@@ -148,8 +158,8 @@
         '<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">札幌市高齢者支援計画2024</a>') +
       card("高齢者1人を支える現役世代", "胴上げ型 → 騎馬戦型 → 肩車型", support,
         '<a href="https://www.city.sapporo.jp/kikaku/miraisousei/1st/documents/plan-3.pdf" target="_blank" rel="noopener">札幌市人口ビジョン</a>／<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">高齢者支援計画2024</a>') +
-      card("同じ札幌でも違う高齢化", "区別の高齢化率（2023年）", wardGap,
-        '<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">札幌市高齢者支援計画2024</a>');
+      card("同じ札幌でも違う高齢化", "10区別の高齢化率（令和2年国勢調査）", wardGap,
+        '<a href="https://www.city.sapporo.jp/toukei/tokusyu/documents/koureisyar5.pdf" target="_blank" rel="noopener">統計からみた札幌市の高齢者（令和5年9月）</a>');
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", render);
