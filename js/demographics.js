@@ -59,6 +59,23 @@
     return s + "</svg>";
   }
 
+  // 単純な縦棒グラフ（カテゴリ比較）
+  function simpleBar(cols, opts) {
+    const { max, ticks, fmt, valFmt } = opts;
+    let s = svgOpen() + gridY(ticks, 0, max, fmt);
+    const bw = 46;
+    const slot = (X1 - X0) / cols.length;
+    cols.forEach((col, ci) => {
+      const cx = X0 + slot * (ci + 0.5);
+      const h = col.val / max * (Y1 - Y0);
+      const yTop = Y1 - h;
+      s += `<rect x="${(cx - bw / 2).toFixed(1)}" y="${yTop.toFixed(1)}" width="${bw}" height="${h.toFixed(1)}" fill="${col.color}"/>`;
+      s += `<text x="${cx.toFixed(1)}" y="${(yTop - 6).toFixed(1)}" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--color-text)">${valFmt(col.val)}</text>`;
+      s += `<text x="${cx.toFixed(1)}" y="${H - 10}" text-anchor="middle" font-size="9.5" font-weight="600" fill="var(--color-text)">${esc(col.label)}</text>`;
+    });
+    return s + "</svg>";
+  }
+
   function legend(items) {
     return '<div class="chart-legend">' + items.map(i =>
       `<span class="lg"><span class="sw" style="background:${i.color}"></span>${esc(i.name)}</span>`).join("") + "</div>";
@@ -107,6 +124,19 @@
         <div class="stat-sub">高齢夫婦のみ世帯も2020年で11.4%（約11.1万世帯）</div>
       </div>`;
 
+    // 5. 高齢者1人を支える現役世代（胴上げ→騎馬戦→肩車）
+    const support = lineChart(
+      [{ x: "2010", y: 3.1 }, { x: "2020", y: 2.2 }, { x: "2040", y: 1.3 }],
+      { ymin: 0, ymax: 3.5, ticks: [1, 2, 3], fmt: v => v + "人", valFmt: v => v.toFixed(1) + "人", color: "#8e44ad" }
+    ) + '<p class="chart-note">65歳以上1人を支える20〜64歳の人数。2040年はほぼ「1人が1人を支える」肩車型へ。</p>';
+
+    // 6. 区別の高齢化率の格差（2023年10月1日）
+    const wardGap = simpleBar(
+      [{ label: "中央区", val: 24.6, color: "#1a5fb4" },
+       { label: "南区", val: 36.2, color: "#c0392b" }],
+      { max: 45, ticks: [0, 15, 30, 45], fmt: v => v + "%", valFmt: v => v + "%" }
+    ) + '<p class="chart-note">最も低い中央区と最も高い南区で11.6ポイント差。まちづくりセンター区域単位では最大42.5ポイントの差がある。</p>';
+
     wrap.innerHTML =
       card("高齢化率の見通し", "65歳以上人口の割合", aging,
         '<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">札幌市高齢者支援計画2024</a>') +
@@ -115,6 +145,10 @@
       card("合計特殊出生率", "2023年は0.96で過去最低", birth,
         '<a href="https://www.city.sapporo.jp/kikaku/miraisousei/2nd/documents/miraisousei2nd_04.pdf" target="_blank" rel="noopener">札幌市人口ビジョン</a>／市公表値') +
       card("ひとり暮らし高齢者の増加", "高齢単身世帯の割合", solo,
+        '<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">札幌市高齢者支援計画2024</a>') +
+      card("高齢者1人を支える現役世代", "胴上げ型 → 騎馬戦型 → 肩車型", support,
+        '<a href="https://www.city.sapporo.jp/kikaku/miraisousei/1st/documents/plan-3.pdf" target="_blank" rel="noopener">札幌市人口ビジョン</a>／<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">高齢者支援計画2024</a>') +
+      card("同じ札幌でも違う高齢化", "区別の高齢化率（2023年）", wardGap,
         '<a href="https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf" target="_blank" rel="noopener">札幌市高齢者支援計画2024</a>');
   }
 
