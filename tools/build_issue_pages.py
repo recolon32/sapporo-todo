@@ -180,12 +180,12 @@ def page_html(it, cat_name, by_id, has_image):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title}｜札幌市の課題地図（事実・解釈・提案）</title>
+  <title>{title}｜数字で見る札幌市・課題地図（事実・解釈・提案）</title>
   <meta name="description" content="{summary}">
   <link rel="canonical" href="{url}">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="札幌市の課題地図">
-  <meta property="og:title" content="{title}｜札幌市の課題地図">
+  <meta property="og:site_name" content="数字で見る札幌市">
+  <meta property="og:title" content="{title}｜数字で見る札幌市">
   <meta property="og:description" content="{summary}">
   <meta property="og:url" content="{url}">{og_image}
   <meta name="twitter:card" content="{twitter_card}">
@@ -203,7 +203,7 @@ def page_html(it, cat_name, by_id, has_image):
         <button type="button" class="fs-btn" data-fs="reset" aria-label="標準の文字サイズに戻す"><span class="a">あ</span></button>
         <button type="button" class="fs-btn" data-fs="inc" aria-label="文字を大きく"><span class="a">あ</span><span class="sign">＋</span></button>
       </div>
-      <h1 class="site-title">札幌市が先送りせず解くべき課題</h1>
+      <h1 class="site-title">数字で見る札幌市</h1>
       <nav class="site-nav">
         <a href="../index.html">課題一覧</a>
         <span class="nav-drop">
