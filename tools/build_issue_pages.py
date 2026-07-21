@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://recolon32.github.io/sapporo-todo"
-VERSION = "20260721"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260721b"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -63,6 +63,68 @@ def deepdive_section(it):
     return f'<section class="detail-section deep-dive"><h2>深掘り — 市民の声と答え</h2>{items}</section>'
 
 
+def entities_section(it):
+    ents = it.get("entities")
+    if not ents:
+        return ""
+    rows = sorted(ents, key=lambda e: (e.get("funding") or 0), reverse=True)
+
+    def yen(n):
+        return "－" if n is None else f"{n:,}"
+
+    def son(n):
+        if n is None:
+            return "－"
+        if n < 0:
+            return f"▲{abs(n):,}"
+        return f"{n:,}"
+
+    # 比較表
+    trs = ""
+    for e in rows:
+        neg = (e.get("profit") is not None and e["profit"] < 0)
+        cls = ' class="ent-neg"' if neg else ""
+        trs += (f'<tr{cls}><td>{esc(e["name"])}</td><td class="ent-type">{esc(e.get("type",""))}</td>'
+                f'<td class="ent-num">{son(e.get("profit"))}</td>'
+                f'<td class="ent-num">{yen(e.get("funding"))}</td></tr>')
+    table = (
+        '<table class="data-table entity-table">'
+        '<thead><tr><th>団体名</th><th>形態</th><th>損益</th><th>市の財政的関与</th></tr></thead>'
+        f'<tbody>{trs}</tbody></table>'
+        '<p class="chart-src">単位：百万円（令和6年度決算）。損益は、株式会社は当期純利益、公益・一般法人は当期経常増減額。'
+        '「市の財政的関与」は補助金・交付金・委託料などの合計（多くは指定管理の委託料）。▲は赤字。</p>'
+    )
+
+    # インフォグラフィック（市の財政的関与 上位12団体の横棒）
+    top = [e for e in rows if (e.get("funding") or 0) > 0][:12]
+    maxf = max((e["funding"] for e in top), default=1)
+    rowh, padt, padl, barw = 26, 30, 232, 300
+    H = padt + rowh * len(top) + 14
+    svg = [f'<svg viewBox="0 0 600 {H}" role="img" aria-label="出資団体への市の財政的関与（上位12団体・百万円）" preserveAspectRatio="xMidYMid meet">']
+    svg.append(f'<text x="0" y="16" font-size="12" font-weight="600" fill="var(--color-text)">市がお金を出している団体（上位12・百万円）</text>')
+    for i, e in enumerate(top):
+        y = padt + rowh * i
+        w = max(2, e["funding"] / maxf * barw)
+        neg = (e.get("profit") is not None and e["profit"] < 0)
+        color = "#c0392b" if neg else "var(--color-accent)"
+        nm = e["name"]
+        if len(nm) > 13:
+            nm = nm[:12] + "…"
+        svg.append(f'<text x="{padl-6}" y="{y+13}" text-anchor="end" font-size="10.5" fill="var(--color-text)">{esc(nm)}</text>')
+        svg.append(f'<rect x="{padl}" y="{y+3}" width="{w:.1f}" height="16" rx="2" fill="{color}"/>')
+        svg.append(f'<text x="{padl+w+5:.1f}" y="{y+15}" font-size="10" fill="var(--color-text-muted)">{e["funding"]:,}</text>')
+    svg.append('</svg>')
+    graphic = (f'<figure class="chart-card ent-graphic">{"".join(svg)}'
+               '<p class="chart-src">赤いバーは損益がマイナスの団体。金額の多くは公共施設を運営させるための委託料（指定管理料）です。</p></figure>')
+
+    lead = ('<p>市が出資する団体を、同じ物差しで並べました。大切なのは「赤字＝悪」ではなく、'
+            '<strong>公共目的でやっている団体（住宅・下水道・防災など）</strong>と、'
+            '<strong>収益をねらえる団体</strong>を分けて見ることです。'
+            'そして市にとっての「効果」は団体の黒字ではなく、<strong>市の持ち出し（補助・委託・補填）がどれだけ減らせるか</strong>で測ります。</p>')
+    return (f'<section class="detail-section"><h2>団体別の比較（令和6年度決算）</h2>'
+            f'{lead}{graphic}{table}</section>')
+
+
 def build_detail(it, cat_name, by_id, has_image):
     is_plan = it.get("kind") == "plan"
     tf = TF_CLASS.get(it.get("timeframe"), "tf-gen")
@@ -80,6 +142,7 @@ def build_detail(it, cat_name, by_id, has_image):
     data = "".join(f'<tr><th>{esc(d.get("label"))}</th><td>{esc(d.get("value"))}</td></tr>'
                    for d in it.get("data", []))
     data_sec = f'<section class="detail-section"><h2>主要データ</h2><table class="data-table">{data}</table></section>' if data else ""
+    ent_sec = entities_section(it)
 
     related = "".join(
         f'<li><a href="{esc(r["id"])}.html">{esc(r["title"])}</a>'
@@ -112,6 +175,7 @@ def build_detail(it, cat_name, by_id, has_image):
   {fig}
   {bg}
   {data_sec}
+  {ent_sec}
   {list_section("事実", it.get("facts"))}
   {interp}
   {list_section("提案", it.get("proposals"))}
