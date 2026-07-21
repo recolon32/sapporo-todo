@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://recolon32.github.io/sapporo-todo/</loc><priority>1.0</priority></url>
   <url><loc>https://recolon32.github.io/sapporo-todo/map.html</loc><priority>0.8</priority></url>
+  <url><loc>https://recolon32.github.io/sapporo-todo/money.html</loc><priority>0.7</priority></url>
   <url><loc>https://recolon32.github.io/sapporo-todo/about.html</loc><priority>0.5</priority></url>
   <url><loc>https://recolon32.github.io/sapporo-todo/updates.html</loc><priority>0.4</priority></url>
   <url><loc>https://recolon32.github.io/sapporo-todo/i/snow-01.html</loc><priority>0.7</priority></url>
