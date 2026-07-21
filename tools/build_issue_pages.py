@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://recolon32.github.io/sapporo-todo"
-VERSION = "20260721b"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260721c"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -98,9 +98,9 @@ def entities_section(it):
     # インフォグラフィック（市の財政的関与 上位12団体の横棒）
     top = [e for e in rows if (e.get("funding") or 0) > 0][:12]
     maxf = max((e["funding"] for e in top), default=1)
-    rowh, padt, padl, barw = 26, 30, 232, 300
+    rowh, padt, padl, barw = 30, 34, 240, 560
     H = padt + rowh * len(top) + 14
-    svg = [f'<svg viewBox="0 0 600 {H}" role="img" aria-label="出資団体への市の財政的関与（上位12団体・百万円）" preserveAspectRatio="xMidYMid meet">']
+    svg = [f'<svg viewBox="0 0 900 {H}" role="img" aria-label="出資団体への市の財政的関与（上位12団体・百万円）" preserveAspectRatio="xMidYMid meet">']
     svg.append(f'<text x="0" y="16" font-size="12" font-weight="600" fill="var(--color-text)">市がお金を出している団体（上位12・百万円）</text>')
     for i, e in enumerate(top):
         y = padt + rowh * i

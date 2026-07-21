@@ -292,4 +292,4 @@ a { color: var(--color-link); }
 .entity-table .ent-num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .entity-table tr.ent-neg td { background: rgba(192, 57, 43, 0.08); }
 .entity-table tr.ent-neg td:first-child { box-shadow: inset 3px 0 0 #c0392b; }
-.ent-graphic { max-width: 560px; margin: 10px 0 16px; }
+.ent-graphic { max-width: 100%; margin: 10px 0 16px; }
