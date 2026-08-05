@@ -4,10 +4,13 @@
 
   --color-bg: #ffffff;
   --color-surface: #f7f7f8;
+  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。同じトーンで一段濃い青みグレー */
+  --color-surface-ref: #eaeef4;
   --color-text: #1d1d1f;
   --color-text-muted: #6b6b70;
   --color-border: #e4e4e7;
   --color-accent: #1a5fb4;
+  --color-challenge: #1f8a70;
   --color-link: #1a5fb4;
 
   /* 緊急度・深刻度スケール（●） */
@@ -25,10 +28,12 @@
 [data-theme="dark"] {
   --color-bg: #1b1b1d;
   --color-surface: #242427;
+  --color-surface-ref: #2c313a;
   --color-text: #f2f2f4;
   --color-text-muted: #a1a1aa;
   --color-border: #34343a;
   --color-accent: #5ea0ef;
+  --color-challenge: #3fb492;
   --color-link: #5ea0ef;
   --color-scale-on: #ff6b5e;
   --color-scale-off: #44444b;

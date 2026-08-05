@@ -74,7 +74,10 @@ a { color: var(--color-link); }
 .badge.challenge { background: transparent; color: #1f8a70;
   border: 1px solid #1f8a70; }
 .plan-tag { font-size: 0.78rem; color: var(--color-accent); }
-.card-plan { border-style: dashed; }
+/* 課題ではないカード（計画・施策／挑戦・構想）＝背景を変えて区別 */
+.card-ref { background: var(--color-surface-ref); }
+.card-plan { border-left: 3px solid var(--color-accent); }
+.card-challenge { border-left: 3px solid var(--color-challenge); }
 .scale .dot { display: inline-block; width: 9px; height: 9px;
   border-radius: 50%; margin-right: 2px; background: var(--color-scale-off); }
 .scale .dot.on { background: var(--color-scale-on); }

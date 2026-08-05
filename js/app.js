@@ -44,13 +44,16 @@ function syncActiveButton() {
 
 function cardHTML(it) {
   const isPlan = it.kind === "plan";
-  const planBadge = it.kind === "challenge"
+  const isChallenge = it.kind === "challenge";
+  const kindClass = isChallenge ? " card-ref card-challenge"
+    : isPlan ? " card-ref card-plan" : "";
+  const planBadge = isChallenge
     ? `<span class="badge challenge">挑戦・構想</span>`
     : isPlan ? `<span class="badge plan">計画・施策</span>` : "";
   const meta = isPlan
     ? `<span class="plan-tag">進行中の計画・施策</span>`
     : `<span>緊急 ${dots(it.urgency)}</span><span>深刻 ${dots(it.severity)}</span>`;
-  return `<a class="card${isPlan ? " card-plan" : ""}" href="i/${encodeURIComponent(it.id)}.html">
+  return `<a class="card${kindClass}" href="i/${encodeURIComponent(it.id)}.html">
     <div class="card-top">
       <span class="card-cat">${esc(CAT_NAME[it.category] || it.category)}</span>
       ${planBadge}<span class="badge ${tfClass(it.timeframe)}">${esc(it.timeframe)}</span>
