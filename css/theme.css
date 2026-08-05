@@ -4,8 +4,8 @@
 
   --color-bg: #ffffff;
   --color-surface: #f7f7f8;
-  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。同じトーンで一段濃い青みグレー */
-  --color-surface-ref: #eaeef4;
+  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。同じトーンで明確に濃い青みグレー */
+  --color-surface-ref: #d3dcea;
   --color-text: #1d1d1f;
   --color-text-muted: #6b6b70;
   --color-border: #e4e4e7;
@@ -28,7 +28,7 @@
 [data-theme="dark"] {
   --color-bg: #1b1b1d;
   --color-surface: #242427;
-  --color-surface-ref: #2c313a;
+  --color-surface-ref: #363d4b;
   --color-text: #f2f2f4;
   --color-text-muted: #a1a1aa;
   --color-border: #34343a;
