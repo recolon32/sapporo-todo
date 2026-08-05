@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://recolon32.github.io/sapporo-todo"
-VERSION = "20260721c"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260728"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -128,7 +128,12 @@ def entities_section(it):
 def build_detail(it, cat_name, by_id, has_image):
     is_plan = it.get("kind") == "plan"
     tf = TF_CLASS.get(it.get("timeframe"), "tf-gen")
-    plan_badge = '<span class="badge plan">計画・施策</span>' if is_plan else ""
+    if it.get("kind") == "challenge":
+        plan_badge = '<span class="badge challenge">挑戦・構想</span>'
+    elif is_plan:
+        plan_badge = '<span class="badge plan">計画・施策</span>'
+    else:
+        plan_badge = ""
     meta = ('<span class="plan-tag">進行中の計画・施策</span>' if is_plan
             else f'<span>緊急度 {dots(it.get("urgency"))}</span><span>深刻度 {dots(it.get("severity"))}</span>')
 

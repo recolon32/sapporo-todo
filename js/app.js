@@ -44,7 +44,9 @@ function syncActiveButton() {
 
 function cardHTML(it) {
   const isPlan = it.kind === "plan";
-  const planBadge = isPlan ? `<span class="badge plan">計画・施策</span>` : "";
+  const planBadge = it.kind === "challenge"
+    ? `<span class="badge challenge">挑戦・構想</span>`
+    : isPlan ? `<span class="badge plan">計画・施策</span>` : "";
   const meta = isPlan
     ? `<span class="plan-tag">進行中の計画・施策</span>`
     : `<span>緊急 ${dots(it.urgency)}</span><span>深刻 ${dots(it.severity)}</span>`;

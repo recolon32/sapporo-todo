@@ -71,6 +71,8 @@ a { color: var(--color-link); }
 .badge.tf-gen { background: var(--color-tf-gen); }
 .badge.plan { background: transparent; color: var(--color-accent);
   border: 1px solid var(--color-accent); }
+.badge.challenge { background: transparent; color: #1f8a70;
+  border: 1px solid #1f8a70; }
 .plan-tag { font-size: 0.78rem; color: var(--color-accent); }
 .card-plan { border-style: dashed; }
 .scale .dot { display: inline-block; width: 9px; height: 9px;
