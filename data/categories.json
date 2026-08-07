@@ -6,5 +6,6 @@
   { "id": "finance",   "name": "財政・行政",            "description": "市財政の持続可能性、行政運営" },
   { "id": "industry",  "name": "産業・観光・MICE",      "description": "産業構造、観光、MICE、雇用" },
   { "id": "infra",     "name": "インフラ老朽化",        "description": "上下水道・橋梁・公共施設の更新" },
-  { "id": "energy",    "name": "環境・エネルギー",      "description": "脱炭素、エネルギー、防災・気候変動" }
+  { "id": "energy",    "name": "環境・エネルギー",      "description": "脱炭素、エネルギー、防災・気候変動" },
+  { "id": "edu",       "name": "教育・子育て",          "description": "保育・学童、小中学校の統廃合と老朽化、給食、高校・大学の再編と人材" }
 ]
