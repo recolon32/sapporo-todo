@@ -12,7 +12,7 @@ import os
 import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
-SITE_BASE = "https://recolon32.github.io/sapporo-todo"
+SITE_BASE = "https://todo.takibikai.jp"
 VERSION = "20260728e"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

@@ -2,9 +2,9 @@
 
 放置すれば市の維持が揺らぐ**構造的な課題**を、個別の事件ではなく都市の仕組みとして整理した、生成AIによるオープンな課題地図です。AIが情報を収集し、現状と進行中の対策・計画をまとめたうえで、AIによる評価と、今後AIができることまで推論しています。
 
-- 🌐 **公開サイト**：https://recolon32.github.io/sapporo-todo/
-- 🗺️ **課題マップ**：https://recolon32.github.io/sapporo-todo/map.html
-- ℹ️ **このサイトについて**：https://recolon32.github.io/sapporo-todo/about.html
+- 🌐 **公開サイト**：https://todo.takibikai.jp/
+- 🗺️ **課題マップ**：https://todo.takibikai.jp/map.html
+- ℹ️ **このサイトについて**：https://todo.takibikai.jp/about.html
 - 𝕏 **問い合わせ・ご指摘**：[@__TAKIBI__](https://x.com/__TAKIBI__)（焚き火会 AIチーム）
 
 fladdict 氏の「[日本が先送りせず解くべき課題](https://fladdict.github.io/japan-todo/)」の仕組みを参考に、その枠組みを札幌市に当てはめています。
@@ -119,7 +119,7 @@ RESEARCH_GUIDE.md  課題の調査・追加手順／別地域版の作り方
 
 ## アクセス解析とプライバシー
 
-公開サイトでは Google アナリティクス（GA4）で利用状況を測定しています（個人を特定しません）。目的・オプトアウト方法は[このサイトについて](https://recolon32.github.io/sapporo-todo/about.html)に記載しています。
+公開サイトでは Google アナリティクス（GA4）で利用状況を測定しています（個人を特定しません）。目的・オプトアウト方法は[このサイトについて](https://todo.takibikai.jp/about.html)に記載しています。
 
 アクセス解析は**公開元ドメインでのみ作動**します（`js/analytics.js` のホスト判定）。フォークや別ドメイン、localhost では計測が動かないため、複製しても元サイトにデータが送られることはありません。
 
