@@ -102,7 +102,10 @@ a { color: var(--color-link); }
 .card-top { display: flex; justify-content: space-between; align-items: center;
   gap: 8px; margin-bottom: 8px; }
 .card-cat { font-size: 0.72rem; color: var(--color-text-muted); }
-.card-title { font-size: 1rem; margin: 0 0 6px; line-height: 1.4; }
+.card-title { font-size: 1rem; margin: 0 0 4px; line-height: 1.4; }
+/* 課題カードの印象数字・キーワード（計画・挑戦には付けない） */
+.card-hero { font-size: 1.7rem; font-weight: 700; color: var(--color-accent);
+  line-height: 1.1; margin: 2px 0 8px; letter-spacing: -0.01em; }
 .card-summary { font-size: 0.85rem; color: var(--color-text-muted);
   margin: 0 0 12px; flex: 1; }
 .card-meta { display: flex; gap: 14px; font-size: 0.75rem;
@@ -264,6 +267,7 @@ a { color: var(--color-link); }
 .stat-hero { font-size: 2.6rem; font-weight: 700; line-height: 1.05;
   color: var(--color-accent); margin: 6px 0 2px; }
 .stat-hero-unit { font-size: 1.1rem; font-weight: 600; margin-left: 2px; }
+.stat-hero-approx { font-size: 0.42em; font-weight: 600; margin-right: 1px; }
 .stat-headline { font-size: 0.9rem; color: var(--color-text); margin: 0 0 6px; }
 .stat-note { font-size: 0.76rem; color: var(--color-text-muted); margin: 0; }
 .card-stat .card-more { font-size: 0.74rem; color: var(--color-accent);

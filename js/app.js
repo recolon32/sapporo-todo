@@ -59,6 +59,7 @@ function cardHTML(it) {
       ${planBadge}<span class="badge ${tfClass(it.timeframe)}">${esc(it.timeframe)}</span>
     </div>
     <h3 class="card-title">${esc(it.title)}</h3>
+    ${(!isPlan && !isChallenge && it.hero) ? `<div class="card-hero">${esc(it.hero)}</div>` : ""}
     <p class="card-summary">${esc(it.summary)}</p>
     <div class="card-meta">${meta}</div>
   </a>`;

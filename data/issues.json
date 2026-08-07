@@ -131,7 +131,8 @@
         "title": "雪対策の現状と課題（札幌市）",
         "url": "https://www.city.sapporo.jp/kensetsu/yuki/keikaku/documents/03genjoutokadai.pdf"
       }
-    ]
+    ],
+    "hero": "280億円"
   },
   {
     "id": "snow-02",
@@ -168,7 +169,8 @@
         "title": "新福祉除雪26年度から実施（北海道新聞）",
         "url": "https://www.hokkaido-np.co.jp/article/1248607/"
       }
-    ]
+    ],
+    "hero": "担い手不足"
   },
   {
     "id": "snow-03",
@@ -209,7 +211,8 @@
         "title": "パートナーシップ排雪制度（札幌市）",
         "url": "https://www.city.sapporo.jp/kensetsu/yuki/haisetsu/partner.html"
       }
-    ]
+    ],
+    "hero": "不公平感"
   },
   {
     "id": "snow-04",
@@ -239,7 +242,8 @@
         "title": "ロードヒーティング（札幌市）",
         "url": "https://www.city.sapporo.jp/kensetsu/yuki/yukishisetsu/05.html"
       }
-    ]
+    ],
+    "hero": "雪の置き場"
   },
   {
     "id": "snow-05",
@@ -417,7 +421,8 @@
         "title": "札幌市除雪費、甘い見積もりで国の補助金減か（北海道新聞）",
         "url": "https://www.hokkaido-np.co.jp/article/1262240/"
       }
-    ]
+    ],
+    "hero": "286億円"
   },
   {
     "id": "pop-01",
@@ -466,7 +471,8 @@
         "title": "札幌市の現状と課題（札幌市 ICT活用戦略 有識者会議資料）",
         "url": "https://www.city.sapporo.jp/kikaku/ictplan/yushikishakaigi/documents/01siryo.pdf"
       }
-    ]
+    ],
+    "hero": "−40万人"
   },
   {
     "id": "pop-02",
@@ -508,7 +514,8 @@
         "title": "第1節 高齢者人口や世帯などの状況（札幌市 高齢者支援計画）",
         "url": "https://www.city.sapporo.jp/kaigo/k500plan/documents/2024honsho_chapter3.pdf"
       }
-    ]
+    ],
+    "hero": "39.4%"
   },
   {
     "id": "pop-03",
@@ -549,7 +556,8 @@
         "title": "日本の地域別将来推計人口（令和5年推計）の概要（北海道）",
         "url": "https://www.pref.hokkaido.lg.jp/fs/9/6/7/2/7/3/6/_/03_shiryou2-2.pdf"
       }
-    ]
+    ],
+    "hero": "道人口の1/3"
   },
   {
     "id": "pop-04",
@@ -594,7 +602,8 @@
         "title": "データ分析に基づく少子化の要因調査（札幌市）",
         "url": "https://www.city.sapporo.jp/kikaku/miraisousei/3rd/documents/datebunsekigaiyo.pdf"
       }
-    ]
+    ],
+    "hero": "0.96"
   },
   {
     "id": "pop-05",
@@ -745,7 +754,8 @@
         "title": "外国人労働者、上限123万人の政府案（毎日新聞）",
         "url": "https://news.yahoo.co.jp/articles/e7f9cd249601e9b1fb86342f577a9d6fcf07eda9"
       }
-    ]
+    ],
+    "hero": "多文化共生"
   },
   {
     "id": "city-01",
@@ -783,7 +793,8 @@
         "title": "都心エネルギーアクションプラン 後半期間編（札幌市）",
         "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf"
       }
-    ]
+    ],
+    "hero": "築50年"
   },
   {
     "id": "city-02",
@@ -821,7 +832,8 @@
         "title": "郊外住宅地のまちづくり（札幌市）",
         "url": "https://www.city.sapporo.jp/keikaku/kougai/index.html"
       }
-    ]
+    ],
+    "hero": "一斉高齢化"
   },
   {
     "id": "city-03",
@@ -857,7 +869,8 @@
         "title": "空き家対策（札幌市）",
         "url": "https://www.city.sapporo.jp/toshi/k-shido/akiya-tekiseikannri.html"
       }
-    ]
+    ],
+    "hero": "空き家増加"
   },
   {
     "id": "city-04",
@@ -902,7 +915,8 @@
         "title": "札幌延伸、2030年度末開業「極めて困難」（マイナビニュース）",
         "url": "https://news.mynavi.jp/article/20240512-hokkaidoshinkansen/"
       }
-    ]
+    ],
+    "hero": "開業延期"
   },
   {
     "id": "city-05",
@@ -1190,7 +1204,8 @@
         "title": "JR北海道バス、札幌圏で減便拡大 平日146便（日本経済新聞）",
         "url": "https://www.nikkei.com/article/DGXZQOFC215P90R21C24A0000000/"
       }
-    ]
+    ],
+    "hero": "440便減"
   },
   {
     "id": "transit-02",
@@ -1236,7 +1251,8 @@
         "title": "札幌市、交通計画改定 地下鉄黒字37億円に下方修正（日本経済新聞）",
         "url": "https://www.nikkei.com/article/DGXZQOFC021XI0S4A400C2000000/"
       }
-    ]
+    ],
+    "hero": "赤字リスク"
   },
   {
     "id": "transit-03",
@@ -1274,7 +1290,8 @@
         "title": "札幌市地域公共交通計画・公共交通協議会（札幌市）",
         "url": "https://www.city.sapporo.jp/sogokotsu/kokyokotsukyogikai.html"
       }
-    ]
+    ],
+    "hero": "移動困難"
   },
   {
     "id": "transit-04",
@@ -1404,7 +1421,8 @@
         "title": "北海道科学大、地下鉄手稲延伸へ膜製シェルター提案／建設費を抑制（北海道建設新聞）",
         "url": "https://e-kensin.net/n/n417ba6ac5e21"
       }
-    ]
+    ],
+    "hero": "853億円"
   },
   {
     "id": "transit-05",
@@ -1450,7 +1468,8 @@
         "title": "丘珠空港と周辺地域の共生に関する基本構想（札幌市）",
         "url": "https://www.city.sapporo.jp/shimin/okadama/rikatsuyo/kihonkousou/documents/kihonkousou.pdf"
       }
-    ]
+    ],
+    "hero": "第2の空港"
   },
   {
     "id": "finance-01",
@@ -1498,7 +1517,8 @@
         "title": "札幌市の今後の財政運営について（今後10年間の財政推計・令和8年1月／札幌市）",
         "url": "https://www.city.sapporo.jp/zaisei/kohyo/yosan-kessan/r8/documents/r8_zaiseisuikei.pdf"
       }
-    ]
+    ],
+    "hero": "1.1兆円"
   },
   {
     "id": "finance-02",
@@ -1544,7 +1564,8 @@
         "label": "直近の伸び",
         "value": "前年度比 +4.0%（+154億円。障害福祉サービス費・医療扶助費等の増）"
       }
-    ]
+    ],
+    "hero": "歳出の33%"
   },
   {
     "id": "finance-03",
@@ -1647,7 +1668,8 @@
         "title": "札幌DX推進方針（札幌市）",
         "url": "https://www.city.sapporo.jp/kikaku/ictplan/documents/dxhonsyo2.pdf"
       }
-    ]
+    ],
+    "hero": "行政DX"
   },
   {
     "id": "infra-01",
@@ -1778,7 +1800,8 @@
         "title": "令和5年度 決算の概要（性質別歳出／札幌市）",
         "url": "https://www.city.sapporo.jp/zaisei/kohyo/zaimu/kenzenka/documents/r5kessan_gaiyou.pdf"
       }
-    ]
+    ],
+    "hero": "築30年6割"
   },
   {
     "id": "infra-02",
@@ -1890,7 +1913,8 @@
         "title": "受益者負担のあり方 資料（札幌市営企業調査審議会・下水道部会, 2025-03-14）",
         "url": "https://www.city.sapporo.jp/gesui/shingikai/documents/05_r6_bukai2_siryo4n.pdf"
       }
-    ]
+    ],
+    "hero": "23%値上げ"
   },
   {
     "id": "infra-03",
@@ -1926,7 +1950,8 @@
         "title": "公共施設等総合管理計画（札幌市）",
         "url": "https://www.city.sapporo.jp/zaisei/sougoukannrikeikaku.html"
       }
-    ]
+    ],
+    "hero": "老朽化"
   },
   {
     "id": "industry-01",
@@ -1959,7 +1984,8 @@
         "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）",
         "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php"
       }
-    ]
+    ],
+    "hero": "6割が道外"
   },
   {
     "id": "industry-02",
@@ -1990,7 +2016,8 @@
         "title": "観光産業は好調でも人口減少は加速（事業構想オンライン）",
         "url": "https://www.projectdesign.jp/201807/area-hokkaido/005111.php"
       }
-    ]
+    ],
+    "hero": "雇用の質"
   },
   {
     "id": "industry-03",
@@ -2123,7 +2150,8 @@
         "title": "SAPPORO AI LAB",
         "url": "https://www.s-ail.org/"
       }
-    ]
+    ],
+    "hero": "ラピダス"
   },
   {
     "id": "industry-04",
@@ -2326,7 +2354,8 @@
         "title": "札幌市ゼロカーボンシティ宣言（札幌市）",
         "url": "https://www.city.sapporo.jp/kankyo/ondanka/zero_carbon/index.html"
       }
-    ]
+    ],
+    "hero": "2050年ゼロ"
   },
   {
     "id": "energy-02",
@@ -2373,7 +2402,8 @@
         "title": "平成30年北海道胆振東部地震 対応検証報告書（札幌市）",
         "url": "https://www.city.sapporo.jp/kikikanri/hokkaido_iburi_earthquake/documents/ho_koku.pdf"
       }
-    ]
+    ],
+    "hero": "295万戸"
   },
   {
     "id": "energy-03",
@@ -2470,7 +2500,8 @@
         "title": "手稲山地区の地すべり対策について（北海道・計画段階評価資料）",
         "url": "https://www.pref.hokkaido.lg.jp/fs/1/2/9/8/1/3/6/7/_/kyokushiryou1.pdf"
       }
-    ]
+    ],
+    "hero": "液状化"
   },
   {
     "id": "energy-04",
@@ -2508,7 +2539,8 @@
         "title": "都心エネルギーアクションプラン 後半期間編（札幌市）",
         "url": "https://www.city.sapporo.jp/kikaku/downtown/toshin-energy/documents/ap_kohan_1.pdf"
       }
-    ]
+    ],
+    "hero": "暖房の脱炭素"
   },
   {
     "id": "energy-05",
@@ -2559,7 +2591,8 @@
         "title": "さっぽろヒグマ基本計画2023 概要版（札幌市）",
         "url": "https://www.city.sapporo.jp/kurashi/animal/choju/kuma/housin/documents/2higumakeikaku2023_gaiyou.pdf"
       }
-    ]
+    ],
+    "hero": "出没319件"
   },
   {
     "id": "finance-04",
@@ -2874,7 +2907,8 @@
         "title": "市有地をお売りします（遊休資産の活用・札幌市）",
         "url": "https://www.city.sapporo.jp/kanzai/uriharai/"
       }
-    ]
+    ],
+    "hero": "年490億円"
   },
   {
     "id": "city-07",
