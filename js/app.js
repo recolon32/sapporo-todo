@@ -7,6 +7,17 @@ async function init() {
   renderFilterButtons();
   renderSortButtons();
   render();
+  renderLastUpdated();
+}
+
+async function renderLastUpdated() {
+  const el = document.getElementById("last-updated");
+  if (!el) return;
+  try {
+    const items = await (await fetch("data/updates.json")).json();
+    const latest = items.map(u => u.date).sort().at(-1);
+    if (latest) el.textContent = `最終更新: ${latest}`;
+  } catch (e) { /* 取得失敗時は初期表示のまま */ }
 }
 
 function renderSortButtons() {
