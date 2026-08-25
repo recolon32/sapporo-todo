@@ -203,8 +203,8 @@ def jsonld(it, cat_name, has_image, url):
         "url": url,
         "mainEntityOfPage": url,
         "articleSection": cat_name.get(it["category"], it["category"]),
-        "author": {"@type": "Organization", "name": "焚き火会 AIチーム", "url": SITE_BASE},
-        "publisher": {"@type": "Organization", "name": "焚き火会 AIチーム", "url": SITE_BASE},
+        "author": {"@type": "Organization", "name": "焚き火会 AI活用チーム", "url": SITE_BASE},
+        "publisher": {"@type": "Organization", "name": "焚き火会 AI活用チーム", "url": SITE_BASE},
     }]
     if has_image:
         graph[0]["image"] = f"{SITE_BASE}/images/{img_file(it['id'])}"
@@ -293,7 +293,8 @@ def page_html(it, cat_name, by_id, has_image):
   <footer class="site-footer">
     <div class="container">
       <p>本サイトは<strong>生成AIによる評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいています。SNSや出典情報による「ゆらぎ」が存在するものとします。</p>
-      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）／協力・サイト作成：<a href="https://x.com/__TAKIBI__" target="_blank" rel="noopener">焚き火会 AIチーム</a></p>
+      <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）</p>
+      <p>制作・運営：焚き火会 AI活用チーム ― 札幌のこれからを、みんなで考えるための土台に。中立でどなたでもご利用いただけます。</p>
     </div>
   </footer>
 </body>
