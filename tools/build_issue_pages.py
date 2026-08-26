@@ -13,7 +13,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
-VERSION = "20260819"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260826"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -295,6 +295,7 @@ def page_html(it, cat_name, by_id, has_image):
       <p>本サイトは<strong>生成AIによる評価版</strong>です。特定の政党や立場による評価ではなく、AIの平等で優先的な判断軸に基づいています。SNSや出典情報による「ゆらぎ」が存在するものとします。</p>
       <p>参考：<a href="https://fladdict.github.io/japan-todo/" target="_blank" rel="noopener">日本が先送りせず解くべき課題</a>（fladdict 氏）</p>
       <p>制作・運営：焚き火会 AI活用チーム ― 札幌のこれからを、みんなで考えるための土台に。中立でどなたでもご利用いただけます。</p>
+      <p class="footer-oss">🛠️ このサイトは<strong>オープンソース</strong>です。仕組みごと自由に再利用して、あなたの街版の課題地図を作れます。― <a href="https://github.com/recolon32/sapporo-todo" target="_blank" rel="noopener">GitHubでソースを見る →</a></p>
     </div>
   </footer>
 </body>
