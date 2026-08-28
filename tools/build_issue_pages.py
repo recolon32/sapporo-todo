@@ -9,6 +9,7 @@
 """
 import json
 import os
+import re
 import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
@@ -163,8 +164,18 @@ def build_detail(it, cat_name, by_id, has_image):
                       for s in it.get("sources", []))
     sources_sec = f'<section class="detail-section"><h2>出典</h2><ul>{sources}</ul></section>' if sources else ""
 
-    bg = f'<section class="detail-section"><h2>背景</h2><p>{esc(it["background"])}</p></section>' if it.get("background") else ""
-    interp = f'<section class="detail-section"><h2>解釈</h2><p>{esc(it["interpretation"])}</p></section>' if it.get("interpretation") else ""
+    def linkify_refs(html):
+        # 文中の（infra-01）のような課題ID参照を、タイトル付きの内部リンクに変換
+        def rep(m):
+            rid = m.group("id")
+            r = by_id.get(rid)
+            if not r:
+                return m.group(0)
+            return f'（<a href="{esc(rid)}.html">{esc(r["title"])}</a>）'
+        return re.sub(r'[（(](?P<id>[a-z]+-\d+)[）)]', rep, html)
+
+    bg = f'<section class="detail-section"><h2>背景</h2><p>{linkify_refs(esc(it["background"]))}</p></section>' if it.get("background") else ""
+    interp = f'<section class="detail-section"><h2>解釈</h2><p>{linkify_refs(esc(it["interpretation"]))}</p></section>' if it.get("interpretation") else ""
     team = f'<section class="detail-section"><h2>検討体制・メンバー</h2><p>{esc(it["team"])}</p></section>' if it.get("team") else ""
     ainote = f'<section class="detail-section ai-note"><h2>AIノート</h2><p>{esc(it["aiNote"])}</p></section>' if it.get("aiNote") else ""
 
