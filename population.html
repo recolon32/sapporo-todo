@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>課題マップ | 数字で見る札幌市</title>
-  <meta name="description" content="札幌市の課題を関係ネットワーク図と時間軸マトリクスで俯瞰する課題マップ。点＝課題（色＝分類・大きさ＝緊急度）、線＝関連。">
-  <meta property="og:type" content="website">
+  <title>札幌市の人口の見通し（データ）｜数字で見る札幌市</title>
+  <meta name="description" content="多くの課題の土台にある札幌市の人口を、将来推計と比較グラフで整理。総人口の推移、支え手（現役世代）の減少、10区別の高齢化格差などを可視化します。">
+  <link rel="canonical" href="https://todo.takibikai.jp/population.html">
+  <meta property="og:type" content="article">
   <meta property="og:site_name" content="数字で見る札幌市">
-  <meta property="og:title" content="課題マップ | 数字で見る札幌市">
-  <meta property="og:description" content="札幌市の課題を関係ネットワーク図と時間軸マトリクスで俯瞰する課題マップ。">
-  <meta property="og:url" content="https://todo.takibikai.jp/map.html">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="札幌市の人口の見通し（データ）｜数字で見る札幌市">
+  <meta property="og:description" content="札幌市の人口を将来推計と比較グラフで整理。総人口の推移、支え手の減少、10区別の高齢化格差などを可視化。">
+  <meta property="og:url" content="https://todo.takibikai.jp/population.html">
+  <meta property="og:image" content="https://todo.takibikai.jp/images/ogp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://todo.takibikai.jp/images/ogp.jpg">
   <link rel="stylesheet" href="css/theme.css?v=20260829">
   <link rel="stylesheet" href="css/base.css?v=20260829">
   <script src="js/analytics.js?v=20260829"></script>
@@ -24,7 +27,7 @@
         <button type="button" class="fs-btn" data-fs="reset" aria-label="標準の文字サイズに戻す"><span class="a">あ</span></button>
         <button type="button" class="fs-btn" data-fs="inc" aria-label="文字を大きく"><span class="a">あ</span><span class="sign">＋</span></button>
       </div>
-      <h1 class="site-title">数字で見る札幌市</h1>
+      <h1 class="site-title">札幌市の人口の見通し（データ）</h1>
       <nav class="site-nav">
         <a href="index.html">課題一覧</a>
         <span class="nav-drop">
@@ -42,16 +45,8 @@
   </header>
 
   <main class="container">
-    <h2 class="map-heading" id="h-network">関係ネットワーク図</h2>
-    <p class="map-desc">点＝課題（色＝分類・大きさ＝緊急度）、線＝関連。点にカーソルを合わせると名前と関連が強調されます。クリックで詳細へ移動します。下のボタンで分類を絞り込めます。</p>
-    <div id="map-filter" class="filter-buttons"></div>
-    <div id="legend" class="legend"></div>
-    <div id="network" class="network-wrap"></div>
-
-    <h2 class="map-heading" id="h-matrix">カテゴリ × 時間軸マトリクス</h2>
-    <p class="map-desc">どの分野の課題が、いつ顕在化するかを俯瞰できます。</p>
-    <div id="matrix" class="matrix-wrap"></div>
-
+    <p class="map-desc">多くの課題の土台にある人口の動きを、将来推計でまとめました。数値は時点で変わる前提（「ゆらぎ」あり）です。</p>
+    <div id="demographics" class="demographics"></div>
   </main>
 
   <footer class="site-footer">
@@ -63,7 +58,6 @@
     </div>
   </footer>
 
-  <script src="js/data.js?v=20260829"></script>
-  <script src="js/map.js?v=20260829"></script>
+  <script src="js/demographics.js?v=20260829"></script>
 </body>
 </html>

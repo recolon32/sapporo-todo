@@ -291,10 +291,10 @@ def page_html(it, cat_name, by_id, has_image):
           <span class="nav-sub">
             <a href="../map.html#h-network">関係ネットワーク図</a>
             <a href="../map.html#h-matrix">時間軸マトリクス</a>
-            <a href="../map.html#h-population">札幌市の人口</a>
           </span>
         </span>
-        <a href="../dantai.html">出資団体</a>
+        <a href="../population.html">札幌市の人口</a>
+        <a href="../dantai.html">札幌市の三セク</a>
         <a href="../about.html">このサイトについて</a>
       </nav>
     </div>
@@ -346,6 +346,7 @@ def write_sitemap(issues):
         ("/", "1.0"),
         ("/map.html", "0.8"),
         ("/money.html", "0.7"),
+        ("/population.html", "0.6"),
         ("/dantai.html", "0.6"),
         ("/about.html", "0.5"),
         ("/updates.html", "0.4"),
