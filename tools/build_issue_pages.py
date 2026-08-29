@@ -14,7 +14,7 @@ import html
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
-VERSION = "20260826"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260829"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -294,6 +294,7 @@ def page_html(it, cat_name, by_id, has_image):
             <a href="../map.html#h-population">札幌市の人口</a>
           </span>
         </span>
+        <a href="../dantai.html">出資団体</a>
         <a href="../about.html">このサイトについて</a>
       </nav>
     </div>
@@ -345,6 +346,7 @@ def write_sitemap(issues):
         ("/", "1.0"),
         ("/map.html", "0.8"),
         ("/money.html", "0.7"),
+        ("/dantai.html", "0.6"),
         ("/about.html", "0.5"),
         ("/updates.html", "0.4"),
     ]

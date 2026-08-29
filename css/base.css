@@ -313,3 +313,21 @@ a { color: var(--color-link); }
 .entity-table tr.ent-neg td { background: rgba(192, 57, 43, 0.08); }
 .entity-table tr.ent-neg td:first-child { box-shadow: inset 3px 0 0 #c0392b; }
 .ent-graphic { max-width: 100%; margin: 10px 0 16px; }
+
+/* 出資団体（三セク）株主構成 */
+.share-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 14px 0; }
+.share-card { border: 1px solid var(--color-border); border-radius: 10px; padding: 12px 14px;
+  background: var(--color-surface); }
+.share-card h3 { margin: 0 0 2px; font-size: 1rem; }
+.share-card .share-meta { font-size: 0.76rem; color: var(--color-text-muted); margin-bottom: 6px; }
+.share-card .share-city { color: var(--color-accent); font-weight: 700; }
+.share-bar { height: 9px; border-radius: 5px; background: var(--color-surface-ref);
+  overflow: hidden; margin: 4px 0 8px; }
+.share-bar > i { display: block; height: 100%; background: var(--color-accent); }
+.share-list { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.share-list td { border-bottom: 1px solid var(--color-border); padding: 3px 6px; }
+.share-list td.pct { text-align: right; white-space: nowrap; width: 4.2em;
+  font-variant-numeric: tabular-nums; }
+.share-list tr.is-city td { background: var(--color-surface-ref); font-weight: 700;
+  color: var(--color-accent); }
+@media (max-width: 640px) { .share-grid { grid-template-columns: 1fr; } }
