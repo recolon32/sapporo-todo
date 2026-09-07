@@ -6,7 +6,7 @@
 // （計測したくなければ ALLOW_HOSTS を空配列 [] にするか、このファイルの読み込みを外す）。
 (function () {
   var GA_ID = "G-WX2TZPD9V0";
-  var ALLOW_HOSTS = ["recolon32.github.io"];
+  var ALLOW_HOSTS = ["todo.takibikai.jp", "recolon32.github.io"];
 
   if (ALLOW_HOSTS.indexOf(location.hostname) === -1) return;
 
