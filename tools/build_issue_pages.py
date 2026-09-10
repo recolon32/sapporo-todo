@@ -11,6 +11,7 @@ import json
 import os
 import re
 import html
+import datetime
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
@@ -351,13 +352,21 @@ def write_sitemap(issues):
         ("/about.html", "0.5"),
         ("/updates.html", "0.4"),
     ]
-    urls = [(f"{SITE_BASE}{path}", pri) for path, pri in static_pages]
-    urls += [(f"{SITE_BASE}/i/{it['id']}.html", "0.7") for it in issues]
+    def lastmod(rel_path):
+        # 出力ファイルの更新日を lastmod に（鮮度シグナル）。無ければ当日。
+        fp = os.path.join(ROOT, rel_path.lstrip("/") or "index.html")
+        try:
+            return datetime.date.fromtimestamp(os.path.getmtime(fp)).isoformat()
+        except OSError:
+            return datetime.date.today().isoformat()
+
+    urls = [(f"{SITE_BASE}{path}", pri, lastmod(path)) for path, pri in static_pages]
+    urls += [(f"{SITE_BASE}/i/{it['id']}.html", "0.7", lastmod(f"/i/{it['id']}.html")) for it in issues]
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for loc, pri in urls:
-        lines.append(f"  <url><loc>{loc}</loc><priority>{pri}</priority></url>")
+    for loc, pri, mod in urls:
+        lines.append(f"  <url><loc>{loc}</loc><lastmod>{mod}</lastmod><priority>{pri}</priority></url>")
     lines.append("</urlset>")
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
