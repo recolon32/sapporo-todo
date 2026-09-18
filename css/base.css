@@ -136,6 +136,15 @@ a { color: var(--color-link); }
   padding: 8px 10px; text-align: left; font-size: 0.92rem; }
 .data-table th { background: var(--color-surface); width: 45%;
   color: var(--color-text-muted); font-weight: 600; }
+/* 横並び比較表（21大都市など） */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.cmp-table { min-width: 560px; }
+.cmp-table th, .cmp-table td { width: auto; text-align: right; white-space: nowrap; }
+.cmp-table thead th { background: var(--color-surface); color: var(--color-text-muted);
+  text-align: right; position: sticky; top: 0; }
+.cmp-table th:nth-child(2), .cmp-table td:nth-child(2) { text-align: left; }
+.cmp-table tbody tr.hl td { background: var(--color-surface-ref);
+  font-weight: 700; color: var(--color-text); }
 .related-list a { text-decoration: none; }
 .rel-cat { color: var(--color-text-muted); font-size: 0.85rem; }
 /* 深掘り（市民の声＋答え） */

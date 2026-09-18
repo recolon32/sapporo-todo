@@ -15,7 +15,7 @@ import datetime
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
-VERSION = "20260829"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20260918"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -170,6 +170,22 @@ def build_detail(it, cat_name, by_id, has_image):
                       for s in it.get("sources", []))
     sources_sec = f'<section class="detail-section"><h2>出典</h2><ul>{sources}</ul></section>' if sources else ""
 
+    table_sec = ""
+    bt = it.get("bodyTable")
+    if bt and bt.get("rows"):
+        hl = bt.get("highlight")
+        thead = "".join(f'<th>{esc(c)}</th>' for c in bt.get("columns", []))
+        trs = ""
+        for row in bt["rows"]:
+            cls = ' class="hl"' if hl and any(str(c) == hl for c in row) else ""
+            tds = "".join(f'<td>{esc(v)}</td>' for v in row)
+            trs += f'<tr{cls}>{tds}</tr>'
+        note = f'<p class="chart-src">{esc(bt["note"])}</p>' if bt.get("note") else ""
+        title = esc(bt.get("title", "比較表"))
+        table_sec = (f'<section class="detail-section"><h2>{title}</h2>'
+                     f'<div class="table-scroll"><table class="data-table cmp-table">'
+                     f'<thead><tr>{thead}</tr></thead><tbody>{trs}</tbody></table></div>{note}</section>')
+
     def linkify_refs(html):
         # 文中の（infra-01）のような課題ID参照を、タイトル付きの内部リンクに変換
         def rep(m):
@@ -199,6 +215,7 @@ def build_detail(it, cat_name, by_id, has_image):
   {data_sec}
   {ent_sec}
   {list_section("事実", it.get("facts"))}
+  {table_sec}
   {interp}
   {list_section("提案", it.get("proposals"))}
   {deepdive_section(it)}
