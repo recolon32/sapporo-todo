@@ -1,0 +1,67 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="札幌市は21大都市中、世帯年収(総世帯)21位・勤労者世帯21位・金融資産残高21位・純金融資産20位・1か月消費支出20位と所得・貯蓄・資産・消費がほぼ最下位。一方で高齢化率は14位(むしろ若い方)、世帯の小ささ(単身の多さ)は5位で世帯構成は平均的。単身・高齢では説明できず、要因は所得水準そのもの。" preserveAspectRatio="xMidYMid meet">
+  <style>
+    :root{ --t:#1d1d1f; --m:#6b6b70; --sf:#f7f7f8; --line:#d9d9de; --red:#c0392b; --gray:#8a8a90; --accent:#1a5fb4; }
+    @media (prefers-color-scheme: dark){
+      :root{ --t:#f2f2f4; --m:#a1a1aa; --sf:#242427; --line:#44444b; --red:#ff6b5e; --gray:#9a9aa2; --accent:#5ea0ef; }
+    }
+    svg{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;}
+    .t{fill:var(--t);} .m{fill:var(--m);}
+  </style>
+
+  <text x="0" y="26" font-size="21" font-weight="700" class="t">札幌市は21大都市中で何位？</text>
+  <text x="0" y="50" font-size="13" class="m">所得・貯蓄・資産・消費はほぼ最下位。世帯構成（高齢・単身）は平均的。</text>
+
+  <!-- axis ticks -->
+  <text x="250" y="78" text-anchor="middle" font-size="11" class="m">1位（高い）</text>
+  <text x="850" y="78" text-anchor="end" font-size="11" class="m">21位（最下位）</text>
+
+  <!-- rows -->
+  <!-- A 世帯年収 総世帯 (21) -->
+  <text x="235" y="102" text-anchor="end" font-size="13" class="t">世帯年収（総世帯）</text>
+  <line x1="250" y1="97" x2="850" y2="97" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="850" cy="97" r="7" fill="var(--red)"/><text x="850" y="88" text-anchor="middle" font-size="11" font-weight="700" fill="var(--red)">21</text>
+
+  <!-- B 勤労者 (21) -->
+  <text x="235" y="146" text-anchor="end" font-size="13" class="t">世帯年収（勤労者世帯）</text>
+  <line x1="250" y1="141" x2="850" y2="141" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="850" cy="141" r="7" fill="var(--red)"/><text x="850" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="var(--red)">21</text>
+
+  <!-- C 金融資産残高 (21) -->
+  <text x="235" y="190" text-anchor="end" font-size="13" class="t">金融資産残高（貯蓄）</text>
+  <line x1="250" y1="185" x2="850" y2="185" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="850" cy="185" r="7" fill="var(--red)"/><text x="850" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="var(--red)">21</text>
+
+  <!-- D 純金融資産 (20) -->
+  <text x="235" y="234" text-anchor="end" font-size="13" class="t">純金融資産（貯蓄−負債）</text>
+  <line x1="250" y1="229" x2="850" y2="229" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="820" cy="229" r="7" fill="var(--red)"/><text x="820" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="var(--red)">20</text>
+
+  <!-- E 消費支出 (20) -->
+  <text x="235" y="278" text-anchor="end" font-size="13" class="t">1か月の消費支出</text>
+  <line x1="250" y1="273" x2="850" y2="273" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="820" cy="273" r="7" fill="var(--red)"/><text x="820" y="264" text-anchor="middle" font-size="11" font-weight="700" fill="var(--red)">20</text>
+
+  <!-- divider -->
+  <line x1="0" y1="300" x2="900" y2="300" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="0" y="320" font-size="12" font-weight="700" class="m">参考：世帯構成（この2つは「低さ」の言い訳にならない）</text>
+
+  <!-- F 高齢化率 (14 高い順) -->
+  <text x="235" y="350" text-anchor="end" font-size="13" class="t">高齢化率（高い順）</text>
+  <line x1="250" y1="345" x2="850" y2="345" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="640" cy="345" r="7" fill="var(--gray)"/><text x="640" y="336" text-anchor="middle" font-size="11" font-weight="700" fill="var(--gray)">14</text>
+  <text x="660" y="349" font-size="11" class="m">＝むしろ若い方</text>
+
+  <!-- G 世帯の小ささ (5 小さい順=単身多い) -->
+  <text x="235" y="394" text-anchor="end" font-size="13" class="t">世帯の小ささ（単身の多さ）</text>
+  <line x1="250" y1="389" x2="850" y2="389" stroke="var(--line)" stroke-width="2"/>
+  <circle cx="370" cy="389" r="7" fill="var(--gray)"/><text x="370" y="380" text-anchor="middle" font-size="11" font-weight="700" fill="var(--gray)">5</text>
+  <text x="390" y="393" font-size="11" class="m">単身は多めだが中位（最小は東京・大阪で年収は上位）</text>
+
+  <!-- conclusion box -->
+  <rect x="0" y="418" width="900" height="128" rx="8" fill="var(--sf)"/>
+  <text x="18" y="446" font-size="14" font-weight="700" class="t">要因は「世帯構成」ではなく「所得水準そのもの」</text>
+  <text x="18" y="470" font-size="13" class="t">・所得・貯蓄・資産・消費は軒並み最下位。金融資産は唯一1,000万円未満で、横浜との差は約1,203万円。</text>
+  <text x="18" y="492" font-size="13" class="t">・世帯年収と世帯の小ささの相関はほぼゼロ（−0.09）。単身が多い東京・大阪はむしろ高所得。</text>
+  <text x="18" y="514" font-size="13" class="t">・世帯構成から予測される札幌の年収は約591万円。実績475万円で、予測より約116万円低い外れ値。</text>
+  <text x="18" y="536" font-size="12" class="m">出典：総務省 令和6年全国家計構造調査／令和2年国勢調査（大都市比較統計年表 令和6年版）</text>
+</svg>

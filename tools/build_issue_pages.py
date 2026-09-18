@@ -22,8 +22,8 @@ TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y
 
 
 def img_file(iid):
-    """課題のインフォグラフィック画像名を返す（png優先、なければjpg。無ければ空文字）。"""
-    for ext in ("png", "jpg"):
+    """課題のインフォグラフィック画像名を返す（svg優先、次にpng、jpg。無ければ空文字）。"""
+    for ext in ("svg", "png", "jpg"):
         if os.path.exists(os.path.join(ROOT, "images", f"{iid}.{ext}")):
             return f"{iid}.{ext}"
     return ""
@@ -141,10 +141,15 @@ def build_detail(it, cat_name, by_id, has_image):
 
     fig = ""
     if has_image:
+        imgname = img_file(it["id"])
+        if imgname.endswith(".svg"):
+            caption = "図はデータに基づく作成です。出典は本ページ末尾を参照。"
+        else:
+            caption = "Geminiによる自動生成です。AIによる推論でAI独自の課題解決案が付与されている場合があります。"
         fig = (f'<figure class="infographic">'
-               f'<img src="../images/{esc(img_file(it["id"]))}" loading="lazy" '
+               f'<img src="../images/{esc(imgname)}" loading="lazy" '
                f'alt="{esc(it["title"])}の要約インフォグラフィック">'
-               f'<figcaption>Geminiによる自動生成です。AIによる推論でAI独自の課題解決案が付与されている場合があります。</figcaption></figure>')
+               f'<figcaption>{caption}</figcaption></figure>')
 
     data = "".join(f'<tr><th>{esc(d.get("label"))}</th><td>{esc(d.get("value"))}</td></tr>'
                    for d in it.get("data", []))
