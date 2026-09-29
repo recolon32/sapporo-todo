@@ -1,40 +1,57 @@
+/* 本文フォント：UDゴシック（無料のBIZ UDPGothic）。渋谷区サイトのUD新ゴに近い読みやすさを狙う */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap');
+
 :root {
-  --font-base: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
-               "Hiragino Sans", Meiryo, sans-serif;
+  --font-base: "BIZ UDPGothic", "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+               "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+  /* タイポグラフィ（読みやすさの要：ゆったりした行間と字間） */
+  --line-height: 1.9;
+  --letter-spacing: 0.03em;
+  --radius: 14px;
+  --radius-sm: 10px;
 
   --color-bg: #ffffff;
-  --color-surface: #f7f7f8;
-  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。同じトーンで明確に濃い青みグレー */
-  --color-surface-ref: #d3dcea;
-  --color-text: #1d1d1f;
-  --color-text-muted: #6b6b70;
-  --color-border: #e4e4e7;
-  --color-accent: #1a5fb4;
+  --color-surface: #f5f6fb;
+  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。淡いラベンダーで区別 */
+  --color-surface-ref: #e2e6f3;
+  --color-text: #0b1020;
+  --color-text-muted: #6b6e80;
+  --color-border: #e6e6f0;
+  --color-accent: #4d65cb;
   --color-challenge: #1f8a70;
-  --color-link: #1a5fb4;
+  --color-link: #4d65cb;
+
+  /* AIノート専用色（他セクションと区別する淡い紫） */
+  --color-ai: #7a5cd0;
+  --color-ai-bg: #f3eefc;
+  --color-ai-border: #e3d8f7;
 
   /* 緊急度・深刻度スケール（●） */
-  --color-scale-on: #c0392b;
-  --color-scale-off: #d9d9de;
+  --color-scale-on: #dd192d;
+  --color-scale-off: #d9d9e2;
 
   /* タイムフレーム別バッジ色 */
-  --color-tf-now: #c0392b;
+  --color-tf-now: #dd192d;
   --color-tf-5y: #d68910;
-  --color-tf-10y: #1a5fb4;
-  --color-tf-gen: #6b6b70;
+  --color-tf-10y: #4d65cb;
+  --color-tf-gen: #6b6e80;
 }
 
 /* 別テーマ例：差し替えで全体が変わることの実証用 */
 [data-theme="dark"] {
-  --color-bg: #1b1b1d;
-  --color-surface: #242427;
-  --color-surface-ref: #363d4b;
-  --color-text: #f2f2f4;
-  --color-text-muted: #a1a1aa;
-  --color-border: #34343a;
-  --color-accent: #5ea0ef;
+  --color-bg: #14151a;
+  --color-surface: #1e2029;
+  --color-surface-ref: #2b3350;
+  --color-text: #eef0f6;
+  --color-text-muted: #a7abbd;
+  --color-border: #2f3342;
+  --color-accent: #8ea2f0;
   --color-challenge: #3fb492;
-  --color-link: #5ea0ef;
+  --color-link: #8ea2f0;
+  --color-ai: #b9a4f0;
+  --color-ai-bg: #262041;
+  --color-ai-border: #3b3566;
   --color-scale-on: #ff6b5e;
-  --color-scale-off: #44444b;
+  --color-scale-off: #44465a;
 }

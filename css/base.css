@@ -1,10 +1,14 @@
 * { box-sizing: border-box; }
+html { font-size: 16px; }
 body {
   margin: 0;
   font-family: var(--font-base);
   background: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.7;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a { color: var(--color-link); }
 .site-header { border-bottom: 1px solid var(--color-border); padding: 24px 0; }
@@ -86,18 +90,19 @@ a { color: var(--color-link); }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 18px;
 }
 .card {
   display: flex; flex-direction: column;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 10px;
-  padding: 14px 16px;
+  border-radius: var(--radius);
+  padding: 18px 20px;
   text-decoration: none;
   color: var(--color-text);
-  transition: border-color .15s, transform .15s;
+  transition: border-color .15s, transform .15s, box-shadow .15s;
 }
+.card:hover { box-shadow: 0 6px 20px rgba(11, 16, 32, 0.08); }
 .card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
 /* 課題ではないカード（計画・施策／挑戦・構想）＝背景を変えて区別。.card より後に定義して上書きを防ぐ */
 .card-ref { background: var(--color-surface-ref); border-color: transparent; }
@@ -106,12 +111,12 @@ a { color: var(--color-link); }
 .card-top { display: flex; justify-content: space-between; align-items: center;
   gap: 8px; margin-bottom: 8px; }
 .card-cat { font-size: 0.72rem; color: var(--color-text-muted); }
-.card-title { font-size: 1rem; margin: 0 0 4px; line-height: 1.4; }
+.card-title { font-size: 1.05rem; margin: 0 0 6px; line-height: 1.5; }
 /* 課題カードの印象数字・キーワード（計画・挑戦には付けない） */
 .card-hero { font-size: 1.7rem; font-weight: 700; color: var(--color-accent);
   line-height: 1.1; margin: 2px 0 8px; letter-spacing: -0.01em; }
-.card-summary { font-size: 0.85rem; color: var(--color-text-muted);
-  margin: 0 0 12px; flex: 1; }
+.card-summary { font-size: 0.9rem; color: var(--color-text-muted);
+  margin: 0 0 14px; flex: 1; line-height: 1.8; }
 .card-meta { display: flex; gap: 14px; font-size: 0.75rem;
   color: var(--color-text-muted); align-items: center; }
 
@@ -122,18 +127,20 @@ a { color: var(--color-link); }
 .breadcrumb { margin: 20px 0 8px; font-size: 0.9rem; }
 .breadcrumb a { text-decoration: none; }
 .detail-head { display: flex; gap: 10px; align-items: center; margin-top: 8px; }
-.detail-title { font-size: 1.5rem; margin: 8px 0 6px; }
-.detail-summary { color: var(--color-text-muted); margin: 0 0 12px; font-size: 1.05rem; }
+.detail-title { font-size: 1.75rem; margin: 10px 0 8px; line-height: 1.45; }
+.detail-summary { color: var(--color-text-muted); margin: 0 0 14px; font-size: 1.1rem;
+  line-height: 1.8; }
 .detail-meta { display: flex; gap: 18px; font-size: 0.9rem;
   color: var(--color-text-muted); margin-bottom: 8px; }
-.detail-section { margin: 24px 0; max-width: 920px; }
-.detail-section h2 { font-size: 1.05rem; border-left: 4px solid var(--color-accent);
-  padding-left: 10px; margin-bottom: 8px; }
+.detail-section { margin: 30px 0; max-width: 940px; }
+.detail-section h2 { font-size: 1.2rem; border-left: 4px solid var(--color-accent);
+  padding-left: 12px; margin-bottom: 12px; line-height: 1.5; }
+.detail-section p { line-height: 1.95; }
 .detail-section ul { margin: 0; padding-left: 1.3em; }
-.detail-section li { margin: 4px 0; }
+.detail-section li { margin: 7px 0; }
 .data-table { border-collapse: collapse; width: 100%; }
 .data-table th, .data-table td { border: 1px solid var(--color-border);
-  padding: 8px 10px; text-align: left; font-size: 0.92rem; }
+  padding: 11px 13px; text-align: left; font-size: 0.95rem; line-height: 1.7; }
 .data-table th { background: var(--color-surface); width: 45%;
   color: var(--color-text-muted); font-weight: 600; }
 /* 横並び比較表（21大都市など） */
@@ -149,8 +156,8 @@ a { color: var(--color-link); }
 .rel-cat { color: var(--color-text-muted); font-size: 0.85rem; }
 /* 深掘り（市民の声＋答え） */
 .deep-dive .dd-item { background: var(--color-surface);
-  border: 1px solid var(--color-border); border-radius: 12px;
-  padding: 18px 20px; margin: 14px 0; }
+  border: 1px solid var(--color-border); border-radius: var(--radius);
+  padding: 20px 22px; margin: 16px 0; }
 .dd-q, .dd-a { position: relative; padding-left: 32px; margin: 0; }
 .dd-q::before, .dd-a::before {
   position: absolute; left: 0; top: 0.05em;
@@ -170,14 +177,15 @@ a { color: var(--color-link); }
 .dd-src ul { margin: 4px 0 0; padding-left: 1.2em; }
 .dd-src li { margin: 2px 0; }
 .dd-src a { color: var(--color-link); }
-.detail-section.ai-note { background: var(--color-surface);
-  border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent);
-  border-radius: 8px; padding: 14px 18px; }
-.detail-section.ai-note h2 { border-left: none; padding-left: 0; margin-top: 0; }
+.detail-section.ai-note { background: var(--color-ai-bg);
+  border: 1px solid var(--color-ai-border); border-left: 4px solid var(--color-ai);
+  border-radius: var(--radius-sm); padding: 18px 20px; }
+.detail-section.ai-note h2 { border-left: none; padding-left: 0; margin-top: 0;
+  color: var(--color-ai); }
 .detail-section.ai-note h2::before { content: "🤖 "; }
 .infographic { margin: 18px 0 8px; max-width: 920px; }
 .infographic img { width: 100%; height: auto; display: block;
-  border: 1px solid var(--color-border); border-radius: 10px; }
+  border: 1px solid var(--color-border); border-radius: var(--radius); }
 .infographic figcaption { margin-top: 6px; font-size: 0.78rem;
   color: var(--color-text-muted); text-align: right; }
 
@@ -246,7 +254,7 @@ a { color: var(--color-link); }
 .demographics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
   max-width: 920px; }
 .chart-card { margin: 0; background: var(--color-surface);
-  border: 1px solid var(--color-border); border-radius: 12px; padding: 14px 16px; }
+  border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px 18px; }
 .chart-title { font-size: 0.95rem; font-weight: 600; color: var(--color-text);
   display: flex; flex-direction: column; gap: 2px; margin-bottom: 6px; }
 .chart-sub { font-size: 0.78rem; font-weight: 400; color: var(--color-text-muted); }
