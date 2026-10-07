@@ -91,7 +91,10 @@ a { color: var(--color-link); }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 18px;
+  grid-auto-flow: row dense;
 }
+/* 計画・施策／挑戦・構想（色違いカード）は情報量が多いので横2ブロック分に広げる */
+.card-grid .card-ref { grid-column: span 2; }
 .card {
   display: flex; flex-direction: column;
   background: var(--color-surface);
@@ -121,7 +124,8 @@ a { color: var(--color-link); }
   color: var(--color-text-muted); align-items: center; }
 
 @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 540px) { .card-grid { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .card-grid { grid-template-columns: 1fr; }
+  .card-grid .card-ref { grid-column: auto; } }
 
 /* ===== 詳細ページ ===== */
 .breadcrumb { margin: 20px 0 8px; font-size: 0.9rem; }
