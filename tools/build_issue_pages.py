@@ -15,7 +15,7 @@ import datetime
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
-VERSION = "20261007"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20261015"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -196,6 +196,16 @@ def build_detail(it, cat_name, by_id, has_image):
             return f'（<a href="{esc(rid)}.html">{esc(r["title"])}</a>）'
         return re.sub(r'[（(](?P<id>[a-z]+-\d+)[）)]', rep, html)
 
+    revs = it.get("revisions") or []
+    if revs:
+        items = "".join(
+            f'<li><span class="rev-date">{esc(r.get("date"))}</span>{esc(r.get("note"))}</li>'
+            for r in revs)
+        rev_sec = (f'<section class="detail-section page-revisions"><h2>更新記録</h2>'
+                   f'<ul class="rev-list">{items}</ul></section>')
+    else:
+        rev_sec = ""
+
     bg = f'<section class="detail-section"><h2>背景</h2><p>{linkify_refs(esc(it["background"]))}</p></section>' if it.get("background") else ""
     interp = f'<section class="detail-section"><h2>解釈</h2><p>{linkify_refs(esc(it["interpretation"]))}</p></section>' if it.get("interpretation") else ""
     team = f'<section class="detail-section"><h2>検討体制・メンバー</h2><p>{esc(it["team"])}</p></section>' if it.get("team") else ""
@@ -223,6 +233,7 @@ def build_detail(it, cat_name, by_id, has_image):
   {ainote}
   {related_sec}
   {plans_sec}
+  {rev_sec}
   {sources_sec}
 """
 

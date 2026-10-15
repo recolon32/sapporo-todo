@@ -187,6 +187,12 @@ a { color: var(--color-link); }
 .detail-section.ai-note h2 { border-left: none; padding-left: 0; margin-top: 0;
   color: var(--color-ai); }
 .detail-section.ai-note h2::before { content: "🤖 "; }
+/* ページ更新記録 */
+.page-revisions .rev-list { list-style: none; margin: 0; padding: 0; }
+.page-revisions .rev-list li { padding: 6px 0; border-bottom: 1px dashed var(--color-border);
+  font-size: 0.9rem; color: var(--color-text-muted); }
+.page-revisions .rev-date { display: inline-block; margin-right: 10px; font-weight: 700;
+  color: var(--color-accent); font-variant-numeric: tabular-nums; }
 .infographic { margin: 18px 0 8px; max-width: 920px; }
 .infographic img { width: 100%; height: auto; display: block;
   border: 1px solid var(--color-border); border-radius: var(--radius); }
