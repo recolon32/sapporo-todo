@@ -2536,6 +2536,23 @@
       { "label": "全国の漁獲量", "value": "1984年ピークの約3分の1。北海道もサケ・サンマ・スルメイカが不漁" },
       { "label": "開設・所有", "value": "昭和34年(1959)開設。開設者＝札幌市（公設・特別会計）" }
     ],
+    "chartTitle": "取扱額の部門別（令和5→6年度・億円）",
+    "chartNote": "水産＋41億・青果＋48億。数量は減ったが単価上昇で金額は増加。出典：各年度 事業会計決算概要（札幌市中央卸売市場）。",
+    "chartSvg": "<svg viewBox=\"0 0 720 320\" role=\"img\" aria-label=\"取扱額の部門別。令和5年度は青果571億・水産886億（計1457億）、令和6年度は青果619億・水産927億（計1546億）。\" preserveAspectRatio=\"xMidYMid meet\"><g font-family=\"inherit\" font-size=\"13\" fill=\"var(--color-text-muted)\"><line x1=\"90\" y1=\"270\" x2=\"700\" y2=\"270\" stroke=\"var(--color-border)\"/><text x=\"82\" y=\"274\" text-anchor=\"end\">0</text><line x1=\"90\" y1=\"210\" x2=\"700\" y2=\"210\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"214\" text-anchor=\"end\">250</text><line x1=\"90\" y1=\"150\" x2=\"700\" y2=\"150\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"154\" text-anchor=\"end\">500</text><line x1=\"90\" y1=\"90\" x2=\"700\" y2=\"90\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"94\" text-anchor=\"end\">750</text><line x1=\"90\" y1=\"30\" x2=\"700\" y2=\"30\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"34\" text-anchor=\"end\">1000</text><text x=\"30\" y=\"34\" fill=\"var(--color-text-muted)\">億円</text></g><g font-family=\"inherit\"><rect x=\"150\" y=\"133\" width=\"46\" height=\"137\" fill=\"var(--color-challenge)\"/><text x=\"173\" y=\"126\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-challenge)\">571</text><rect x=\"204\" y=\"57\" width=\"46\" height=\"213\" fill=\"var(--color-accent)\"/><text x=\"227\" y=\"50\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-accent)\">886</text><text x=\"200\" y=\"292\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-text)\">令和5年度　計1,457</text><rect x=\"420\" y=\"121\" width=\"46\" height=\"149\" fill=\"var(--color-challenge)\"/><text x=\"443\" y=\"114\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-challenge)\">619</text><rect x=\"474\" y=\"48\" width=\"46\" height=\"222\" fill=\"var(--color-accent)\"/><text x=\"497\" y=\"41\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-accent)\">927</text><text x=\"470\" y=\"292\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-text)\">令和6年度　計1,546</text></g><g font-family=\"inherit\" font-size=\"13\"><rect x=\"560\" y=\"40\" width=\"14\" height=\"14\" fill=\"var(--color-challenge)\"/><text x=\"580\" y=\"52\" fill=\"var(--color-text-muted)\">青果部</text><rect x=\"560\" y=\"62\" width=\"14\" height=\"14\" fill=\"var(--color-accent)\"/><text x=\"580\" y=\"74\" fill=\"var(--color-text-muted)\">水産物部</text></g></svg>",
+    "bodyTables": [
+      {
+        "title": "取扱量・取扱額・収支の推移（令和5→6年度）",
+        "columns": ["項目", "令和5年度", "令和6年度", "増減"],
+        "rows": [["取扱量 合計", "27.5万t", "26.4万t", "−1.1万t"], ["　うち青果部", "21.0万t", "20.1万t", "−0.9万t"], ["　うち水産物部", "6.3万t", "6.3万t", "±0"], ["取扱額 合計", "1,457億円", "1,546億円", "+89億円"], ["　うち青果部", "571億円", "619億円", "+48億円"], ["　うち水産物部", "886億円", "927億円", "+41億円"], ["収益的収支", "+1.18億円", "▲0.37億円", "赤字転落"], ["資金残高", "14.66億円", "16.22億円", "+1.56億円"]],
+        "note": "単位は概数（万t・億円未満を四捨五入）。端数処理で部門合算が合計と一致しない場合がある。出典：各年度 事業会計決算概要（札幌市中央卸売市場）。"
+      },
+      {
+        "title": "空き区画（募集中）",
+        "columns": ["棟", "階", "面積", "月額使用料", "用途"],
+        "rows": [["水産棟", "2F", "146㎡", "360,386円", "事務所"], ["青果棟", "3F", "28㎡", "69,115円", "飲食店等"], ["青果棟", "3F", "40㎡（2室）", "98,736円", "飲食店等"], ["青果棟", "3F", "719㎡", "1,774,779円", "事務所"], ["水産保冷配送センター", "3F", "160㎡", "296,208円", "事務所"], ["水産保冷配送センター", "3F", "91㎡", "168,468円", "事務所"], ["合計（7区画）", "—", "約1,224㎡", "—", "—"]],
+        "note": "募集ページの現時点スナップショット。総区画に対する「空室率(%)」は非公表。別途、光熱水費・共用部負担金・立体駐車場（1台9,350円）等。"
+      }
+    ],
     "facts": [
       "札幌市中央卸売市場は札幌市が開設・所有する公設市場（会計は市場事業会計＝特別会計）。令和6年度決算は収益的収支が▲0.37億円と3年ぶりの赤字に転じた。主因は空き事務所の入居が進まず施設使用料が減ったこと。",
       "令和6年度の取扱量は26.4万t（前年27.5万t）と減る一方、取扱額は1,546億円（前年1,457億円）と単価高で増加。『数量減・単価高』の傾向が続く。",
@@ -2612,6 +2629,10 @@
       {
         "date": "2026-10-20",
         "note": "新規作成。令和6年度決算（取扱26.4万t・1,546億円、収支▲0.37億円）と、魚離れ・漁獲減・価格＋約30%・道内市場の縮小を整理。観光/給食/見学連携のビジョンをQ&Aで掲載。"
+      },
+      {
+        "date": "2026-10-20",
+        "note": "本文を拡充。取扱額の部門別グラフ、令和5→6年度の総合比較表、空き区画（募集中7区画）の一覧表を追加。"
       }
     ],
     "hero": "3年ぶり赤字"

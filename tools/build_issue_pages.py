@@ -170,9 +170,15 @@ def build_detail(it, cat_name, by_id, has_image):
                       for s in it.get("sources", []))
     sources_sec = f'<section class="detail-section"><h2>出典</h2><ul>{sources}</ul></section>' if sources else ""
 
+    # 本文テーブル：bodyTable（単体）または bodyTables（複数）を受け付ける
+    bts = it.get("bodyTables")
+    if not bts:
+        single = it.get("bodyTable")
+        bts = [single] if single else []
     table_sec = ""
-    bt = it.get("bodyTable")
-    if bt and bt.get("rows"):
+    for bt in bts:
+        if not (bt and bt.get("rows")):
+            continue
         hl = bt.get("highlight")
         thead = "".join(f'<th>{esc(c)}</th>' for c in bt.get("columns", []))
         trs = ""
@@ -182,9 +188,18 @@ def build_detail(it, cat_name, by_id, has_image):
             trs += f'<tr{cls}>{tds}</tr>'
         note = f'<p class="chart-src">{esc(bt["note"])}</p>' if bt.get("note") else ""
         title = esc(bt.get("title", "比較表"))
-        table_sec = (f'<section class="detail-section"><h2>{title}</h2>'
-                     f'<div class="table-scroll"><table class="data-table cmp-table">'
-                     f'<thead><tr>{thead}</tr></thead><tbody>{trs}</tbody></table></div>{note}</section>')
+        table_sec += (f'<section class="detail-section"><h2>{title}</h2>'
+                      f'<div class="table-scroll"><table class="data-table cmp-table">'
+                      f'<thead><tr>{thead}</tr></thead><tbody>{trs}</tbody></table></div>{note}</section>')
+
+    # 本文グラフ：インラインSVG（ページのCSS変数を継承しテーマ連動）
+    chart_sec = ""
+    cs = it.get("chartSvg")
+    if cs:
+        ct = esc(it.get("chartTitle", "グラフ"))
+        cnote = f'<p class="chart-src">{esc(it["chartNote"])}</p>' if it.get("chartNote") else ""
+        chart_sec = (f'<section class="detail-section"><h2>{ct}</h2>'
+                     f'<figure class="chart-card">{cs}{cnote}</figure></section>')
 
     def linkify_refs(html):
         # 文中の（infra-01）のような課題ID参照を、タイトル付きの内部リンクに変換
@@ -225,6 +240,7 @@ def build_detail(it, cat_name, by_id, has_image):
   {data_sec}
   {ent_sec}
   {list_section("事実", it.get("facts"))}
+  {chart_sec}
   {table_sec}
   {interp}
   {list_section("提案", it.get("proposals"))}
