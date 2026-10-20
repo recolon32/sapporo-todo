@@ -2539,7 +2539,20 @@
     "chartTitle": "取扱額の部門別（令和5→6年度・億円）",
     "chartNote": "水産＋41億・青果＋48億。数量は減ったが単価上昇で金額は増加。出典：各年度 事業会計決算概要（札幌市中央卸売市場）。",
     "chartSvg": "<svg viewBox=\"0 0 720 320\" role=\"img\" aria-label=\"取扱額の部門別。令和5年度は青果571億・水産886億（計1457億）、令和6年度は青果619億・水産927億（計1546億）。\" preserveAspectRatio=\"xMidYMid meet\"><g font-family=\"inherit\" font-size=\"13\" fill=\"var(--color-text-muted)\"><line x1=\"90\" y1=\"270\" x2=\"700\" y2=\"270\" stroke=\"var(--color-border)\"/><text x=\"82\" y=\"274\" text-anchor=\"end\">0</text><line x1=\"90\" y1=\"210\" x2=\"700\" y2=\"210\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"214\" text-anchor=\"end\">250</text><line x1=\"90\" y1=\"150\" x2=\"700\" y2=\"150\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"154\" text-anchor=\"end\">500</text><line x1=\"90\" y1=\"90\" x2=\"700\" y2=\"90\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"94\" text-anchor=\"end\">750</text><line x1=\"90\" y1=\"30\" x2=\"700\" y2=\"30\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"82\" y=\"34\" text-anchor=\"end\">1000</text><text x=\"30\" y=\"34\" fill=\"var(--color-text-muted)\">億円</text></g><g font-family=\"inherit\"><rect x=\"150\" y=\"133\" width=\"46\" height=\"137\" fill=\"var(--color-challenge)\"/><text x=\"173\" y=\"126\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-challenge)\">571</text><rect x=\"204\" y=\"57\" width=\"46\" height=\"213\" fill=\"var(--color-accent)\"/><text x=\"227\" y=\"50\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-accent)\">886</text><text x=\"200\" y=\"292\" text-anchor=\"middle\" font-size=\"13\" fill=\"var(--color-text)\">令和5年度　計1,457</text><rect x=\"420\" y=\"121\" width=\"46\" height=\"149\" fill=\"var(--color-challenge)\"/><text x=\"443\" y=\"114\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-challenge)\">619</text><rect x=\"474\" y=\"48\" width=\"46\" height=\"222\" fill=\"var(--color-accent)\"/><text x=\"497\" y=\"41\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-accent)\">927</text><text x=\"470\" y=\"292\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"700\" fill=\"var(--color-text)\">令和6年度　計1,546</text></g><g font-family=\"inherit\" font-size=\"13\"><rect x=\"560\" y=\"40\" width=\"14\" height=\"14\" fill=\"var(--color-challenge)\"/><text x=\"580\" y=\"52\" fill=\"var(--color-text-muted)\">青果部</text><rect x=\"560\" y=\"62\" width=\"14\" height=\"14\" fill=\"var(--color-accent)\"/><text x=\"580\" y=\"74\" fill=\"var(--color-text-muted)\">水産物部</text></g></svg>",
+    "chartSvgs": [
+      {
+        "title": "取扱量の推移（量で見る・万t）",
+        "note": "価格の影響を受けない『量』でみると縮小が続く（2022→2024で約1割減）。R7・R8は予算（計画値）。出典：各年度 事業会計 決算概要・予算概要（札幌市中央卸売市場）。",
+        "svg": "<svg viewBox=\"0 0 720 300\" role=\"img\" aria-label=\"取扱量の推移。2022年度29.6万t、2023年度27.5万t、2024年度26.4万t、2025年度(予算)26.2万t、2026年度(予算)26.9万t。\" preserveAspectRatio=\"xMidYMid meet\"><g font-family=\"inherit\" font-size=\"13\" fill=\"var(--color-text-muted)\"><line x1=\"80\" y1=\"250\" x2=\"700\" y2=\"250\" stroke=\"var(--color-border)\"/><text x=\"72\" y=\"254\" text-anchor=\"end\">0</text><line x1=\"80\" y1=\"176.7\" x2=\"700\" y2=\"176.7\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"72\" y=\"180\" text-anchor=\"end\">10</text><line x1=\"80\" y1=\"103.3\" x2=\"700\" y2=\"103.3\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"72\" y=\"107\" text-anchor=\"end\">20</text><line x1=\"80\" y1=\"30\" x2=\"700\" y2=\"30\" stroke=\"var(--color-border)\" stroke-dasharray=\"3 3\"/><text x=\"72\" y=\"34\" text-anchor=\"end\">30</text><text x=\"40\" y=\"34\" fill=\"var(--color-text-muted)\">万t</text></g><g font-family=\"inherit\" font-size=\"13\" font-weight=\"700\"><rect x=\"110\" y=\"32.9\" width=\"60\" height=\"217.1\" fill=\"var(--color-accent)\"/><text x=\"140\" y=\"26\" text-anchor=\"middle\" fill=\"var(--color-accent)\">29.6</text><rect x=\"240\" y=\"48.3\" width=\"60\" height=\"201.7\" fill=\"var(--color-accent)\"/><text x=\"270\" y=\"41\" text-anchor=\"middle\" fill=\"var(--color-accent)\">27.5</text><rect x=\"370\" y=\"56.4\" width=\"60\" height=\"193.6\" fill=\"var(--color-accent)\"/><text x=\"400\" y=\"49\" text-anchor=\"middle\" fill=\"var(--color-accent)\">26.4</text><rect x=\"500\" y=\"57.9\" width=\"60\" height=\"192.1\" fill=\"var(--color-accent)\" opacity=\"0.45\"/><text x=\"530\" y=\"50\" text-anchor=\"middle\" fill=\"var(--color-text-muted)\">26.2</text><rect x=\"630\" y=\"52.7\" width=\"60\" height=\"197.3\" fill=\"var(--color-accent)\" opacity=\"0.45\"/><text x=\"660\" y=\"45\" text-anchor=\"middle\" fill=\"var(--color-text-muted)\">26.9</text></g><g font-family=\"inherit\" font-size=\"12\" fill=\"var(--color-text)\"><text x=\"140\" y=\"268\" text-anchor=\"middle\">2022</text><text x=\"270\" y=\"268\" text-anchor=\"middle\">2023</text><text x=\"400\" y=\"268\" text-anchor=\"middle\">2024</text><text x=\"530\" y=\"268\" text-anchor=\"middle\" fill=\"var(--color-text-muted)\">2025予</text><text x=\"660\" y=\"268\" text-anchor=\"middle\" fill=\"var(--color-text-muted)\">2026予</text></g></svg>"
+      }
+    ],
     "bodyTables": [
+      {
+        "title": "取扱量の推移（量で見る・2022→2026年度）",
+        "columns": ["年度", "取扱量 合計", "水産物", "青果物", "区分"],
+        "rows": [["2022 (R4)", "29.6万t", "—", "—", "実績"], ["2023 (R5)", "27.5万t", "6.3万t", "21.0万t", "実績"], ["2024 (R6)", "26.4万t", "6.3万t", "20.1万t", "実績"], ["2025 (R7)", "26.2万t", "6.7万t", "19.6万t", "予算"], ["2026 (R8)", "26.9万t", "6.3万t", "20.6万t", "予算"]],
+        "note": "取扱額は単価上昇で横ばい〜微増だが、『量』は2022→2024で約1割減と縮小が続く。R7・R8は予算（計画値）。出典：各年度 事業会計 決算概要・予算概要。"
+      },
       {
         "title": "取扱量・取扱額・収支の推移（令和5→6年度）",
         "columns": ["項目", "令和5年度", "令和6年度", "増減"],
@@ -2637,6 +2650,10 @@
       {
         "date": "2026-10-20",
         "note": "Q&A（観光連携）に、他市場（豊洲・築地）は見学無料＋民間の有料ツアー・定例イベントで観光の厚みがある一方、札幌は観光商品化が弱く伸びしろ、という比較を追記。"
+      },
+      {
+        "date": "2026-10-20",
+        "note": "『取扱量の推移（量で見る・2022→2026年度）』のグラフと表を追加。価格の影響を除いた量ベースで縮小が続くことを可視化。"
       }
     ],
     "hero": "3年ぶり赤字"

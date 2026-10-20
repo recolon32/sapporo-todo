@@ -193,13 +193,17 @@ def build_detail(it, cat_name, by_id, has_image):
                       f'<thead><tr>{thead}</tr></thead><tbody>{trs}</tbody></table></div>{note}</section>')
 
     # 本文グラフ：インラインSVG（ページのCSS変数を継承しテーマ連動）
+    def one_chart(svg, title, note):
+        n = f'<p class="chart-src">{esc(note)}</p>' if note else ""
+        return (f'<section class="detail-section"><h2>{esc(title)}</h2>'
+                f'<figure class="chart-card">{svg}{n}</figure></section>')
     chart_sec = ""
     cs = it.get("chartSvg")
     if cs:
-        ct = esc(it.get("chartTitle", "グラフ"))
-        cnote = f'<p class="chart-src">{esc(it["chartNote"])}</p>' if it.get("chartNote") else ""
-        chart_sec = (f'<section class="detail-section"><h2>{ct}</h2>'
-                     f'<figure class="chart-card">{cs}{cnote}</figure></section>')
+        chart_sec += one_chart(cs, it.get("chartTitle", "グラフ"), it.get("chartNote"))
+    for ch in it.get("chartSvgs", []):
+        if ch and ch.get("svg"):
+            chart_sec += one_chart(ch["svg"], ch.get("title", "グラフ"), ch.get("note"))
 
     def linkify_refs(html):
         # 文中の（infra-01）のような課題ID参照を、タイトル付きの内部リンクに変換
