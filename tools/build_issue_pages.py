@@ -15,7 +15,7 @@ import datetime
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
-VERSION = "20261120"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20261120b"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -232,11 +232,13 @@ def build_detail(it, cat_name, by_id, has_image):
 
     return f"""
   <p class="breadcrumb"><a href="../index.html">← 課題一覧</a></p>
-  <div class="detail-head">
-    <span class="card-cat">{esc(cat_name.get(it["category"], it["category"]))}</span>
-    {plan_badge}<span class="badge {tf}">{esc(it.get("timeframe"))}</span>
+  <div class="detail-hero">
+    <div class="detail-head">
+      <span class="card-cat">{esc(cat_name.get(it["category"], it["category"]))}</span>
+      {plan_badge}<span class="badge {tf}">{esc(it.get("timeframe"))}</span>
+    </div>
+    <h1 class="detail-title">{esc(it["title"])}</h1>
   </div>
-  <h1 class="detail-title">{esc(it["title"])}</h1>
   <p class="detail-summary">{esc(it.get("summary"))}</p>
   <div class="detail-meta">{meta}</div>
   {fig}
