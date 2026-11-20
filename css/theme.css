@@ -11,47 +11,52 @@
   --radius: 14px;
   --radius-sm: 10px;
 
-  --color-bg: #ffffff;
-  --color-surface: #f5f6fb;
-  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。淡いラベンダーで区別 */
-  --color-surface-ref: #e2e6f3;
-  --color-text: #0b1020;
-  --color-text-muted: #6b6e80;
-  --color-border: #e6e6f0;
-  --color-accent: #4d65cb;
-  --color-challenge: #1f8a70;
-  --color-link: #4d65cb;
+  /* アースカラー基調：背景は薄グレー、カードは白で浮かせる（弱視配慮の高コントラスト） */
+  --color-bg: #f5f5f3;        /* 全体背景：薄グレー */
+  --color-surface: #ffffff;   /* カード・内部パネル：白 */
+  /* 課題ではないカード（計画・施策／挑戦・構想）の背景。淡いサンドで区別 */
+  --color-surface-ref: #f0eadd;
+  --color-text: #201c17;      /* 焦げ茶の黒（bg比 約13:1） */
+  --color-text-muted: #514a40;
+  --color-border: #d8d7d0;
+  --color-accent: #a8521c;    /* テラコッタ */
+  --color-challenge: #4a5a32; /* モスグリーン */
+  --color-link: #0f5e86;      /* リンク青（AA基準の視認性を維持） */
 
-  /* AIノート専用色（他セクションと区別する淡い紫） */
-  --color-ai: #7a5cd0;
-  --color-ai-bg: #f3eefc;
-  --color-ai-border: #e3d8f7;
+  /* AIノート専用色（他セクションと区別するモスグリーン系） */
+  --color-ai: #4a5a32;
+  --color-ai-bg: #edf0e5;
+  --color-ai-border: #d6ddc5;
 
-  /* 緊急度・深刻度スケール（●） */
-  --color-scale-on: #dd192d;
-  --color-scale-off: #d9d9e2;
+  /* 緊急度・深刻度スケール（●）：赤を深い煉瓦色に落として高コントラスト */
+  --color-scale-on: #9b2d1f;
+  --color-scale-off: #d7d6cf;
 
-  /* タイムフレーム別バッジ色 */
-  --color-tf-now: #dd192d;
-  --color-tf-5y: #d68910;
-  --color-tf-10y: #4d65cb;
-  --color-tf-gen: #6b6e80;
+  /* タイムフレーム別バッジ色（アースに寄せつつ識別しやすく） */
+  --color-tf-now: #9b2d1f;   /* 深い煉瓦 */
+  --color-tf-5y: #8a5a00;    /* 土黄 */
+  --color-tf-10y: #a8521c;   /* テラコッタ */
+  --color-tf-gen: #6b6456;   /* 枯茶グレー */
 }
 
-/* 別テーマ例：差し替えで全体が変わることの実証用 */
+/* 別テーマ例：差し替えで全体が変わることの実証用（アースのまま沈める） */
 [data-theme="dark"] {
-  --color-bg: #14151a;
-  --color-surface: #1e2029;
-  --color-surface-ref: #2b3350;
-  --color-text: #eef0f6;
-  --color-text-muted: #a7abbd;
-  --color-border: #2f3342;
-  --color-accent: #8ea2f0;
-  --color-challenge: #3fb492;
-  --color-link: #8ea2f0;
-  --color-ai: #b9a4f0;
-  --color-ai-bg: #262041;
-  --color-ai-border: #3b3566;
-  --color-scale-on: #ff6b5e;
-  --color-scale-off: #44465a;
+  --color-bg: #1a1916;
+  --color-surface: #23221e;
+  --color-surface-ref: #2f2a20;
+  --color-text: #f3eadb;
+  --color-text-muted: #cbbca2;
+  --color-border: #45443d;
+  --color-accent: #d9843f;
+  --color-challenge: #8fa266;
+  --color-link: #6fb6da;
+  --color-ai: #8fa266;
+  --color-ai-bg: #272b1f;
+  --color-ai-border: #3c4231;
+  --color-scale-on: #e0695a;
+  --color-scale-off: #45443d;
+  --color-tf-now: #e0695a;
+  --color-tf-5y: #d7a13e;
+  --color-tf-10y: #d9843f;
+  --color-tf-gen: #9c8d74;
 }
