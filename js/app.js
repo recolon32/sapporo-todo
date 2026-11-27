@@ -11,18 +11,36 @@ async function init() {
   renderLastUpdated();
 }
 
-// 札幌の強み（ポジティブデータ）：課題一覧の上部に専用枠で表示
+// 強みに紐づく既存課題（related の中で ISSUES に存在する最初のもの）
+function strengthChallenge(it) {
+  for (const id of (it.related || [])) {
+    const c = ISSUES.find(x => x.id === id);
+    if (c) return c;
+  }
+  return null;
+}
+
+// 札幌の強み（ポジティブデータ）：2カラム幅で大きく。強み＋ぶら下がる課題を1枚に
 function strengthCardHTML(it) {
-  return `<a class="card card-strength" href="i/${encodeURIComponent(it.id)}.html">
-    <div class="card-top">
-      <span class="card-cat">${esc(it.category || "札幌の強み")}</span>
-      <span class="badge strength">強み</span>
-    </div>
-    <h3 class="card-title">${esc(it.title)}</h3>
-    ${it.hero ? `<div class="card-hero card-hero--strength">${esc(it.hero)}</div>` : ""}
-    <p class="card-summary">${esc(it.summary)}</p>
-    <div class="card-meta"><span>ポジティブデータ</span></div>
-  </a>`;
+  const ch = strengthChallenge(it);
+  const hanging = ch ? `
+    <a class="hanging-challenge" href="i/${encodeURIComponent(ch.id)}.html">
+      <span class="hc-label">▼ ぶら下がる課題</span>
+      <span class="hc-title">${esc(ch.title)}</span>
+      <span class="hc-go">この課題を見る →</span>
+    </a>` : "";
+  return `<article class="card card-strength card-strength--wide">
+    <a class="card-strength-main" href="i/${encodeURIComponent(it.id)}.html">
+      <div class="card-top">
+        <span class="card-cat">${esc(it.category || "札幌の強み")}</span>
+        <span class="badge strength">強み</span>
+      </div>
+      <h3 class="card-title">${esc(it.title)}</h3>
+      ${it.hero ? `<div class="card-hero card-hero--strength">${esc(it.hero)}</div>` : ""}
+      <p class="card-summary">${esc(it.summary)}</p>
+    </a>
+    ${hanging}
+  </article>`;
 }
 
 function renderStrengths() {
@@ -31,7 +49,7 @@ function renderStrengths() {
   if (!STRENGTHS || !STRENGTHS.length) { el.innerHTML = ""; return; }
   el.innerHTML = `
     <h2 class="strengths-title">札幌の強み</h2>
-    <p class="strengths-desc">課題だけでなく、客観的に伸びている・優れている数字も一次データで整理しています。</p>
+    <p class="strengths-desc">課題だけでなく、客観的に伸びている・優れている数字も一次データで整理。強みには、その先にぶら下がる課題も添えています。</p>
     <div class="card-grid">${STRENGTHS.map(strengthCardHTML).join("")}</div>`;
 }
 
