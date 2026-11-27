@@ -29,6 +29,15 @@ def img_file(iid):
     return ""
 
 
+def ogp_file(iid):
+    """OGP/SNS共有用サムネイル名を返す。<id>o.png を最優先、次に <id>-thumb.jpg、
+    どちらも無ければ本文インフォグラフィック（img_file）にフォールバック。無ければ空文字。"""
+    for name in (f"{iid}o.png", f"{iid}-thumb.jpg"):
+        if os.path.exists(os.path.join(ROOT, "images", name)):
+            return name
+    return img_file(iid)
+
+
 def esc(s):
     return html.escape(str(s if s is not None else ""), quote=True)
 
@@ -283,8 +292,9 @@ def jsonld(it, cat_name, has_image, url):
         "author": {"@type": "Organization", "name": "焚き火会 AI活用チーム", "url": SITE_BASE},
         "publisher": {"@type": "Organization", "name": "焚き火会 AI活用チーム", "url": SITE_BASE},
     }]
-    if has_image:
-        graph[0]["image"] = f"{SITE_BASE}/images/{img_file(it['id'])}"
+    og_name = ogp_file(it['id'])
+    if og_name:
+        graph[0]["image"] = f"{SITE_BASE}/images/{og_name}"
     graph.append({
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -314,9 +324,8 @@ def page_html(it, cat_name, by_id, has_image):
     url = f"{SITE_BASE}/i/{it['id']}.html"
     og_image = ""
     twitter_card = "summary"
-    if has_image:
-        thumb = f"{it['id']}-thumb.jpg"
-        og_name = thumb if os.path.exists(os.path.join(ROOT, "images", thumb)) else img_file(it['id'])
+    og_name = ogp_file(it['id'])
+    if og_name:
         og_image = f'\n  <meta property="og:image" content="{SITE_BASE}/images/{og_name}">'
         twitter_card = "summary_large_image"
     detail = build_detail(it, cat_name, by_id, has_image)
