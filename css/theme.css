@@ -23,6 +23,11 @@
   --color-challenge: #4a5a32; /* モスグリーン */
   --color-link: #0f5e86;      /* リンク青（AA基準の視認性を維持） */
 
+  /* 札幌の強み（ポジティブデータ）専用色：モスグリーン系 */
+  --color-strength: #3f6b3a;
+  --color-strength-bg: #eef3ea;
+  --color-strength-border: #cfe0c6;
+
   /* AIノート専用色（他セクションと区別するモスグリーン系） */
   --color-ai: #4a5a32;
   --color-ai-bg: #edf0e5;
@@ -50,6 +55,9 @@
   --color-accent: #d9843f;
   --color-challenge: #8fa266;
   --color-link: #6fb6da;
+  --color-strength: #8fb37f;
+  --color-strength-bg: #222a1f;
+  --color-strength-border: #3a4a33;
   --color-ai: #8fa266;
   --color-ai-bg: #272b1f;
   --color-ai-border: #3c4231;

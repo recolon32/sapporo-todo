@@ -15,7 +15,7 @@ import datetime
 
 # ===== 設定（公開先が変わったら SITE_BASE を変更）=====
 SITE_BASE = "https://todo.takibikai.jp"
-VERSION = "20261121"  # CSS/JS のキャッシュ用バージョン
+VERSION = "20261127"  # CSS/JS のキャッシュ用バージョン
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TF_CLASS = {"今すぐ": "tf-now", "5年以内": "tf-5y", "10年以内": "tf-10y", "世代単位": "tf-gen"}
@@ -129,15 +129,25 @@ def entities_section(it):
 
 def build_detail(it, cat_name, by_id, has_image):
     is_plan = it.get("kind") == "plan"
+    is_strength = it.get("kind") == "strength"
     tf = TF_CLASS.get(it.get("timeframe"), "tf-gen")
     if it.get("kind") == "challenge":
         plan_badge = '<span class="badge challenge">挑戦・構想</span>'
     elif is_plan:
         plan_badge = '<span class="badge plan">計画・施策</span>'
+    elif is_strength:
+        plan_badge = '<span class="badge strength">ポジティブデータ</span>'
     else:
         plan_badge = ""
-    meta = ('<span class="plan-tag">進行中の計画・施策</span>' if is_plan
-            else f'<span>緊急度 {dots(it.get("urgency"))}</span><span>深刻度 {dots(it.get("severity"))}</span>')
+    # タイムフレーム・バッジ（強みには付けない）
+    tf_badge = "" if is_strength or not it.get("timeframe") else f'<span class="badge {tf}">{esc(it.get("timeframe"))}</span>'
+    if is_plan:
+        meta = '<span class="plan-tag">進行中の計画・施策</span>'
+    elif is_strength:
+        meta = '<span class="plan-tag">札幌の強み・ポジティブデータ</span>'
+    else:
+        meta = f'<span>緊急度 {dots(it.get("urgency"))}</span><span>深刻度 {dots(it.get("severity"))}</span>'
+    hero_class = " detail-hero--strength" if is_strength else ""
 
     fig = ""
     if has_image:
@@ -232,10 +242,10 @@ def build_detail(it, cat_name, by_id, has_image):
 
     return f"""
   <p class="breadcrumb"><a href="../index.html">← 課題一覧</a></p>
-  <div class="detail-hero">
+  <div class="detail-hero{hero_class}">
     <div class="detail-head">
       <span class="card-cat">{esc(cat_name.get(it["category"], it["category"]))}</span>
-      {plan_badge}<span class="badge {tf}">{esc(it.get("timeframe"))}</span>
+      {plan_badge}{tf_badge}
     </div>
     <h1 class="detail-title">{esc(it["title"])}</h1>
   </div>
@@ -371,29 +381,40 @@ def page_html(it, cat_name, by_id, has_image):
 """
 
 
+def load_strengths():
+    """札幌の強み（ポジティブデータ）。ファイルが無ければ空リスト。"""
+    fp = os.path.join(ROOT, "data/strengths.json")
+    if not os.path.exists(fp):
+        return []
+    return json.load(open(fp, encoding="utf-8"))
+
+
 def main():
     cats = json.load(open(os.path.join(ROOT, "data/categories.json"), encoding="utf-8"))
     issues = json.load(open(os.path.join(ROOT, "data/issues.json"), encoding="utf-8"))
+    strengths = load_strengths()
     cat_name = {c["id"]: c["name"] for c in cats}
-    by_id = {it["id"]: it for it in issues}
+    # 強みページ内の課題ID参照も解決できるよう by_id には両方入れる
+    all_pages = issues + strengths
+    by_id = {it["id"]: it for it in all_pages}
     out_dir = os.path.join(ROOT, "i")
     os.makedirs(out_dir, exist_ok=True)
 
     # 既存の生成ページを掃除（孤児を残さない）
-    valid = {f"{it['id']}.html" for it in issues}
+    valid = {f"{it['id']}.html" for it in all_pages}
     for fn in os.listdir(out_dir):
         if fn.endswith(".html") and fn not in valid:
             os.remove(os.path.join(out_dir, fn))
 
     n = 0
-    for it in issues:
+    for it in all_pages:
         has_image = bool(img_file(it['id']))
         with open(os.path.join(out_dir, f"{it['id']}.html"), "w", encoding="utf-8") as f:
             f.write(page_html(it, cat_name, by_id, has_image))
         n += 1
     print(f"generated {n} pages in i/")
 
-    write_sitemap(issues)
+    write_sitemap(all_pages)
 
 
 def write_sitemap(issues):

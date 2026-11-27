@@ -128,12 +128,28 @@ a { color: var(--color-link); }
 @media (max-width: 540px) { .card-grid { grid-template-columns: 1fr; }
   .card-grid .card-ref { grid-column: auto; } }
 
+/* ===== 札幌の強み（ポジティブデータ）専用枠 ===== */
+.strengths-block { margin: 8px 0 28px; padding: 20px 22px 22px;
+  background: var(--color-strength-bg); border: 1px solid var(--color-strength-border);
+  border-radius: var(--radius); }
+.strengths-block:empty { display: none; }
+.strengths-title { font-size: 1.3rem; font-weight: 700; margin: 0 0 4px;
+  border-left: 6px solid var(--color-strength); padding-left: 14px; }
+.strengths-desc { color: var(--color-text-muted); margin: 0 0 16px; }
+/* 強みカード：課題カードと色で区別（モスグリーン）。背景は白で浮かせる */
+.card-strength { background: var(--color-bg); border-color: var(--color-strength-border);
+  border-left: 5px solid var(--color-strength); }
+.card-strength:hover { border-color: var(--color-strength); }
+.card-hero--strength { color: var(--color-strength); }
+.badge.strength { background: var(--color-strength); color: #fff; }
+
 /* ===== 詳細ページ ===== */
 .breadcrumb { margin: 20px 0 8px; font-size: 0.9rem; }
 .breadcrumb a { text-decoration: none; }
 /* 見出し帯：ページ上部をアクセント色の帯にして強弱をはっきりさせる */
 .detail-hero { background: var(--color-accent); border-radius: var(--radius);
   padding: 24px 26px; margin: 8px 0 20px; }
+.detail-hero--strength { background: var(--color-strength); }
 .detail-head { display: flex; gap: 10px; align-items: center; margin-top: 0; }
 .detail-hero .card-cat { color: #fff; opacity: 0.92; font-weight: 700;
   letter-spacing: 0.06em; }

@@ -4,8 +4,8 @@
     {
       "name": "sapporo-todo",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8137"],
-      "port": 8137
+      "runtimeArgs": ["-m", "http.server", "8799", "--directory", "/Users/mits/05_AI_WORK/project/sapporo-todo"],
+      "port": 8799
     }
   ]
 }

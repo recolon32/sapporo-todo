@@ -8,6 +8,7 @@ const PALETTE = ["#1a5fb4", "#c0392b", "#2e8b57", "#d68910", "#7d3c98",
 
 let CATS = [];
 let ISSUES = [];
+let STRENGTHS = [];
 let CAT_NAME = {};
 let CAT_COLOR = {};
 
@@ -16,9 +17,13 @@ async function loadData() {
     fetch("data/categories.json").then(r => r.json()),
     fetch("data/issues.json").then(r => r.json()),
   ]);
+  // 札幌の強み（ポジティブデータ）。無ければ空のまま。
+  try {
+    STRENGTHS = await fetch("data/strengths.json").then(r => r.ok ? r.json() : []);
+  } catch (e) { STRENGTHS = []; }
   CAT_NAME = Object.fromEntries(CATS.map(c => [c.id, c.name]));
   CAT_COLOR = Object.fromEntries(CATS.map((c, i) => [c.id, PALETTE[i % PALETTE.length]]));
-  return { CATS, ISSUES, CAT_NAME, CAT_COLOR };
+  return { CATS, ISSUES, STRENGTHS, CAT_NAME, CAT_COLOR };
 }
 
 function esc(s) {

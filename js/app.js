@@ -4,10 +4,35 @@ let currentSort = "category";   // 既定はカテゴリ順
 
 async function init() {
   await loadData();
+  renderStrengths();
   renderFilterButtons();
   renderSortButtons();
   render();
   renderLastUpdated();
+}
+
+// 札幌の強み（ポジティブデータ）：課題一覧の上部に専用枠で表示
+function strengthCardHTML(it) {
+  return `<a class="card card-strength" href="i/${encodeURIComponent(it.id)}.html">
+    <div class="card-top">
+      <span class="card-cat">${esc(it.category || "札幌の強み")}</span>
+      <span class="badge strength">強み</span>
+    </div>
+    <h3 class="card-title">${esc(it.title)}</h3>
+    ${it.hero ? `<div class="card-hero card-hero--strength">${esc(it.hero)}</div>` : ""}
+    <p class="card-summary">${esc(it.summary)}</p>
+    <div class="card-meta"><span>ポジティブデータ</span></div>
+  </a>`;
+}
+
+function renderStrengths() {
+  const el = document.getElementById("strengths");
+  if (!el) return;
+  if (!STRENGTHS || !STRENGTHS.length) { el.innerHTML = ""; return; }
+  el.innerHTML = `
+    <h2 class="strengths-title">札幌の強み</h2>
+    <p class="strengths-desc">課題だけでなく、客観的に伸びている・優れている数字も一次データで整理しています。</p>
+    <div class="card-grid">${STRENGTHS.map(strengthCardHTML).join("")}</div>`;
 }
 
 async function renderLastUpdated() {
